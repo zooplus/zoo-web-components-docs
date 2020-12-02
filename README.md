@@ -1,2 +1,4 @@
+This repo contains sources for the documentation.
+
 # zoo-web-components-docs
-Storybook documentation for https://github.com/zooplus/zoo-web-components
+https://zooplus.github.io/zoo-web-components-docs

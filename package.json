@@ -1,0 +1,29 @@
+{
+  "name": "zoo-web-components-docs",
+  "version": "1.0.0",
+  "description": "Storybook documentation for https://github.com/zooplus/zoo-web-components",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "deploy-storybook": "storybook-to-ghpages --remote=docs -o .out"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^6.1.9",
+    "@storybook/addon-knobs": "^6.1.9",
+    "@storybook/storybook-deployer": "^2.8.7",
+    "@storybook/theming": "^6.1.9",
+    "@storybook/web-components": "^6.1.9",
+    "@zooplus/zoo-web-components": "^7.2.0",
+    "lit-html": "^1.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zooplus/zoo-web-components-docs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zooplus/zoo-web-components-docs/issues"
+  },
+  "homepage": "https://github.com/zooplus/zoo-web-components-docs#readme"
+}

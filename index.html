@@ -884,7 +884,7 @@
             </h1><p>Grid component.</p>
 <hr>
 <h2>Example usage:</h2><pre><code>&lt;div style=&quot;margin: 30px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)&quot;&gt;
-    &lt;zoo-grid currentpage=&quot;3&quot; maxpages=&quot;20&quot; resizable reorderable stickyheader&gt;
+    &lt;zoo-grid currentpage=&quot;3&quot; maxpages=&quot;20&quot; reorderable stickyheader&gt;
         &lt;zoo-grid-header slot=&quot;headercell&quot; sortable=&quot;true&quot; sortableproperty=&quot;createdDate&quot;&gt;Created date&lt;/zoo-grid-header&gt;
         &lt;zoo-grid-header slot=&quot;headercell&quot; sortable=&quot;true&quot; sortableproperty=&quot;minWeight&quot;&gt;Min weight&lt;/zoo-grid-header&gt;
         &lt;zoo-grid-header slot=&quot;headercell&quot;&gt;Price&lt;/zoo-grid-header&gt;
@@ -906,22 +906,16 @@
     &lt;/zoo-grid&gt;
 &lt;/div&gt;</code></pre>
 <p>The above will render to:</p>
-<div style={{margin: '30px', boxShadow: '0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)'}}>
-<zoo-grid currentpage="3" maxpages="20" resizable reorderable stickyheader>
+<div style="margin: 30px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)">
+<zoo-grid currentpage="3" maxpages="20" reorderable stickyheader>
 <zoo-grid-header slot="headercell" sortable="true" sortableproperty="createdDate">Created date</zoo-grid-header>
 <zoo-grid-header slot="headercell" sortable="true" sortableproperty="minWeight">Min weight</zoo-grid-header>
 <zoo-grid-header slot="headercell">Price</zoo-grid-header>
-
-<div slot="row">
-    <div>2020-05-05</div><div>30 kg</div><div>20 EUR</div>
-</div>
-<div slot="row">
-    <div>2020-05-10</div><div>23 kg</div><div>15 EUR</div>
-</div>
+<div slot="row"><div>2020-05-05</div><div>30 kg</div><div>20 EUR</div></div>
+<div slot="row"><div>2020-05-10</div><div>23 kg</div><div>15 EUR</div></div>
 <div slot="row">
     <div>2020-05-15</div><div>10 kg</div><div>5 EUR</div>
 </div>
-
 <div slot="pagesizeselector">
     <zoo-select labelposition="left">
         <select id="grid-page-size" slot="selectelement">

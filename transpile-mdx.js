@@ -7,7 +7,6 @@ renderer.heading = function(text, level, raw) {
     if (level != 1) {
         return `<h${level}>${text}</h${level}>`;
     }
-    // TODO move these elements to side menu as well
 	const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
 	headers.push({
 		href: `#${escapedText}`,

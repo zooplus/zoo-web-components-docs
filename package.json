@@ -5,14 +5,11 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm run build",
-    "start": "http-server ./docs",
+    "start": "node server.js",
     "build": "node transpile-mdx.js"
   },
-  "dependencies": {
-    "@zooplus/zoo-web-components": "^7.2.0"
-  },
   "devDependencies": {
-    "http-server": "^0.12.3",
+    "@zooplus/zoo-web-components": "^7.2.0",
     "marked": "^1.2.5"
   },
   "repository": {

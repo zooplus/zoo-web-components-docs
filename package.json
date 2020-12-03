@@ -1,8 +1,7 @@
 {
   "name": "zoo-web-components-docs",
   "version": "1.0.0",
-  "description": "Storybook documentation for https://github.com/zooplus/zoo-web-components",
-  "main": "index.js",
+  "description": "Documentation for https://github.com/zooplus/zoo-web-components",
   "type": "module",
   "scripts": {
     "prestart": "npm run build",
@@ -17,10 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/zooplus/zoo-web-components-docs.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zooplus/zoo-web-components-docs/issues"
-  },
-  "homepage": "https://github.com/zooplus/zoo-web-components-docs#readme"
+  "author": "Yuriy Kravets | georgetailor",
+  "license": "ISC"
 }

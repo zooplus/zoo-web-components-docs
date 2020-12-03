@@ -28,7 +28,7 @@ function getFiles(nextPath) {
         const nextDirPath = fs.readdirSync(nextPath);
         nextDirPath.forEach(filePath => getFiles(`${nextPath}/${filePath}`, files));
     } else {
-        if (nextPath.indexOf('.mdx') > -1) {
+        if (nextPath.indexOf('.md') > -1) {
             const markdown = fs.readFileSync(nextPath, 'utf8');
             files.push(marked(markdown));
         }

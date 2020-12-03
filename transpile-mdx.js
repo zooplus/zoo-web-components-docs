@@ -1,5 +1,5 @@
-const fs = require('fs');
-const marked = require('marked');
+import fs from 'fs';
+import marked from 'marked';
 
 const headers = [];
 const renderer = new marked.Renderer();

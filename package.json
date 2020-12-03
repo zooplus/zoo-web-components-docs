@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Storybook documentation for https://github.com/zooplus/zoo-web-components",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "prestart": "npm run build",
     "start": "node server.js",

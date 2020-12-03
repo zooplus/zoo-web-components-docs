@@ -1,10 +1,25 @@
 # Input
 
-Input component which provides styles for slotted `input`.
+Input component which provides styles for slotted **`<input type="text"/>`**
+
+***
+
+## Example usage:
+	<zoo-input linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
+		<input id="input-type-text" slot="inputelement" type="text" placeholder="input"/>
+		<label for="input-type-text" slot="inputlabel">Input type text</label>
+	</zoo-input>
+
+The above will render to:
+
+<zoo-input linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
+	<input id="input-type-text" slot="inputelement" type="text" placeholder="input"/>
+	<label for="input-type-text" slot="inputlabel">Input type text</label>
+</zoo-input>
 
 ## Attributes
 |     **Name**    |           **Description**                                          | **Type** | **Default** | **Optional** | 
-| :-------------: | :-----------------------------------------------------------------:|:--------:|:-----------:|:-----------:|
+| :------------- | :-----------------------------------------------------------------|:--------|:-----------|:-----------:|
 | `labeltext`     | text to be presented as a label                                    | text     |             |   ✔
 | `invalid`       | flag which indicates whether the input is valid or not             | boolean  |   `false`   |   ✔
 |`inputerrormsg`  | text that should be displayed when `valid` is set to `falsy` value | text     |             |   ✔
@@ -21,18 +36,7 @@ Input component which provides styles for slotted `input`.
 | `--warning-mid`        |    `#ED1C24`   |
 ## Slots
 |      **Name**    |           **Description**          | **Optional** | 
-| :--------------: | :---------------------------------:|:-----------:|
+| :-------------- | :---------------------------------|:-----------:|
 | `inputelement`   | `<input id="input-id" slot="inputelement" type="text/>`| ✘
 | `inputlabel`     | `<label for="input-id" slot="inputlabel">An example input</label>`| ✔
 | `button`         | `<zoo-button slot="button"><button type="button">Lorem Ipsum</button></zoo-button>` can be injected aside from input for composition of these elements | ✔
-
-## Example usage:
-	<zoo-input linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
-		<input id="input-type-text" slot="inputelement" type="text" placeholder="input"/>
-		<label for="input-type-text" slot="inputlabel">Input type text</label>
-	</zoo-input>
-### Rendered
-<zoo-input linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
-	<input id="input-type-text" slot="inputelement" type="text" placeholder="input"/>
-	<label for="input-type-text" slot="inputlabel">Input type text</label>
-</zoo-input>

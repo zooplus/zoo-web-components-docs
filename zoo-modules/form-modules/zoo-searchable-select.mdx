@@ -1,10 +1,34 @@
 # Searchable Select
 
-Select component which provides styles for slotted `select`.
+Select component which provides styles for slotted **`<select>...</select>`**
+
+***
+
+## Example usage:
+	<zoo-searchable-select labeltext="Label" infotext="Additional Information" 
+		linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
+		<select slot="selectelement">
+			<option value="value1">Dog</option>
+			<option value="value2">Cat</option>
+			<option value="value3">Small Pet</option>
+			<option value="value4">Aquatic</option>
+		</select>
+	</zoo-searchable-select>
+
+The above will render to:
+
+<zoo-searchable-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/" labeltext="Label">
+	<select slot="selectelement">
+		<option value="value1">Dog</option>
+		<option value="value2">Cat</option>
+		<option value="value3">Small Pet</option>
+		<option value="value4">Aquatic</option>
+	</select>
+</zoo-searchable-select>
 
 ## Attributes
 |     **Name**    |           **Description**                                          | **Type** | **Default** | **Optional** | 
-| :-------------: | :-----------------------------------------------------------------:|:--------:|:-----------:|:-----------:|
+| :------------- | :-----------------------------------------------------------------|:--------|:-----------|:-----------:|
 | `labeltext`     | text to be presented as a label                                    | text     |             |   ✔
 | `invalid`       | flag which indicates whether the input is valid or not             | boolean  |   `false`   |   ✔
 |`inputerrormsg`  | text that should be displayed when `valid` is set to `falsy` value | text     |             |   ✔
@@ -18,25 +42,5 @@ Select component which provides styles for slotted `select`.
 
 ## Slots
 |      **Name**    |           **Description**          | **Optional** | 
-| :--------------: | :---------------------------------:|:-----------:|
+| :-------------- | :---------------------------------|:-----------:|
 | `selectelement`  | `<select slot="selectelement">...</select>`| ✘
-
-## Example usage:
-	<zoo-searchable-select labeltext="Label" infotext="Additional Information" 
-		linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
-		<select slot="selectelement">
-			<option value="value1">Dog</option>
-			<option value="value2">Cat</option>
-			<option value="value3">Small Pet</option>
-			<option value="value4">Aquatic</option>
-		</select>
-	</zoo-searchable-select>
-### Rendered
-<zoo-searchable-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/" labeltext="Label">
-	<select slot="selectelement">
-		<option value="value1">Dog</option>
-		<option value="value2">Cat</option>
-		<option value="value3">Small Pet</option>
-		<option value="value4">Aquatic</option>
-	</select>
-</zoo-searchable-select>

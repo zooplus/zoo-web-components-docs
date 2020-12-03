@@ -1,10 +1,25 @@
 # Button
-Button component which provides a styled version of button, encapsulating native button inside shadow DOM.
+Button component which provides styles for **`<button></button>`**
+
+***
+
+### Example:
+
+	<zoo-button>
+		<button type="button" disabled>Disabled :(</button>
+	</zoo-button>
+
+The above will render to:
+
+<zoo-button>
+	<button type="button" disabled>Disabled :(</button>
+</zoo-button>
+
 ## Attributes
 |   **Name**  |           **Description**              | **Type** | **Default** | **Optional** |
-| :---------: | :-------------------------------------:|:--------:|:-----------:|:-----------:|
-| `type`      | `primary`, `secondary`, `hollow`       | text     |   `primary` |   ✔
-| `size`      | `small`, `medium`                      | text     |   `small`   |   ✔
+| :---------: | :-------------------------------------|:--------|:-----------|:-----------:|
+| `type`      | `primary, secondary, hollow `      | text     |   `primary` |   ✔
+| `size`      | `small, medium`                      | text     |   `small`   |   ✔
 ## CSS Variables
 |   **Name**   |   **Default**  |
 | :----------- |----------:|
@@ -17,14 +32,4 @@ Button component which provides a styled version of button, encapsulating native
 ## Slots
 |     **Name**   |           **Description**          | **Optional** | 
 | :------------: | :---------------------------------:|:-----------:|
-|                | `<button>` element with arbitrary content inside | ✘
-## Example:
-
-	<zoo-button>
-		<button type="button" disabled>Disabled :(</button>
-	</zoo-button>
-
-### Rendered
-<zoo-button>
-	<button type="button" disabled>Disabled :(</button>
-</zoo-button>
+|                | **`<button>`** element with arbitrary content inside | ✘

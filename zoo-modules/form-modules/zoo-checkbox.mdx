@@ -1,10 +1,25 @@
 # Checkbox
 
-Checkbox component which provides styles for `<input type="checkbox"/>`.
+Checkbox component which provides styles for **`<input type="checkbox"/>`**
+
+***
+
+## Example usage:
+	<zoo-checkbox highlighted>
+		<input id="checkbox-id" slot="checkboxelement" type="checkbox"/>
+		<label for="checkbox-id" slot="checkboxlabel">An example checkbox</label>
+	</zoo-checkbox>
+
+The above will render to:
+
+<zoo-checkbox highlighted>
+	<input id="checkbox-id" slot="checkboxelement" type="checkbox"/>
+	<label htmlFor="checkbox-id" slot="checkboxlabel">An example checkbox</label>
+</zoo-checkbox>
 
 ## Attributes
 |   **Name**    |           **Description**                                                      | **Type** | **Default** | **Optional** |
-| :-----------: | :-----------------------------------------------------------------------------:|:--------:|:-----------:|:-----------:|
+| :----------- | :-----------------------------------------------------------------------------|:--------|:-----------|:-----------:|
 | `labeltext`   | text to be presented on the right side of the checkbox                         | text     |             |   ✔
 | `invalid`     | flag which indicates whether the input is valid or not                         | boolean  |   `false`   |   ✔
 | `highlighted` |flag indicating whether the outline around the input should be visible (border) | boolean  |   `false`   |   ✔
@@ -20,14 +35,3 @@ Checkbox component which provides styles for `<input type="checkbox"/>`.
 | :-------------- | :---------------------------------|:-----------:|
 | `checkboxelement`| `<input id="checkbox-id" slot="checkboxelement" type="checkbox/>`| ✘
 | `checkboxlabel`  | `<label for="checkbox-id" slot="checkboxlabel">An example checkbox</label>`| ✔
-
-## Example usage:
-	<zoo-checkbox highlighted>
-		<input id="checkbox-id" slot="checkboxelement" type="checkbox"/>
-		<label for="checkbox-id" slot="checkboxlabel">An example checkbox</label>
-	</zoo-checkbox>
-### Rendered
-<zoo-checkbox highlighted>
-	<input id="checkbox-id" slot="checkboxelement" type="checkbox"/>
-	<label htmlFor="checkbox-id" slot="checkboxlabel">An example checkbox</label>
-</zoo-checkbox>

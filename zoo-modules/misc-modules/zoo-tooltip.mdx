@@ -2,28 +2,32 @@
 
 Tooltip component.
 
+***
+
+## Example usage:
+	<zoo-button>
+		<button type="button">
+			Button
+			<zoo-tooltip position="bottom" text="Tooltip text"></zoo-tooltip>
+		</button>
+	</zoo-button>
+
+The above will render to:
+
+<zoo-button>
+	<button type="button">
+		Button
+		<zoo-tooltip position="bottom" text="Tooltip text"></zoo-tooltip>
+	</button>
+</zoo-button>
+
 ## Attributes
 |     **Name**    |           **Description**                                          | **Type** | **Default** | **Optional** | 
-| :-------------: | :-----------------------------------------------------------------:|:--------:|:-----------:|:-----------:|
+| :------------- | :-----------------------------------------------------------------|:--------|:-----------|:-----------:|
 | `position`      | `top`, `right`, `bottom`, `left`                                   | text     | `top`       |   ✔
 | `text`          | text to be displayed inside tooltip                                | text     |             |   ✔
 
 ## Slots
 |      **Name**    |           **Description**          | **Optional** | 
-| :--------------: | :---------------------------------:|:-----------:|
+| :--------------: | :---------------------------------|:-----------:|
 |                  | arbitrary content which will replace `text` attribute| ✔
-
-## Example usage:
-	<zoo-button>
-		<div>
-			Button
-			<zoo-tooltip text="Tooltip text"></zoo-tooltip>
-		</div>
-	</zoo-button>
-### Rendered
-<zoo-button>
-	<div>
-		Button
-		<zoo-tooltip text="Tooltip text"></zoo-tooltip>
-	</div>
-</zoo-button>

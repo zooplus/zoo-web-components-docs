@@ -1,28 +1,40 @@
-# Modal
+# Navigation
 
 Container component which provides styles for slotted content.
-## CSS Variables
-|        **Name**        |   **Default**  |
-| :--------------------: |:--------------:|
-| `--primary-light`      |    `#66B100`   |
-| `--primary-mid`        |    `#3C9700`   |
-## Slots
-|      **Name**    |           **Description**          | **Optional** | 
-| :--------------: | :---------------------------------:|:-----------:|
-|                  | arbitrary content                  | ✘
+
+***
 
 ## Example usage:
 	<zoo-navigation>
 		<div>
-			<zoo-link href="https://github.com/zooplus/zoo-web-components" text="Github"></zoo-link>
-			<zoo-link href="https://www.npmjs.com/package/@zooplus/zoo-web-components" text="NPM"></zoo-link>
+			<zoo-link type="negative">
+				<a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
+			</zoo-link>
+			<zoo-link type="negative">
+				<a slot="anchor" href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
+			</zoo-link>
 		</div>
 	</zoo-navigation>
 
-### Rendered
+The above will render to:
+
 <zoo-navigation>
 	<div>
-		<zoo-link href="https://github.com/zooplus/zoo-web-components" text="Github"></zoo-link>
-		<zoo-link href="https://www.npmjs.com/package/@zooplus/zoo-web-components" text="NPM"></zoo-link>
+		<zoo-link type="negative">
+			<a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
+		</zoo-link>
+		<zoo-link type="negative">
+			<a slot="anchor" href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
+		</zoo-link>
 	</div>
 </zoo-navigation>
+
+## CSS Variables
+|        **Name**        |   **Default**  |
+| :-------------------- |:--------------:|
+| `--primary-light`      |    `#66B100`   |
+| `--primary-mid`        |    `#3C9700`   |
+## Slots
+|      **Name**    |           **Description**          | **Optional** | 
+| :--------------: | :---------------------------------|:-----------:|
+|                  | arbitrary content                  | ✘

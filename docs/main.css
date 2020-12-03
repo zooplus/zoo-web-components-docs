@@ -1,9 +1,4 @@
-html {
-	font-family: sans-serif;
-}
-
 body {
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 	display: flex;
 	line-height: 1.5;
 	font-size: 14px;
@@ -55,7 +50,6 @@ pre code {
 	word-wrap: break-word;
 	overflow: auto;
 	padding: 10px;
-	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
 blockquote {

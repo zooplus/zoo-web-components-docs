@@ -3,6 +3,7 @@
 The following CSS Custom Properties can be overriden by the user.
 
 ## CSS variables
+
 	--primary-ultralight - `#EBF4E5`;
 	--primary-light - `#66B100`;
 	--primary-mid - `#3C9700`;

@@ -7,23 +7,25 @@ Select component which provides styles for slotted **`<select>...</select>`**
 ## Example usage:
 	<zoo-searchable-select labeltext="Label" infotext="Additional Information" 
 		linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
-		<select slot="selectelement">
+		<select id="searchable-select" slot="selectelement">
 			<option value="value1">Dog</option>
 			<option value="value2">Cat</option>
 			<option value="value3">Small Pet</option>
 			<option value="value4">Aquatic</option>
 		</select>
+		<label slot="selectlabel" for="searchable-select">Label</label>
 	</zoo-searchable-select>
 
 The above will render to:
 
 <zoo-searchable-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/" labeltext="Label">
-	<select slot="selectelement">
+	<select id="searchable-select" slot="selectelement">
 		<option value="value1">Dog</option>
 		<option value="value2">Cat</option>
 		<option value="value3">Small Pet</option>
 		<option value="value4">Aquatic</option>
 	</select>
+	<label slot="selectlabel" for="searchable-select">Label</label>
 </zoo-searchable-select>
 
 ## Attributes

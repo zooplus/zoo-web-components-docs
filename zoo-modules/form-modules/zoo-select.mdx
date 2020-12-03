@@ -5,7 +5,7 @@ Select component which provides styles for slotted **`<select>...</select>`**
 ***
 
 ## Example usage:
-	<zoo-select labeltext="Label" infotext="Additional Information" 
+	<zoo-select infotext="Additional Information" 
 		linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
 		<select id="zoo-select" slot="selectelement">
 			<option value="value1">Dog</option>
@@ -13,18 +13,19 @@ Select component which provides styles for slotted **`<select>...</select>`**
 			<option value="value3">Small Pet</option>
 			<option value="value4">Aquatic</option>
 		</select>
-		<label for="zoo-select" slot="selectlabel">${labeltext}</label>
+		<label for="zoo-select" slot="selectlabel">Label</label>
 	</zoo-select>
 
 The above will render to:
 
-<zoo-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/" labeltext="Label">
+<zoo-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
 	<select slot="selectelement">
 		<option value="value1">Dog</option>
 		<option value="value2">Cat</option>
 		<option value="value3">Small Pet</option>
 		<option value="value4">Aquatic</option>
 	</select>
+	<label for="zoo-select" slot="selectlabel">Label</label>
 </zoo-select>
 
 ## Attributes

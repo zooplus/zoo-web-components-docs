@@ -531,21 +531,23 @@
 <hr>
 <h2>Example usage:</h2><pre><code>&lt;zoo-searchable-select labeltext=&quot;Label&quot; infotext=&quot;Additional Information&quot; 
     linktext=&quot;Forgotten your password?&quot; linkhref=&quot;https://zooplus.github.io/zoo-web-components/&quot;&gt;
-    &lt;select slot=&quot;selectelement&quot;&gt;
+    &lt;select id=&quot;searchable-select&quot; slot=&quot;selectelement&quot;&gt;
         &lt;option value=&quot;value1&quot;&gt;Dog&lt;/option&gt;
         &lt;option value=&quot;value2&quot;&gt;Cat&lt;/option&gt;
         &lt;option value=&quot;value3&quot;&gt;Small Pet&lt;/option&gt;
         &lt;option value=&quot;value4&quot;&gt;Aquatic&lt;/option&gt;
     &lt;/select&gt;
+    &lt;label slot=&quot;selectlabel&quot; for=&quot;searchable-select&quot;&gt;Label&lt;/label&gt;
 &lt;/zoo-searchable-select&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-searchable-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/" labeltext="Label">
-    <select slot="selectelement">
+    <select id="searchable-select" slot="selectelement">
         <option value="value1">Dog</option>
         <option value="value2">Cat</option>
         <option value="value3">Small Pet</option>
         <option value="value4">Aquatic</option>
     </select>
+    <label slot="selectlabel" for="searchable-select">Label</label>
 </zoo-searchable-select>
 
 <h2>Attributes</h2><table>
@@ -650,7 +652,7 @@
             </a>
             </h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <hr>
-<h2>Example usage:</h2><pre><code>&lt;zoo-select labeltext=&quot;Label&quot; infotext=&quot;Additional Information&quot; 
+<h2>Example usage:</h2><pre><code>&lt;zoo-select infotext=&quot;Additional Information&quot; 
     linktext=&quot;Forgotten your password?&quot; linkhref=&quot;https://zooplus.github.io/zoo-web-components/&quot;&gt;
     &lt;select id=&quot;zoo-select&quot; slot=&quot;selectelement&quot;&gt;
         &lt;option value=&quot;value1&quot;&gt;Dog&lt;/option&gt;
@@ -658,16 +660,17 @@
         &lt;option value=&quot;value3&quot;&gt;Small Pet&lt;/option&gt;
         &lt;option value=&quot;value4&quot;&gt;Aquatic&lt;/option&gt;
     &lt;/select&gt;
-    &lt;label for=&quot;zoo-select&quot; slot=&quot;selectlabel&quot;&gt;${labeltext}&lt;/label&gt;
+    &lt;label for=&quot;zoo-select&quot; slot=&quot;selectlabel&quot;&gt;Label&lt;/label&gt;
 &lt;/zoo-select&gt;</code></pre>
 <p>The above will render to:</p>
-<zoo-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/" labeltext="Label">
+<zoo-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
     <select slot="selectelement">
         <option value="value1">Dog</option>
         <option value="value2">Cat</option>
         <option value="value3">Small Pet</option>
         <option value="value4">Aquatic</option>
     </select>
+    <label for="zoo-select" slot="selectlabel">Label</label>
 </zoo-select>
 
 <h2>Attributes</h2><table>

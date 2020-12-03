@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "prestart": "npm run build",
-    "start": "http-server ./",
+    "start": "http-server ./docs",
     "build": "node transpile-mdx.js"
   },
   "dependencies": {

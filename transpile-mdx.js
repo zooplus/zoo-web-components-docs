@@ -52,6 +52,6 @@ const result = file.replace('<app-root/>', `
     </div>
 `);
 
-fs.writeFileSync('./index.html', result);
+fs.writeFileSync('./docs/index.html', result);
 const cmps = fs.readFileSync('./node_modules/@zooplus/zoo-web-components/dist/zoo-components-esm.js', 'utf8');
-fs.writeFileSync('./zoo-web-components.js', cmps);
+fs.writeFileSync('./docs/zoo-web-components.js', cmps);

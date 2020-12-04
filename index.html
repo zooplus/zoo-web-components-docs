@@ -1,14 +1,18 @@
-<html>
-    <head>
-		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="modified-reboot.css">
-		<script src="zoo-web-components.js"></script>
-		<title>Zoo web components documentation</title>
-    </head>
-    <body>
-        
-    
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="modified-reboot.css">
+	<script src="zoo-web-components.js"></script>
+	<title>Zoo web components documentation</title>
+</head>
+
+<body>
+
+	
 	<div class="menu">
 		<a class="header" href="#button">Button</a><a class="header" href="#checkbox">Checkbox</a><a class="header" href="#input">Input</a><a class="header" href="#quantity-control">Quantity Control</a><a class="header" href="#radio">Radio</a><a class="header" href="#searchable-select">Searchable Select</a><a class="header" href="#select">Select</a><a class="header" href="#toggle-switch">Toggle Switch</a><a class="header" href="#grid">Grid</a><a class="header" href="#collapsable-list">Collapsable List</a><a class="header" href="#feedback">Feedback</a><a class="header" href="#footer">Footer</a><a class="header" href="#header">Header</a><a class="header" href="#link">Link</a><a class="header" href="#modal">Modal</a><a class="header" href="#navigation">Navigation</a><a class="header" href="#spinner">Spinner</a><a class="header" href="#toast">Toast</a><a class="header" href="#tooltip">Tooltip</a><a class="header" href="#theming">Theming</a>
 	</div>
@@ -96,7 +100,7 @@
 <tbody><tr>
 <td align="center"></td>
 <td align="center"><strong><code>&lt;button&gt;</code></strong> element with arbitrary content inside</td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 </tbody></table>
 </div><div class="component">
@@ -189,7 +193,7 @@
 <tbody><tr>
 <td align="left"><code>checkboxelement</code></td>
 <td align="left"><code>&lt;input id=&quot;checkbox-id&quot; slot=&quot;checkboxelement&quot; type=&quot;checkbox/&gt;</code></td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left"><code>checkboxlabel</code></td>
@@ -309,7 +313,7 @@
 <tbody><tr>
 <td align="left"><code>inputelement</code></td>
 <td align="left">name of the slot for input</td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left"><code>inputlabel</code></td>
@@ -422,7 +426,7 @@ when supplying such input for this component remember to add:</p>
 <tbody><tr>
 <td align="left"><code>input</code></td>
 <td align="left"><code>&lt;input id=&quot;number-input&quot; slot=&quot;input&quot; readonly placeholder=&quot;0&quot; type=&quot;number&quot; step=&quot;50&quot;/&gt;</code></td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left"><code>label</code></td>
@@ -521,7 +525,7 @@ when supplying such input for this component remember to add:</p>
 <tbody><tr>
 <td align="center"></td>
 <td align="left">arbitrary amount of <code>input type=&quot;radio&quot;</code> and labels for them</td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 </tbody></table>
 </div><div class="component">
@@ -644,7 +648,7 @@ when supplying such input for this component remember to add:</p>
 <tbody><tr>
 <td align="left"><code>selectelement</code></td>
 <td align="left"><code>&lt;select slot=&quot;selectelement&quot;&gt;...&lt;/select&gt;</code></td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 </tbody></table>
 </div><div class="component">
@@ -790,7 +794,7 @@ when supplying such input for this component remember to add:</p>
 <tbody><tr>
 <td align="left"><code>selectelement</code></td>
 <td align="left"><code>&lt;select id=&quot;zoo-select&quot; slot=&quot;selectelement&quot;&gt;...&lt;/select&gt;</code></td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left"><code>selectlabel</code></td>
@@ -868,7 +872,7 @@ when supplying such input for this component remember to add:</p>
 <tbody><tr>
 <td align="left"><code>input</code></td>
 <td align="left"><code>&lt;input id=&quot;input-id&quot; slot=&quot;input&quot; type=&quot;checkbox&quot;/&gt;</code></td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left"><code>label</code></td>
@@ -1022,7 +1026,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <tbody><tr>
 <td align="left">headercell</td>
 <td align="left"><code>&lt;zoo-grid-header slot=&quot;headercell&quot;&gt;Header&lt;/zoo-grid-header&gt;</code></td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left">row</td>
@@ -1160,17 +1164,17 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <tbody><tr>
 <td align="left"></td>
 <td align="left">injected element must be <code>zoo-collapsable-list-item</code>, which accepts <code>header</code> and <code>content</code> slots</td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left"><code>header</code></td>
 <td align="left">arbitrary content</td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left"><code>content</code></td>
 <td align="left">arbitrary content</td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 </tbody></table>
 </div><div class="component">
@@ -1485,7 +1489,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <tr>
 <td align="left"><code>anchor</code></td>
 <td align="left"><code>&lt;a&gt;</code> element</td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left"><code>post</code></td>
@@ -1530,7 +1534,7 @@ Modal visibility must be controlled by the client.</p>
 <td align="left">text that should be displayed as modal header</td>
 <td align="left">text</td>
 <td align="center"></td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 </tbody></table>
 <h2>CSS Variables</h2><table>
@@ -1556,7 +1560,7 @@ Modal visibility must be controlled by the client.</p>
 <tbody><tr>
 <td align="center"></td>
 <td align="left">arbitrary content</td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 </tbody></table>
 </div><div class="component">
@@ -1615,7 +1619,7 @@ Modal visibility must be controlled by the client.</p>
 <tbody><tr>
 <td align="center"></td>
 <td align="left">arbitrary content</td>
-<td align="center">&#65794;</td>
+<td align="center">&#10005;</td>
 </tr>
 </tbody></table>
 </div><div class="component">
@@ -1824,5 +1828,6 @@ Modal visibility must be controlled by the client.</p>
     </div>
 
 
-    </body>
+</body>
+
 </html>

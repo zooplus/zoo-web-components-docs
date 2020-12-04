@@ -1,3 +1,17 @@
+:root {
+	--primary-mid: #3C9700;
+	--primary-light: #66B100;
+	--primary-dark: #286400;
+	--primary-ultralight: #EBF4E5;
+	--secondary-mid: #FF6200;
+	--secondary-light: #F80;
+	--secondary-dark: #CC4E00;
+	--info-ultralight: #ECF5FA;
+	--info-mid: #459FD0;
+	--warning-ultralight: #FDE8E9;
+	--warning-mid: #ED1C24;
+}
+
 body {
 	display: flex;
 	line-height: 1.5;
@@ -61,22 +75,15 @@ blockquote {
 	quotes: "\201C""\201D""\2018""\2019";
 }
 
-a {
-	text-decoration: none;
-	background-color: transparent;
-	width: max-content;
+label {
+	margin-bottom: revert;
 }
 
-a:hover {
-	text-decoration: underline;
+zoo-link a {
+	color: revert;
 }
 
-a:not([href]):not([class]) {
-	text-decoration: none;
+zoo-link a:hover {
+	text-decoration: revert;
+	color: revert;
 }
-
-a:not([href]):not([class]):hover {
-	color: inherit;
-	text-decoration: none;
-}
-

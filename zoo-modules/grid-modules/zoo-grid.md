@@ -93,7 +93,7 @@ The above will render to:
 
 | **Name**         | **Description**                                                                                                 | **Optional** |
 | :--------------- | :-------------------------------------------------------------------------------------------------------------- | :----------: |
-| headercell       | `<zoo-grid-header slot="headercell">Header</zoo-grid-header>`                                                   |   &#65794;   |
+| headercell       | `<zoo-grid-header slot="headercell">Header</zoo-grid-header>`                                                   |   &#10005;   |
 | row              | arbitrary content                                                                                               |   &#10003;   |
 | paginator        | arbitrary content, default is: `<zoo-grid-paginator><slot name="pagesizeselector"></slot></zoo-grid-paginator>` |   &#10003;   |
 | pagesizeselector | arbitrary content, mandatory when `paginator` slot is filled                                                    |   &#10003;   |

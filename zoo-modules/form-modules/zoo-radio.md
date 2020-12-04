@@ -48,4 +48,4 @@ The above will render to:
 
 | **Name** | **Description**                                              | **Optional** |
 | :------: | :----------------------------------------------------------- | :----------: |
-|          | arbitrary amount of `input type="radio"` and labels for them |   &#65794;   |
+|          | arbitrary amount of `input type="radio"` and labels for them |   &#10005;   |

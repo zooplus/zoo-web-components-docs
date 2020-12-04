@@ -43,6 +43,6 @@ The above will render to:
 
 | **Name**       | **Description**                                                                | **Optional** |
 | :------------- | :----------------------------------------------------------------------------- | :----------: |
-| `inputelement` | name of the slot for input                                                     |   &#65794;   |
+| `inputelement` | name of the slot for input                                                     |   &#10005;   |
 | `inputlabel`   | name of the slot for label                                                     |   &#10003;   |
 | `button`       | button that can be injected aside from input for composition of these elements |   &#10003;   |

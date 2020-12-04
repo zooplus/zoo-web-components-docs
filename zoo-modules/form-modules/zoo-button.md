@@ -38,4 +38,4 @@ The above will render to:
 
 | **Name** |                   **Description**                    | **Optional** |
 | :------: | :--------------------------------------------------: | :----------: |
-|          | **`<button>`** element with arbitrary content inside |   &#65794;   |
+|          | **`<button>`** element with arbitrary content inside |   &#10005;   |

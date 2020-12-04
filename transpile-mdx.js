@@ -42,7 +42,7 @@ function getHeaderString (header) {
 	return `<a class="header" href="${header.href}">${header.text}</a>`;
 }
 const file = fs.readFileSync('./template.html', 'utf8');
-const result = file.replace('<app-root/>', `
+const result = file.replace('<app-root>', `
 	<div class="menu">
 		${headers.map(header => getHeaderString(header)).join('')}
 	</div>

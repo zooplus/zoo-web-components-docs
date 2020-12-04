@@ -37,5 +37,5 @@ The above will render to:
 
 | **Name** | **Description**                                               | **Optional** |
 | :------- | :------------------------------------------------------------ | :----------: |
-| `input`  | `<input id="input-id" slot="input" type="checkbox"/>`         |   &#65794;   |
+| `input`  | `<input id="input-id" slot="input" type="checkbox"/>`         |   &#10005;   |
 | `label`  | `<label for="input-id" slot="label">An example input</label>` |   &#10003;   |

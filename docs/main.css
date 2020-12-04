@@ -64,6 +64,7 @@ blockquote {
 a {
 	text-decoration: none;
 	background-color: transparent;
+	width: max-content;
 }
 
 a:hover {

@@ -43,4 +43,4 @@ The above will render to:
 
 | **Name** | **Description**   | **Optional** |
 | :------: | :---------------- | :----------: |
-|          | arbitrary content |   &#65794;   |
+|          | arbitrary content |   &#10005;   |

@@ -49,5 +49,5 @@ The above will render to:
 
 | **Name** | **Description**                                                                            | **Optional** |
 | :------- | :----------------------------------------------------------------------------------------- | :----------: |
-| `input`  | `<input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>` |   &#65794;   |
+| `input`  | `<input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>` |   &#10005;   |
 | `label`  | `<label for="input-id" slot="label">An example input</label>`                              |   &#10003;   |

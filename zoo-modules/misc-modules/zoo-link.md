@@ -43,5 +43,5 @@ The above will render to:
 | **Name** | **Description**                                                             | **Optional** |
 | :------- | :-------------------------------------------------------------------------- | :----------: |
 | `pre`    | will be rendered before link text, for example: `<svg slot="pre">...</svg>` |   &#10003;   |
-| `anchor` | `<a>` element                                                               |   &#65794;   |
+| `anchor` | `<a>` element                                                               |   &#10005;   |
 | `post`   | will be rendered after link text, for example: `<svg slot="post">...</svg>` |   &#10003;   |

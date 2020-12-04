@@ -58,6 +58,6 @@ The above will render to:
 
 | **Name**        | **Description**                                                              | **Optional** |
 | :-------------- | :--------------------------------------------------------------------------- | :----------: |
-| `selectelement` | `<select id="zoo-select" slot="selectelement">...</select>`                  |   &#65794;   |
+| `selectelement` | `<select id="zoo-select" slot="selectelement">...</select>`                  |   &#10005;   |
 | `selectlabel`   | `<label for="zoo-select">Label</label>`                                      |   &#10003;   |
 | `input`         | `<slot name="input"></slot>` can be used for composition of select and input |   &#10003;   |

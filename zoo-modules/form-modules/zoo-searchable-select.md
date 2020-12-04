@@ -50,4 +50,4 @@ The above will render to:
 
 | **Name**        | **Description**                             | **Optional** |
 | :-------------- | :------------------------------------------ | :----------: |
-| `selectelement` | `<select slot="selectelement">...</select>` |   &#65794;   |
+| `selectelement` | `<select slot="selectelement">...</select>` |   &#10005;   |

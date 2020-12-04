@@ -43,6 +43,6 @@ Container component which provides styles for slotted content.
 
 | **Name**  | **Description**                                                                                  | **Optional** |
 | :-------- | :----------------------------------------------------------------------------------------------- | :----------: |
-|           | injected element must be `zoo-collapsable-list-item`, which accepts `header` and `content` slots |   &#65794;   |
-| `header`  | arbitrary content                                                                                |   &#65794;   |
-| `content` | arbitrary content                                                                                |   &#65794;   |
+|           | injected element must be `zoo-collapsable-list-item`, which accepts `header` and `content` slots |   &#10005;   |
+| `header`  | arbitrary content                                                                                |   &#10005;   |
+| `content` | arbitrary content                                                                                |   &#10005;   |

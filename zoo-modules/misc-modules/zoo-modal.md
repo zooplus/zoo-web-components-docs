@@ -28,7 +28,7 @@ Modal visibility must be controlled by the client.
 
 | **Name**     | **Description**                               | **Type** | **Default** | **Optional** |
 | :----------- | :-------------------------------------------- | :------- | :---------: | :----------: |
-| `headertext` | text that should be displayed as modal header | text     |             |   &#65794;   |
+| `headertext` | text that should be displayed as modal header | text     |             |   &#10005;   |
 
 ## CSS Variables
 
@@ -40,4 +40,4 @@ Modal visibility must be controlled by the client.
 
 | **Name** | **Description**   | **Optional** |
 | :------: | :---------------- | :----------: |
-|          | arbitrary content |   &#65794;   |
+|          | arbitrary content |   &#10005;   |

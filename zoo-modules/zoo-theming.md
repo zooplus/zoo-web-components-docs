@@ -1,4 +1,4 @@
-# Theming
+# [Theming](#theming)
 
 The following CSS Custom Properties can be overriden by the user.
 

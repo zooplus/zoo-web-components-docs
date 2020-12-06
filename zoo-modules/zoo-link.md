@@ -1,4 +1,4 @@
-# Link
+# [Link](#link)
 
 Link wrapper component which provides styles for **`<a></a>`**
 

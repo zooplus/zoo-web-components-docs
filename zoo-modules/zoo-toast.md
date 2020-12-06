@@ -1,4 +1,4 @@
-# Toast
+# [Toast](#toast)
 
 Container component which has fly-in/out animations. It can be controlled via exported functions.
 
@@ -7,7 +7,9 @@ Container component which has fly-in/out animations. It can be controlled via ex
 ## Example usage
 
 ```HTML
-<zoo-toast id="zoo-toast" text="This is an info message."></zoo-toast>
+<zoo-toast>
+    <span slot="content">This is an info message.</span>
+</zoo-toast>
 ```
 
 ## Attributes
@@ -15,7 +17,6 @@ Container component which has fly-in/out animations. It can be controlled via ex
 | **Name**  | **Description**                                       | **Type** | **Default** | **Optional** |
 | :-------- | :---------------------------------------------------- | :------- | :---------- | :----------: |
 | `type`    | `info`, `error`, `success`                            | text     | `info`      |   &#10003;   |
-| `text`    | text to be rendered in the toast box                  | text     |             |   &#10003;   |
 | `timeout` | how long the toast should be visible for (in seconds) | number   | `3`         |   &#10003;   |
 
 ## CSS Variables
@@ -35,3 +36,9 @@ Container component which has fly-in/out animations. It can be controlled via ex
 | :------- | :---------------------------- | :--------------------------------------------- |
 | `show`   | `function` to show the toast. | `document.querySelector('#zoo-toast').show();` |
 | `hide`   | `function` to hide the toast. | `document.querySelector('#zoo-toast').hide();` |
+
+## Slots
+
+| **Name**  | **Description**   | **Optional** |
+| :-------- | :---------------- | :----------: |
+| `content` | arbitrary content |   &#10003;   |

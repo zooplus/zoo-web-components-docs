@@ -1,4 +1,4 @@
-# Modal
+# [Modal](#modal)
 
 Container component which provides styles for modal and slotted content.
 Modal visibility must be controlled by the client.
@@ -8,13 +8,14 @@ Modal visibility must be controlled by the client.
 ## Example usage
 
 ```HTML
-<zoo-modal style="display: none" headertext="Header">
+<zoo-modal style="display: none">
+	<span slot="header">Your basket contains licensed items</span>
 	<div>
-		<zoo-feedback text="This is an info message. Only one coupon can be accepted with each order."></zoo-feedback>
+		<zoo-feedback>This is an info message. Only one coupon can be accepted with each order.</zoo-feedback>
 		<br>
 		<zoo-checkbox highlighted="true">
-			<input id="chkbx" slot="checkboxelement" type="checkbox"/>
-			<label for="chkbx" slot="checkboxlabel">I understand and confirm that ALL of the above statements are true</label>
+			<input id="chkbx" slot="checkbox" type="checkbox"/>
+			<label for="chkbx" slot="label">I understand and confirm that ALL of the above statements are true</label>
 		</zoo-checkbox>
 		<br>
 		<zoo-button style="margin: 0 auto" type="hollow">
@@ -23,12 +24,6 @@ Modal visibility must be controlled by the client.
 	</div>
 </zoo-modal>
 ```
-
-## Attributes
-
-| **Name**     | **Description**                               | **Type** | **Default** | **Optional** |
-| :----------- | :-------------------------------------------- | :------- | :---------: | :----------: |
-| `headertext` | text that should be displayed as modal header | text     |             |   &#10005;   |
 
 ## CSS Variables
 
@@ -41,3 +36,4 @@ Modal visibility must be controlled by the client.
 | **Name** | **Description**   | **Optional** |
 | :------: | :---------------- | :----------: |
 |          | arbitrary content |   &#10005;   |
+|  header  | arbitrary content |   &#10005;   |

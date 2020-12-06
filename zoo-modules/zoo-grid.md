@@ -1,4 +1,4 @@
-# Grid
+# [Grid](#grid)
 
 Grid component.
 
@@ -19,12 +19,12 @@ Grid component.
 
 		<div slot="pagesizeselector">
 			<zoo-select labelposition="left">
-				<select id="grid-page-size" slot="selectelement">
+				<select id="grid-page-size" slot="select">
 					<option selected>5</option>
 					<option>10</option>
 					<option>25</option>
 				</select>
-				<label for="grid-page-size" slot="selectlabel">Page Size</label>
+				<label for="grid-page-size" slot="label">Page Size</label>
 			</zoo-select>
 		</div>
 	</zoo-grid>
@@ -45,12 +45,12 @@ The above will render to:
 		</div>
 		<div slot="pagesizeselector">
 			<zoo-select labelposition="left">
-				<select id="grid-page-size" slot="selectelement">
+				<select id="grid-page-size" slot="select">
 					<option selected>5</option>
 					<option>10</option>
 					<option>25</option>
 				</select>
-				<label for="grid-page-size" slot="selectlabel">Page Size</label>
+				<label for="grid-page-size" slot="label">Page Size</label>
 			</zoo-select>
 		</div>
 	</zoo-grid>

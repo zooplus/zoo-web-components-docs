@@ -1,4 +1,4 @@
-# Button
+# [Button](#button)
 
 Button component which provides styles for **`<button></button>`**
 

@@ -42,11 +42,12 @@ The above will render to:
 |    **Name**     | **Default** |
 | :-------------: | :---------: |
 | `--primary-mid` |  `#3C9700`  |
+
 ## Slots
 
 | **Name** | **Description**                                                                            | **Optional** |
 | :------- | :----------------------------------------------------------------------------------------- | :----------: |
 | `input`  | `<input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>` |   &#10005;   |
 | `label`  | `<label for="input-id" slot="label">An example input</label>`                              |   &#10003;   |
-| `info`   | accepts `zoo-input-info`                                                                   |   &#10003;   |
-| `error`  | accepts `zoo-input-error` element that shows when `invalid` attribute is present           |   &#10003;   |
+| `info`   | accepts any element, foe example `span`                                                    |   &#10003;   |
+| `error`  | accepts any element element that shows when `invalid` attribute is present                 |   &#10003;   |

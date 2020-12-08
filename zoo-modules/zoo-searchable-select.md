@@ -14,12 +14,8 @@ Select component which provides styles for slotted **`<select>...</select>`**
 		<option value="value3">Small Pet</option>
 		<option value="value4">Aquatic</option>
 	</select>
-	<label slot="label" for="searchable-select">
-		Searchable select
-	</label>
-	<zoo-input-info slot="info">
-		Additional helpful information for our users
-	</zoo-input-info>
+	<label slot="label" for="searchable-select">Searchable select</label>
+	<span slot="info">Additional helpful information for our users</span>
 </zoo-searchable-select>
 ```
 
@@ -33,9 +29,7 @@ The above will render to:
 		<option value="value4">Aquatic</option>
 	</select>
 	<label slot="label" for="searchable-select">Searchable select</label>
-	<zoo-input-info slot="info">
-		Additional helpful information for our users
-	</zoo-input-info>
+	<span slot="info">Additional helpful information for our users</span>
 </zoo-searchable-select>
 
 ## Attributes
@@ -48,10 +42,10 @@ The above will render to:
 
 ## Slots
 
-| **Name** | **Description**                                                                  | **Optional** |
-| :------- | :------------------------------------------------------------------------------- | :----------: |
-| `label`  | name of the slot for label                                                       |   &#10005;   |
-| `select` | `<select slot="select">...</select>`                                             |   &#10005;   |
-| `info`   | accepts `zoo-input-info`                                                         |   &#10003;   |
-| `error`  | accepts `zoo-input-error` element that shows when `invalid` attribute is present |   &#10003;   |
-| `link`   | accepts `zoo-link`                                                               |   &#10003;   |
+| **Name** | **Description**                                                            | **Optional** |
+| :------- | :------------------------------------------------------------------------- | :----------: |
+| `label`  | name of the slot for label                                                 |   &#10005;   |
+| `select` | `<select slot="select">...</select>`                                       |   &#10005;   |
+| `info`   | accepts any element, foe example `span`                                    |   &#10003;   |
+| `error`  | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |
+| `link`   | accepts `a`                                                                |   &#10003;   |

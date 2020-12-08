@@ -34,9 +34,9 @@ The above will render to:
 
 ## Slots
 
-| **Name**   | **Description**                                                                  | **Optional** |
-| :--------- | :------------------------------------------------------------------------------- | :----------: |
-| `checkbox` | `<input id="checkbox-id" slot="checkbox" type="checkbox/>`                       |   &#10005;   |
-| `label`    | `<label for="checkbox-id" slot="label">An example checkbox</label>`              |   &#10003;   |
-| `info`     | accepts `zoo-input-info`                                                         |   &#10003;   |
-| `error`    | accepts `zoo-input-error` element that shows when `invalid` attribute is present |   &#10003;   |
+| **Name**   | **Description**                                                            | **Optional** |
+| :--------- | :------------------------------------------------------------------------- | :----------: |
+| `checkbox` | `<input id="checkbox-id" slot="checkbox" type="checkbox/>`                 |   &#10005;   |
+| `label`    | `<label for="checkbox-id" slot="label">An example checkbox</label>`        |   &#10003;   |
+| `info`     | accepts any element, foe example `span`                                    |   &#10003;   |
+| `error`    | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |

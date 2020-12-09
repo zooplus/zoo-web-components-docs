@@ -2,25 +2,13 @@ import fs from 'fs';
 import marked from 'marked';
 
 const headers = [];
-const renderer = new marked.Renderer();
-renderer.heading = function(text, level, raw) {
-    if (level != 1) {
-        return `<h${level}>${text}</h${level}>`;
+const walkTokens = (token) => {
+    if (token.type === 'heading' && token.depth === 1 && token.tokens[0].type === 'link') {
+        headers.push(token);
     }
-	const escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
-	headers.push({
-		href: `#${escapedText}`,
-		text: text
-	});
-      return `
-			<h${level}>
-            <a name="${escapedText}" class="anchor" href="#${escapedText}">
-                <span class="header-link">${text}</span>
-            </a>
-            </h${level}>`;
 };
 
-marked.use({ renderer });
+marked.use({ walkTokens });
   
 const files = [];
 function getFiles(nextPath) {
@@ -39,11 +27,12 @@ function getComponentString (file) {
     return `<div class="component">${file}</div>`;
 }
 function getHeaderString (header) {
-	return `<a class="header" href="${header.href}">${header.text}</a>`;
+	return `<a class="header" href="${header.tokens[0].href}">${header.tokens[0].text}</a>`;
 }
 const file = fs.readFileSync('./template.html', 'utf8');
 const result = file.replace('<app-root>', `
-	<div class="menu">
+    <div class="menu">
+        <h2>Zoo web components</h2>
 		${headers.map(header => getHeaderString(header)).join('')}
 	</div>
     <div class="content">

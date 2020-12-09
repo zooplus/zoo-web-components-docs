@@ -1,4 +1,4 @@
-# Navigation
+# [Navigation](#navigation)
 
 Container component which provides styles for slotted content.
 

@@ -1,4 +1,4 @@
-# Header
+# [Header](#header)
 
 Container header component.
 
@@ -7,8 +7,9 @@ Container header component.
 ## Example usage
 
 ```HTML
-<zoo-header headertext="Zooplus web components">
+<zoo-header>
 	<img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/>
+	<h2 slot="headertext">Zooplus web components</h2>
 	<zoo-button size="medium" style="margin-left: 50px">
 		<button type="button">Zoo+ theme</button>
 	</zoo-button>
@@ -17,18 +18,13 @@ Container header component.
 
 The above will render to:
 
-<zoo-header headertext="Zooplus web components">
+<zoo-header>
 	<img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/>
+	<h2 slot="headertext">Zooplus web components</h2>
 	<zoo-button size="medium" style="margin-left: 50px">
 		<button type="button">Zoo+ theme</button>
 	</zoo-button>
 </zoo-header>
-
-## Attributes
-
-| **Name**     | **Description**                           | **Type** | **Default** | **Optional** |
-| :----------- | :---------------------------------------- | :------- | :---------: | :----------: |
-| `headertext` | arbitrary text to show next to `img` slot | text     |             |   &#10003;   |
 
 ## CSS Variables
 

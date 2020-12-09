@@ -1,4 +1,4 @@
-# Toggle Switch
+# [Toggle Switch](#toggle-switch)
 
 Input component which provides styles for slotted **`<input type="checkbox"/>`**
 
@@ -7,7 +7,7 @@ Input component which provides styles for slotted **`<input type="checkbox"/>`**
 ## Example usage
 
 ```HTML
-<zoo-toggle-switch infotext="Additional helpful information for our users">
+<zoo-toggle-switch>
 	<label for="input-toggle" slot="label">Toggle switch</label>
 	<input id="input-toggle" slot="input" type="checkbox"/>
 </zoo-toggle-switch>
@@ -15,17 +15,10 @@ Input component which provides styles for slotted **`<input type="checkbox"/>`**
 
 The above will render to:
 
-<zoo-toggle-switch infotext="Additional helpful information for our users">
+<zoo-toggle-switch>
 	<label for="input-toggle" slot="label">Toggle switch</label>
 	<input id="input-toggle" slot="input" type="checkbox"/>
 </zoo-toggle-switch>
-
-## Attributes
-
-| **Name**    | **Description**                                                  | **Type** | **Default** | **Optional** |
-| :---------- | :--------------------------------------------------------------- | :------- | :---------: | :----------: |
-| `labeltext` | text to be presented as a label                                  | text     |             |   &#10003;   |
-| `infotext`  | text that should be displayed as additional info below the input | text     |             |   &#10003;   |
 
 ## CSS Variables
 
@@ -35,7 +28,9 @@ The above will render to:
 
 ## Slots
 
-| **Name** | **Description**                                               | **Optional** |
-| :------- | :------------------------------------------------------------ | :----------: |
-| `input`  | `<input id="input-id" slot="input" type="checkbox"/>`         |   &#10005;   |
-| `label`  | `<label for="input-id" slot="label">An example input</label>` |   &#10003;   |
+| **Name** | **Description**                                                            | **Optional** |
+| :------- | :------------------------------------------------------------------------- | :----------: |
+| `input`  | `<input id="input-id" slot="input" type="checkbox"/>`                      |   &#10005;   |
+| `label`  | `<label for="input-id" slot="label">An example input</label>`              |   &#10003;   |
+| `info`   | accepts any element, foe example `span`                                    |   &#10003;   |
+| `error`  | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |

@@ -1,4 +1,4 @@
-# Feedback
+# [Feedback](#feedback)
 
 Container component which provides a styled container with preset icon.
 

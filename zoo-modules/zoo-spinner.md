@@ -1,4 +1,4 @@
-# Spinner
+# [Spinner](#spinner)
 
 Spinner svg.
 

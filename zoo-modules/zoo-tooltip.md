@@ -1,4 +1,4 @@
-# Tooltip
+# [Tooltip](#tooltip)
 
 Tooltip component.
 
@@ -10,7 +10,7 @@ Tooltip component.
 <zoo-button>
 	<button type="button">
 		Button
-		<zoo-tooltip position="bottom" text="Tooltip text"></zoo-tooltip>
+		<zoo-tooltip position="bottom">Tooltip text</zoo-tooltip>
 	</button>
 </zoo-button>
 ```
@@ -20,19 +20,18 @@ The above will render to:
 <zoo-button>
 	<button type="button">
 		Button
-		<zoo-tooltip position="bottom" text="Tooltip text"></zoo-tooltip>
+		<zoo-tooltip position="bottom">Tooltip text</zoo-tooltip>
 	</button>
 </zoo-button>
 
 ## Attributes
 
-| **Name**   | **Description**                     | **Type** | **Default** | **Optional** |
-| :--------- | :---------------------------------- | :------- | :---------- | :----------: |
-| `position` | `top`, `right`, `bottom`, `left`    | text     | `top`       |   &#10003;   |
-| `text`     | text to be displayed inside tooltip | text     |             |   &#10003;   |
+| **Name**   | **Description**                  | **Type** | **Default** | **Optional** |
+| :--------- | :------------------------------- | :------- | :---------- | :----------: |
+| `position` | `top`, `right`, `bottom`, `left` | text     | `top`       |   &#10003;   |
 
 ## Slots
 
-| **Name** | **Description**                                       | **Optional** |
-| :------: | :---------------------------------------------------- | :----------: |
-|          | arbitrary content which will replace `text` attribute |   &#10003;   |
+| **Name** | **Description**   | **Optional** |
+| :------: | :---------------- | :----------: |
+|          | arbitrary content |   &#10003;   |

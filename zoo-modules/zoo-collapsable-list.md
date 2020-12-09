@@ -1,4 +1,4 @@
-# Collapsable List
+# [Collapsable List](#collapsable-list)
 
 Container component which provides styles for slotted content.
 

@@ -1,4 +1,4 @@
-# Radio
+# [Radio](#radio)
 
 Radio component which provides styles for **`<input type="radio"/>`** and associated **`<label></label>`**
 
@@ -7,35 +7,38 @@ Radio component which provides styles for **`<input type="radio"/>`** and associ
 ## Example usage
 
 ```HTML
-<zoo-radio infotext="Additional Information" labeltext="Label">
+<zoo-radio>
+	<span slot="label">Radio group</span>
+
 	<input type="radio" id="contactChoice1" name="contact" value="email">
 	<label for="contactChoice1">Email</label>
 	<input type="radio" id="contactChoice2" name="contact" value="phone">
 	<label for="contactChoice2">Phone</label>
 	<input type="radio" id="contactChoice3" name="contact" value="mail">
 	<label for="contactChoice3">Mail</label>
+
+	<span slot="info">Additional information</span>
 </zoo-radio>
 ```
 
 The above will render to:
 
-<zoo-radio infotext="Additional Information" labeltext="Label">
+<zoo-radio>
+	<span slot="label">Radio group</span>
 	<input type="radio" id="contactChoice1" name="contact" value="email"/>
 	<label for="contactChoice1">Email</label>
 	<input type="radio" id="contactChoice2" name="contact" value="phone"/>
 	<label for="contactChoice2">Phone</label>
 	<input type="radio" id="contactChoice3" name="contact" value="mail"/>
 	<label for="contactChoice3">Mail</label>
+	<span slot="info">Additional information</span>
 </zoo-radio>
 
 ## Attributes
 
-| **Name**        | **Description**                                                    | **Type** | **Default** | **Optional** |
-| :-------------- | :----------------------------------------------------------------- | :------- | :---------- | :----------: |
-| `labeltext`     | text to be presented on the top of inputs                          | text     |             |   &#10003;   |
-| `invalid`       | flag which indicates whether the input is valid or not             | boolean  | `false`     |   &#10003;   |
-| `inputerrormsg` | text that should be displayed when `valid` is set to `falsy` value | text     |             |   &#10003;   |
-| `infotext`      | text that should be displayed as additional info below the input   | text     |             |   &#10003;   |
+| **Name**  | **Description**                                        | **Type** | **Default** | **Optional** |
+| :-------- | :----------------------------------------------------- | :------- | :---------- | :----------: |
+| `invalid` | flag which indicates whether the input is valid or not | boolean  | `null`      |   &#10003;   |
 
 ## CSS Variables
 
@@ -46,6 +49,9 @@ The above will render to:
 
 ## Slots
 
-| **Name** | **Description**                                              | **Optional** |
-| :------: | :----------------------------------------------------------- | :----------: |
-|          | arbitrary amount of `input type="radio"` and labels for them |   &#10005;   |
+| **Name** | **Description**                                                            | **Optional** |
+| :------: | :------------------------------------------------------------------------- | :----------: |
+|          | arbitrary amount of `input type="radio"` and labels for them               |   &#10005;   |
+| `label`  | name of the slot for label                                                 |   &#10003;   |
+|  `info`  | accepts any element, foe example `span`                                    |   &#10003;   |
+| `error`  | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |

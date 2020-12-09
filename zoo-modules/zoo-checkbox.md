@@ -20,10 +20,10 @@ The above will render to:
 
 ## Attributes
 
-| **Name**      | **Description**                                                       | **Type** | **Default** | **Optional** |
-| :------------ | :-------------------------------------------------------------------- | :------- | :---------- | :----------: |
-| `invalid`     | flag which indicates whether the input is valid or not                | boolean  | `null`      |   &#10003;   |
-| `highlighted` | flag indicating whether the border around the input should be visible | boolean  | `null`      |   &#10003;   |
+| **Name**      | **Description**                                                | **Type** | **Default** | **Optional** |
+| :------------ | :------------------------------------------------------------- | :------- | :---------- | :----------: |
+| `invalid`     | flag which indicates whether the input is valid or not         | boolean  | `null`      |   &#10003;   |
+| `highlighted` | flag indicating whether the border around the input is visible | boolean  | `null`      |   &#10003;   |
 
 ## CSS Variables
 

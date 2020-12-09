@@ -9,7 +9,7 @@
     "build": "node transpile-mdx.js"
   },
   "devDependencies": {
-    "@zooplus/zoo-web-components": "8.0.0-beta.12",
+    "@zooplus/zoo-web-components": "8.0.0",
     "marked": "^1.2.5"
   },
   "repository": {

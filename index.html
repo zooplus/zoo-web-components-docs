@@ -13,23 +13,16 @@
 <body>
 
 	
-	<div class="menu">
-		<a class="header" href="#zoo-web-components">Zoo web components</a><a class="header" href="#button">Button</a><a class="header" href="#checkbox">Checkbox</a><a class="header" href="#collapsable-list">Collapsable List</a><a class="header" href="#feedback">Feedback</a><a class="header" href="#footer">Footer</a><a class="header" href="#grid">Grid</a><a class="header" href="#header">Header</a><a class="header" href="#input">Input</a><a class="header" href="#link">Link</a><a class="header" href="#modal">Modal</a><a class="header" href="#navigation">Navigation</a><a class="header" href="#quantity-control">Quantity Control</a><a class="header" href="#radio">Radio</a><a class="header" href="#searchable-select">Searchable Select</a><a class="header" href="#select">Select</a><a class="header" href="#spinner">Spinner</a><a class="header" href="#theming">Theming</a><a class="header" href="#toast">Toast</a><a class="header" href="#toggle-switch">Toggle Switch</a><a class="header" href="#tooltip">Tooltip</a>
+    <div class="menu">
+        <h2>Zoo web components</h2>
+		<a class="header" href="#button">Button</a><a class="header" href="#checkbox">Checkbox</a><a class="header" href="#collapsable-list">Collapsable List</a><a class="header" href="#feedback">Feedback</a><a class="header" href="#footer">Footer</a><a class="header" href="#grid">Grid</a><a class="header" href="#header">Header</a><a class="header" href="#input">Input</a><a class="header" href="#link">Link</a><a class="header" href="#modal">Modal</a><a class="header" href="#navigation">Navigation</a><a class="header" href="#quantity-control">Quantity Control</a><a class="header" href="#radio">Radio</a><a class="header" href="#searchable-select">Searchable Select</a><a class="header" href="#select">Select</a><a class="header" href="#spinner">Spinner</a><a class="header" href="#theming">Theming</a><a class="header" href="#toast">Toast</a><a class="header" href="#toggle-switch">Toggle Switch</a><a class="header" href="#tooltip">Tooltip</a>
 	</div>
     <div class="content">
-        <div class="component">
-			<h1>
-            <a name="zoo-web-components" class="anchor" href="#zoo-web-components">
-                <span class="header-link">Zoo web components</span>
-            </a>
-            </h1></div><div class="component">
-			<h1>
-            <a name="button" class="anchor" href="#button">
-                <span class="header-link">Button</span>
-            </a>
-            </h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
+        <div class="component"><h1 id="button"><a href="#button">Button</a></h1>
+<p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
 <hr>
-<h2>Example</h2><pre><code>&lt;zoo-button&gt;
+<h2 id="example">Example</h2>
+<pre><code>&lt;zoo-button&gt;
     &lt;button type=&quot;button&quot; disabled&gt;Disabled :(&lt;/button&gt;
 &lt;/zoo-button&gt;</code></pre>
 <p>The above will render to:</p>
@@ -37,7 +30,8 @@
     <button type="button" disabled>Disabled :(</button>
 </zoo-button>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -62,7 +56,8 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -94,7 +89,8 @@
 <td align="right"><code>#CC4E00</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -108,24 +104,22 @@
 <td align="center">&#10005;</td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="checkbox" class="anchor" href="#checkbox">
-                <span class="header-link">Checkbox</span>
-            </a>
-            </h1><p>Checkbox component which provides styles for <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
+</div><div class="component"><h1 id="checkbox"><a href="#checkbox">Checkbox</a></h1>
+<p>Checkbox component which provides styles for <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
 <hr>
-<h2>Example usage</h2><pre><code>&lt;zoo-checkbox highlighted&gt;
-    &lt;input id=&quot;checkbox-id&quot; slot=&quot;checkboxelement&quot; type=&quot;checkbox&quot;/&gt;
-    &lt;label for=&quot;checkbox-id&quot; slot=&quot;checkboxlabel&quot;&gt;An example checkbox&lt;/label&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code>&lt;zoo-checkbox highlighted&gt;
+    &lt;input id=&quot;checkbox-id&quot; slot=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt;
+    &lt;label for=&quot;checkbox-id&quot; slot=&quot;label&quot;&gt;An example checkbox&lt;/label&gt;
 &lt;/zoo-checkbox&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-checkbox highlighted>
-    <input id="checkbox-id" slot="checkboxelement" type="checkbox"/>
-    <label htmlFor="checkbox-id" slot="checkboxlabel">An example checkbox</label>
+    <input id="checkbox-id" slot="checkbox" type="checkbox"/>
+    <label htmlFor="checkbox-id" slot="label">An example checkbox</label>
 </zoo-checkbox>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -136,42 +130,22 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>labeltext</code></td>
-<td align="left">text to be presented on the right side of the checkbox</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
 <td align="left"><code>invalid</code></td>
 <td align="left">flag which indicates whether the input is valid or not</td>
 <td align="left">boolean</td>
-<td align="left"><code>false</code></td>
+<td align="left"><code>null</code></td>
 <td align="center">&#10003;</td>
 </tr>
 <tr>
 <td align="left"><code>highlighted</code></td>
-<td align="left">flag indicating whether the outline around the input should be visible (border)</td>
+<td align="left">flag indicating whether the border around the input is visible</td>
 <td align="left">boolean</td>
-<td align="left"><code>false</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>inputerrormsg</code></td>
-<td align="left">text that should be displayed when <code>valid</code> is set to <code>falsy</code> value</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>infotext</code></td>
-<td align="left">text that should be displayed as additional info below the checkbox</td>
-<td align="left">text</td>
-<td align="left"></td>
+<td align="left"><code>null</code></td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -187,7 +161,8 @@
 <td align="center"><code>#FF6200</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -196,24 +171,31 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>checkboxelement</code></td>
-<td align="left"><code>&lt;input id=&quot;checkbox-id&quot; slot=&quot;checkboxelement&quot; type=&quot;checkbox/&gt;</code></td>
+<td align="left"><code>checkbox</code></td>
+<td align="left"><code>&lt;input id=&quot;checkbox-id&quot; slot=&quot;checkbox&quot; type=&quot;checkbox/&gt;</code></td>
 <td align="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>checkboxlabel</code></td>
-<td align="left"><code>&lt;label for=&quot;checkbox-id&quot; slot=&quot;checkboxlabel&quot;&gt;An example checkbox&lt;/label&gt;</code></td>
+<td align="left"><code>label</code></td>
+<td align="left"><code>&lt;label for=&quot;checkbox-id&quot; slot=&quot;label&quot;&gt;An example checkbox&lt;/label&gt;</code></td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>info</code></td>
+<td align="left">accepts any element, foe example <code>span</code></td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="collapsable-list" class="anchor" href="#collapsable-list">
-                <span class="header-link">Collapsable List</span>
-            </a>
-            </h1><p>Container component which provides styles for slotted content.</p>
+</div><div class="component"><h1 id="collapsable-list"><a href="#collapsable-list">Collapsable List</a></h1>
+<p>Container component which provides styles for slotted content.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">    &lt;zoo-collapsable-list&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">    &lt;zoo-collapsable-list&gt;
         &lt;zoo-collapsable-list-item&gt;
             &lt;span slot=&quot;header&quot;&gt;Header1&lt;/span&gt;
             &lt;div slot=&quot;content&quot;&gt;content&lt;/div&gt;
@@ -223,7 +205,8 @@
             &lt;div slot=&quot;content&quot;&gt;content&lt;/div&gt;
         &lt;/zoo-collapsable-list-item&gt;
     &lt;/zoo-collapsable-list&gt;</code></pre>
-<h3>Rendered</h3><zoo-collapsable-list>
+<h3 id="rendered">Rendered</h3>
+<zoo-collapsable-list>
     <zoo-collapsable-list-item>
         <span slot="header">Header1</span>
         <div slot="content">content</div>
@@ -234,7 +217,8 @@
     </zoo-collapsable-list-item>
 </zoo-collapsable-list>
 
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -250,7 +234,8 @@
 <td align="center"><code>#286400</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -274,23 +259,22 @@
 <td align="center">&#10005;</td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="feedback" class="anchor" href="#feedback">
-                <span class="header-link">Feedback</span>
-            </a>
-            </h1><p>Container component which provides a styled container with preset icon.</p>
+</div><div class="component"><h1 id="feedback"><a href="#feedback">Feedback</a></h1>
+<p>Container component which provides a styled container with preset icon.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;height: 50px; width: auto&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;div style=&quot;height: 50px; width: auto&quot;&gt;
     &lt;zoo-feedback&gt;
         This is an info message.
     &lt;/zoo-feedback&gt;
 &lt;/div&gt;</code></pre>
-<h3>Rendered</h3><div style="height: 50px; width: auto">
+<h3 id="rendered">Rendered</h3>
+<div style="height: 50px; width: auto">
     <zoo-feedback>This is an info message.</zoo-feedback>
 </div>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -308,7 +292,8 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -340,7 +325,8 @@
 <td align="left"><code>#ED1C24</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -354,14 +340,11 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="footer" class="anchor" href="#footer">
-                <span class="header-link">Footer</span>
-            </a>
-            </h1><p>Container footer component.</p>
+</div><div class="component"><h1 id="footer"><a href="#footer">Footer</a></h1>
+<p>Container footer component.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-footer copyright=&quot;zooplus AG&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-footer copyright=&quot;zooplus AG&quot;&gt;
     &lt;zoo-link type=&quot;negative&quot;&gt;
         &lt;a slot=&quot;anchor&quot; href=&quot;https://github.com/zooplus/zoo-web-components&quot;&gt;Github&lt;/a&gt;
     &lt;/zoo-link&gt;
@@ -379,7 +362,8 @@
     </zoo-link>
 </zoo-footer>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -397,7 +381,8 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -413,7 +398,8 @@
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -427,14 +413,11 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="grid" class="anchor" href="#grid">
-                <span class="header-link">Grid</span>
-            </a>
-            </h1><p>Grid component.</p>
+</div><div class="component"><h1 id="grid"><a href="#grid">Grid</a></h1>
+<p>Grid component.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;margin: 30px;box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;div style=&quot;margin: 30px;box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)&quot;&gt;
     &lt;zoo-grid currentpage=&quot;3&quot; maxpages=&quot;20&quot; reorderable stickyheader&gt;
         &lt;zoo-grid-header slot=&quot;headercell&quot; sortable=&quot;true&quot; sortableproperty=&quot;createdDate&quot;&gt;Created date&lt;/zoo-grid-header&gt;
         &lt;zoo-grid-header slot=&quot;headercell&quot; sortable=&quot;true&quot; sortableproperty=&quot;minWeight&quot;&gt;Min weight&lt;/zoo-grid-header&gt;
@@ -446,12 +429,12 @@
 
         &lt;div slot=&quot;pagesizeselector&quot;&gt;
             &lt;zoo-select labelposition=&quot;left&quot;&gt;
-                &lt;select id=&quot;grid-page-size&quot; slot=&quot;selectelement&quot;&gt;
+                &lt;select id=&quot;grid-page-size&quot; slot=&quot;select&quot;&gt;
                     &lt;option selected&gt;5&lt;/option&gt;
                     &lt;option&gt;10&lt;/option&gt;
                     &lt;option&gt;25&lt;/option&gt;
                 &lt;/select&gt;
-                &lt;label for=&quot;grid-page-size&quot; slot=&quot;selectlabel&quot;&gt;Page Size&lt;/label&gt;
+                &lt;label for=&quot;grid-page-size&quot; slot=&quot;label&quot;&gt;Page Size&lt;/label&gt;
             &lt;/zoo-select&gt;
         &lt;/div&gt;
     &lt;/zoo-grid&gt;
@@ -469,18 +452,19 @@
         </div>
         <div slot="pagesizeselector">
             <zoo-select labelposition="left">
-                <select id="grid-page-size" slot="selectelement">
+                <select id="grid-page-size" slot="select">
                     <option selected>5</option>
                     <option>10</option>
                     <option>25</option>
                 </select>
-                <label for="grid-page-size" slot="selectlabel">Page Size</label>
+                <label for="grid-page-size" slot="label">Page Size</label>
             </zoo-select>
         </div>
     </zoo-grid>
 </div>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -533,7 +517,8 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS variables</h2><table>
+<h2 id="css-variables">CSS variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -562,7 +547,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <pre><code class="language-CSS"> zoo-grid div[column=&quot;1&quot;] {
     min-width: 150px;
  }</code></pre>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -596,7 +582,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h3>zoo-grid-header attributes</h3><table>
+<h3 id="zoo-grid-header-attributes">zoo-grid-header attributes</h3>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -621,7 +608,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003; - when <code>sortable</code> is not set</td>
 </tr>
 </tbody></table>
-<h2>Events</h2><table>
+<h2 id="events">Events</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -656,46 +644,28 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <ul>
 <li><code>pageNumber</code> - number of the page user wants to go to</li>
 </ul>
-</div><div class="component">
-			<h1>
-            <a name="header" class="anchor" href="#header">
-                <span class="header-link">Header</span>
-            </a>
-            </h1><p>Container header component.</p>
+</div><div class="component"><h1 id="header"><a href="#header">Header</a></h1>
+<p>Container header component.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-header headertext=&quot;Zooplus web components&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-header&gt;
     &lt;img slot=&quot;img&quot; alt=&quot;Zooplus logo&quot; src=&quot;https://zooplus.github.io/zoo-web-components/logo.png&quot;/&gt;
+    &lt;h2 slot=&quot;headertext&quot;&gt;Zooplus web components&lt;/h2&gt;
     &lt;zoo-button size=&quot;medium&quot; style=&quot;margin-left: 50px&quot;&gt;
         &lt;button type=&quot;button&quot;&gt;Zoo+ theme&lt;/button&gt;
     &lt;/zoo-button&gt;
 &lt;/zoo-header&gt;</code></pre>
 <p>The above will render to:</p>
-<zoo-header headertext="Zooplus web components">
+<zoo-header>
     <img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/>
+    <h2 slot="headertext">Zooplus web components</h2>
     <zoo-button size="medium" style="margin-left: 50px">
         <button type="button">Zoo+ theme</button>
     </zoo-button>
 </zoo-header>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="center"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>headertext</code></td>
-<td align="left">arbitrary text to show next to <code>img</code> slot</td>
-<td align="left">text</td>
-<td align="center"></td>
-<td align="center">&#10003;</td>
-</tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -707,7 +677,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -731,24 +702,26 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="input" class="anchor" href="#input">
-                <span class="header-link">Input</span>
-            </a>
-            </h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
+</div><div class="component"><h1 id="input"><a href="#input">Input</a></h1>
+<p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
 <hr>
-<h2>Example usage</h2><pre><code>&lt;zoo-input linktext=&quot;Forgotten your password?&quot; linkhref=&quot;https://zooplus.github.io/zoo-web-components/&quot;&gt;
-    &lt;input id=&quot;input-type-text&quot; slot=&quot;inputelement&quot; type=&quot;text&quot; placeholder=&quot;input&quot;/&gt;
-    &lt;label for=&quot;input-type-text&quot; slot=&quot;inputlabel&quot;&gt;Input type text&lt;/label&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code>&lt;zoo-input&gt;
+    &lt;input id=&quot;input-type-text&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;input&quot;/&gt;
+    &lt;label for=&quot;input-type-text&quot; slot=&quot;label&quot;&gt;Input type text&lt;/label&gt;
+    &lt;span slot=&quot;info&quot;&gt;Additional helpful information for our users&lt;/span&gt;
+    &lt;a slot=&quot;link&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot; target=&quot;about:blank&quot;&gt;Forgotten your password?&lt;/a&gt;
 &lt;/zoo-input&gt;</code></pre>
 <p>The above will render to:</p>
-<zoo-input linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
-    <input id="input-type-text" slot="inputelement" type="text" placeholder="input"/>
-    <label for="input-type-text" slot="inputlabel">Input type text</label>
+<zoo-input>
+    <input id="input-type-text" slot="input" type="text" placeholder="input"/>
+    <label for="input-type-text" slot="label">Input type text</label>
+    <span slot="info">Additional helpful information for our users</span>
+    <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-input>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -759,56 +732,15 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>labeltext</code></td>
-<td align="left">text to be presented as a label</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
 <td align="left"><code>invalid</code></td>
 <td align="left">flag which indicates whether the input is valid or not</td>
 <td align="left">boolean</td>
-<td align="left"><code>false</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>inputerrormsg</code></td>
-<td align="left">text that should be displayed when <code>valid</code> is set to <code>falsy</code> value</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>infotext</code></td>
-<td align="left">text that should be displayed as additional info below the input</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linktext</code></td>
-<td align="left">what text to present as a link text</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linkhref</code></td>
-<td align="left">where the link should lead</td>
-<td align="left">link</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linktarget</code></td>
-<td align="left">target of the anchor link</td>
-<td align="left">text</td>
-<td align="left"><code>about:blank</code></td>
+<td align="left"><code>null</code></td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -832,7 +764,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center"><code>#ED1C24</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -841,29 +774,36 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>inputelement</code></td>
+<td align="left"><code>input</code></td>
 <td align="left">name of the slot for input</td>
 <td align="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>inputlabel</code></td>
+<td align="left"><code>label</code></td>
 <td align="left">name of the slot for label</td>
 <td align="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>button</code></td>
-<td align="left">button that can be injected aside from input for composition of these elements</td>
+<td align="left"><code>info</code></td>
+<td align="left">accepts any element, foe example <code>span</code></td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>link</code></td>
+<td align="left">accepts <code>a</code></td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="link" class="anchor" href="#link">
-                <span class="header-link">Link</span>
-            </a>
-            </h1><p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
+</div><div class="component"><h1 id="link"><a href="#link">Link</a></h1>
+<p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;height: 10px; width: auto&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;div style=&quot;height: 10px; width: auto&quot;&gt;
     &lt;zoo-link type=&quot;primary&quot;&gt;
         &lt;a slot=&quot;anchor&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot;&gt;Zoo web components&lt;/a&gt;
     &lt;/zoo-link&gt;
@@ -875,7 +815,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     </zoo-link>
 </div>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -900,7 +841,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -924,7 +866,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center"><code>#BD161C</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -948,21 +891,19 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="modal" class="anchor" href="#modal">
-                <span class="header-link">Modal</span>
-            </a>
-            </h1><p>Container component which provides styles for modal and slotted content.
+</div><div class="component"><h1 id="modal"><a href="#modal">Modal</a></h1>
+<p>Container component which provides styles for modal and slotted content.
 Modal visibility must be controlled by the client.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-modal style=&quot;display: none&quot; headertext=&quot;Header&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-modal style=&quot;display: none&quot;&gt;
+    &lt;span slot=&quot;header&quot;&gt;Your basket contains licensed items&lt;/span&gt;
     &lt;div&gt;
-        &lt;zoo-feedback text=&quot;This is an info message. Only one coupon can be accepted with each order.&quot;&gt;&lt;/zoo-feedback&gt;
+        &lt;zoo-feedback&gt;This is an info message. Only one coupon can be accepted with each order.&lt;/zoo-feedback&gt;
         &lt;br&gt;
         &lt;zoo-checkbox highlighted=&quot;true&quot;&gt;
-            &lt;input id=&quot;chkbx&quot; slot=&quot;checkboxelement&quot; type=&quot;checkbox&quot;/&gt;
-            &lt;label for=&quot;chkbx&quot; slot=&quot;checkboxlabel&quot;&gt;I understand and confirm that ALL of the above statements are true&lt;/label&gt;
+            &lt;input id=&quot;chkbx&quot; slot=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt;
+            &lt;label for=&quot;chkbx&quot; slot=&quot;label&quot;&gt;I understand and confirm that ALL of the above statements are true&lt;/label&gt;
         &lt;/zoo-checkbox&gt;
         &lt;br&gt;
         &lt;zoo-button style=&quot;margin: 0 auto&quot; type=&quot;hollow&quot;&gt;
@@ -970,25 +911,8 @@ Modal visibility must be controlled by the client.</p>
         &lt;/zoo-button&gt;
     &lt;/div&gt;
 &lt;/zoo-modal&gt;</code></pre>
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="center"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>headertext</code></td>
-<td align="left">text that should be displayed as modal header</td>
-<td align="left">text</td>
-<td align="center"></td>
-<td align="center">&#10005;</td>
-</tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1000,7 +924,8 @@ Modal visibility must be controlled by the client.</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1013,15 +938,17 @@ Modal visibility must be controlled by the client.</p>
 <td align="left">arbitrary content</td>
 <td align="center">&#10005;</td>
 </tr>
+<tr>
+<td align="center">header</td>
+<td align="left">arbitrary content</td>
+<td align="center">&#10005;</td>
+</tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="navigation" class="anchor" href="#navigation">
-                <span class="header-link">Navigation</span>
-            </a>
-            </h1><p>Container component which provides styles for slotted content.</p>
+</div><div class="component"><h1 id="navigation"><a href="#navigation">Navigation</a></h1>
+<p>Container component which provides styles for slotted content.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-navigation&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-navigation&gt;
     &lt;div&gt;
         &lt;zoo-link type=&quot;negative&quot;&gt;
             &lt;a slot=&quot;anchor&quot; href=&quot;https://github.com/zooplus/zoo-web-components&quot;&gt;Github&lt;/a&gt;
@@ -1043,7 +970,8 @@ Modal visibility must be controlled by the client.</p>
     </div>
 </zoo-navigation>
 
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1059,7 +987,8 @@ Modal visibility must be controlled by the client.</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1073,12 +1002,8 @@ Modal visibility must be controlled by the client.</p>
 <td align="center">&#10005;</td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="quantity-control" class="anchor" href="#quantity-control">
-                <span class="header-link">Quantity Control</span>
-            </a>
-            </h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
+</div><div class="component"><h1 id="quantity-control"><a href="#quantity-control">Quantity Control</a></h1>
+<p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
 <hr>
 <blockquote>
 <p>Webkit based browsers (Chrome/Safari) do not support hiding native number scroll on <code>input type=&quot;number&quot;</code>,
@@ -1087,17 +1012,19 @@ when supplying such input for this component remember to add:</p>
 <pre><code class="language-CSS">input::-webkit-outer-spin-button, zoo-quantity-control input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }</code></pre>
-<h2>Example usage</h2><pre><code class="language-HTML">    &lt;zoo-quantity-control infotext=&quot;Additional helpful information for our users&quot; &gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">    &lt;zoo-quantity-control&gt;
         &lt;input id=&quot;number-input&quot; slot=&quot;input&quot; readonly placeholder=&quot;0&quot; type=&quot;number&quot; step=&quot;50&quot;/&gt;
         &lt;label for=&quot;number-input&quot; slot=&quot;label&quot;&gt;Label&lt;/label&gt;
     &lt;/zoo-quantity-control&gt;</code></pre>
 <p>The above will render to:</p>
-<zoo-quantity-control infotext="Additional helpful information for our users" >
+<zoo-quantity-control>
     <input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>
     <label for="number-input" slot="label">Label</label>
 </zoo-quantity-control>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1108,31 +1035,10 @@ when supplying such input for this component remember to add:</p>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>labeltext</code></td>
-<td align="left">text to be presented as a label</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
 <td align="left"><code>invalid</code></td>
 <td align="left">flag which indicates whether the input is valid or not</td>
 <td align="left">boolean</td>
 <td align="left"><code>false</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>inputerrormsg</code></td>
-<td align="left">text that should be displayed when <code>valid</code> is set to <code>falsy</code> value</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>infotext</code></td>
-<td align="left">text that should be displayed as additional info below the input</td>
-<td align="left">text</td>
-<td align="left"></td>
 <td align="center">&#10003;</td>
 </tr>
 <tr>
@@ -1150,7 +1056,8 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1162,7 +1069,8 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1180,33 +1088,47 @@ when supplying such input for this component remember to add:</p>
 <td align="left"><code>&lt;label for=&quot;input-id&quot; slot=&quot;label&quot;&gt;An example input&lt;/label&gt;</code></td>
 <td align="center">&#10003;</td>
 </tr>
+<tr>
+<td align="left"><code>info</code></td>
+<td align="left">accepts any element, foe example <code>span</code></td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td align="center">&#10003;</td>
+</tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="radio" class="anchor" href="#radio">
-                <span class="header-link">Radio</span>
-            </a>
-            </h1><p>Radio component which provides styles for <strong><code>&lt;input type=&quot;radio&quot;/&gt;</code></strong> and associated <strong><code>&lt;label&gt;&lt;/label&gt;</code></strong></p>
+</div><div class="component"><h1 id="radio"><a href="#radio">Radio</a></h1>
+<p>Radio component which provides styles for <strong><code>&lt;input type=&quot;radio&quot;/&gt;</code></strong> and associated <strong><code>&lt;label&gt;&lt;/label&gt;</code></strong></p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-radio infotext=&quot;Additional Information&quot; labeltext=&quot;Label&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-radio&gt;
+    &lt;span slot=&quot;label&quot;&gt;Radio group&lt;/span&gt;
+
     &lt;input type=&quot;radio&quot; id=&quot;contactChoice1&quot; name=&quot;contact&quot; value=&quot;email&quot;&gt;
     &lt;label for=&quot;contactChoice1&quot;&gt;Email&lt;/label&gt;
     &lt;input type=&quot;radio&quot; id=&quot;contactChoice2&quot; name=&quot;contact&quot; value=&quot;phone&quot;&gt;
     &lt;label for=&quot;contactChoice2&quot;&gt;Phone&lt;/label&gt;
     &lt;input type=&quot;radio&quot; id=&quot;contactChoice3&quot; name=&quot;contact&quot; value=&quot;mail&quot;&gt;
     &lt;label for=&quot;contactChoice3&quot;&gt;Mail&lt;/label&gt;
+
+    &lt;span slot=&quot;info&quot;&gt;Additional information&lt;/span&gt;
 &lt;/zoo-radio&gt;</code></pre>
 <p>The above will render to:</p>
-<zoo-radio infotext="Additional Information" labeltext="Label">
+<zoo-radio>
+    <span slot="label">Radio group</span>
     <input type="radio" id="contactChoice1" name="contact" value="email"/>
     <label for="contactChoice1">Email</label>
     <input type="radio" id="contactChoice2" name="contact" value="phone"/>
     <label for="contactChoice2">Phone</label>
     <input type="radio" id="contactChoice3" name="contact" value="mail"/>
     <label for="contactChoice3">Mail</label>
+    <span slot="info">Additional information</span>
 </zoo-radio>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1217,35 +1139,15 @@ when supplying such input for this component remember to add:</p>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>labeltext</code></td>
-<td align="left">text to be presented on the top of inputs</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
 <td align="left"><code>invalid</code></td>
 <td align="left">flag which indicates whether the input is valid or not</td>
 <td align="left">boolean</td>
-<td align="left"><code>false</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>inputerrormsg</code></td>
-<td align="left">text that should be displayed when <code>valid</code> is set to <code>falsy</code> value</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>infotext</code></td>
-<td align="left">text that should be displayed as additional info below the input</td>
-<td align="left">text</td>
-<td align="left"></td>
+<td align="left"><code>null</code></td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1261,7 +1163,8 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#ED1C24</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1274,117 +1177,79 @@ when supplying such input for this component remember to add:</p>
 <td align="left">arbitrary amount of <code>input type=&quot;radio&quot;</code> and labels for them</td>
 <td align="center">&#10005;</td>
 </tr>
+<tr>
+<td align="center"><code>label</code></td>
+<td align="left">name of the slot for label</td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="center"><code>info</code></td>
+<td align="left">accepts any element, foe example <code>span</code></td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="center"><code>error</code></td>
+<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td align="center">&#10003;</td>
+</tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="searchable-select" class="anchor" href="#searchable-select">
-                <span class="header-link">Searchable Select</span>
-            </a>
-            </h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+</div><div class="component"><h1 id="searchable-select"><a href="#searchable-select">Searchable Select</a></h1>
+<p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-searchable-select labeltext=&quot;Label&quot; infotext=&quot;Additional Information&quot; 
-    linktext=&quot;Forgotten your password?&quot; linkhref=&quot;https://zooplus.github.io/zoo-web-components/&quot;&gt;
-    &lt;select id=&quot;searchable-select&quot; slot=&quot;selectelement&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-searchable-select&gt;
+    &lt;select id=&quot;searchable-select&quot; slot=&quot;select&quot;&gt;
         &lt;option value=&quot;value1&quot;&gt;Dog&lt;/option&gt;
         &lt;option value=&quot;value2&quot;&gt;Cat&lt;/option&gt;
         &lt;option value=&quot;value3&quot;&gt;Small Pet&lt;/option&gt;
         &lt;option value=&quot;value4&quot;&gt;Aquatic&lt;/option&gt;
     &lt;/select&gt;
-    &lt;label slot=&quot;selectlabel&quot; for=&quot;searchable-select&quot;&gt;Label&lt;/label&gt;
+    &lt;label slot=&quot;label&quot; for=&quot;searchable-select&quot;&gt;Searchable select&lt;/label&gt;
+    &lt;span slot=&quot;info&quot;&gt;Additional helpful information for our users&lt;/span&gt;
 &lt;/zoo-searchable-select&gt;</code></pre>
 <p>The above will render to:</p>
-<zoo-searchable-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/" labeltext="Label">
-    <select id="searchable-select" slot="selectelement">
+<zoo-searchable-select>
+    <select id="searchable-select" slot="select">
         <option value="value1">Dog</option>
         <option value="value2">Cat</option>
         <option value="value3">Small Pet</option>
         <option value="value4">Aquatic</option>
     </select>
-    <label slot="selectlabel" for="searchable-select">Label</label>
+    <label slot="label" for="searchable-select">Searchable select</label>
+    <span slot="info">Additional helpful information for our users</span>
 </zoo-searchable-select>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
 <th align="left"><strong>Description</strong></th>
 <th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
 <th align="center"><strong>Optional</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>labeltext</code></td>
-<td align="left">text to be presented as a label</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
 <td align="left"><code>invalid</code></td>
 <td align="left">flag which indicates whether the input is valid or not</td>
 <td align="left">boolean</td>
-<td align="left"><code>false</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>inputerrormsg</code></td>
-<td align="left">text that should be displayed when <code>valid</code> is set to <code>falsy</code> value</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>infotext</code></td>
-<td align="left">text that should be displayed as additional info below the input</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linktext</code></td>
-<td align="left">what text to present as a link text</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linkhref</code></td>
-<td align="left">where the link should lead</td>
-<td align="left">link</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linktarget</code></td>
-<td align="left">target of the anchor link</td>
-<td align="left">text</td>
-<td align="left"><code>about:blank</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linktarget</code></td>
-<td align="left">target of the anchor link</td>
-<td align="left">text</td>
-<td align="left"><code>about:blank</code></td>
 <td align="center">&#10003;</td>
 </tr>
 <tr>
 <td align="left"><code>loading</code></td>
 <td align="left">flag which indicates whether to show loader inside slotted <code>select</code> element</td>
 <td align="left">boolean</td>
-<td align="left"></td>
 <td align="center">&#10003;</td>
 </tr>
 <tr>
 <td align="left"><code>placeholder</code></td>
 <td align="left">text that should be displayed as a placeholder</td>
 <td align="left">type</td>
-<td align="left"></td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1393,39 +1258,59 @@ when supplying such input for this component remember to add:</p>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>selectelement</code></td>
-<td align="left"><code>&lt;select slot=&quot;selectelement&quot;&gt;...&lt;/select&gt;</code></td>
+<td align="left"><code>label</code></td>
+<td align="left">name of the slot for label</td>
 <td align="center">&#10005;</td>
 </tr>
+<tr>
+<td align="left"><code>select</code></td>
+<td align="left"><code>&lt;select slot=&quot;select&quot;&gt;...&lt;/select&gt;</code></td>
+<td align="center">&#10005;</td>
+</tr>
+<tr>
+<td align="left"><code>info</code></td>
+<td align="left">accepts any element, foe example <code>span</code></td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>link</code></td>
+<td align="left">accepts <code>a</code></td>
+<td align="center">&#10003;</td>
+</tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="select" class="anchor" href="#select">
-                <span class="header-link">Select</span>
-            </a>
-            </h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+</div><div class="component"><h1 id="select"><a href="#select">Select</a></h1>
+<p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-select infotext=&quot;Additional Information&quot; linktext=&quot;Forgotten your password?&quot; linkhref=&quot;https://zooplus.github.io/zoo-web-components/&quot;&gt;
-    &lt;select id=&quot;zoo-select&quot; slot=&quot;selectelement&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-select&gt;
+    &lt;select id=&quot;zoo-select&quot; slot=&quot;select&quot;&gt;
         &lt;option value=&quot;value1&quot;&gt;Dog&lt;/option&gt;
         &lt;option value=&quot;value2&quot;&gt;Cat&lt;/option&gt;
         &lt;option value=&quot;value3&quot;&gt;Small Pet&lt;/option&gt;
         &lt;option value=&quot;value4&quot;&gt;Aquatic&lt;/option&gt;
     &lt;/select&gt;
-    &lt;label for=&quot;zoo-select&quot; slot=&quot;selectlabel&quot;&gt;Label&lt;/label&gt;
+    &lt;label for=&quot;zoo-select&quot; slot=&quot;label&quot;&gt;Label&lt;/label&gt;
+    &lt;a slot=&quot;link&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot; target=&quot;about:blank&quot;&gt;Forgotten your password?&lt;/a&gt;
 &lt;/zoo-select&gt;</code></pre>
 <p>The above will render to:</p>
-<zoo-select infotext="Additional Information" linktext="Forgotten your password?" linkhref="https://zooplus.github.io/zoo-web-components/">
-    <select slot="selectelement">
+<zoo-select>
+    <select slot="select">
         <option value="value1">Dog</option>
         <option value="value2">Cat</option>
         <option value="value3">Small Pet</option>
         <option value="value4">Aquatic</option>
     </select>
-    <label for="zoo-select" slot="selectlabel">Label</label>
+    <label for="zoo-select" slot="label">Label</label>
+    <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-select>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1443,13 +1328,6 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>labeltext</code></td>
-<td align="left">text to be presented as a label</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
 <td align="left"><code>invalid</code></td>
 <td align="left">flag which indicates whether the input is valid or not</td>
 <td align="left">boolean</td>
@@ -1457,56 +1335,15 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>inputerrormsg</code></td>
-<td align="left">text that should be displayed when <code>valid</code> is set to <code>falsy</code> value</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>infotext</code></td>
-<td align="left">text that should be displayed as additional info below the input</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linktext</code></td>
-<td align="left">what text to present as a link text</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linkhref</code></td>
-<td align="left">where the link should lead</td>
-<td align="left">link</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linktarget</code></td>
-<td align="left">target of the anchor link</td>
-<td align="left">text</td>
-<td align="left"><code>about:blank</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>linktarget</code></td>
-<td align="left">target of the anchor link</td>
-<td align="left">text</td>
-<td align="left"><code>about:blank</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
 <td align="left"><code>loading</code></td>
-<td align="left">flag which indicates whether to show loader inside slotted <code>select</code> element</td>
+<td align="left">flag which indicates whether to show loader</td>
 <td align="left">boolean</td>
 <td align="left"></td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1530,7 +1367,8 @@ when supplying such input for this component remember to add:</p>
 <td align="left"><code>#ED1C24</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1539,12 +1377,12 @@ when supplying such input for this component remember to add:</p>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>selectelement</code></td>
-<td align="left"><code>&lt;select id=&quot;zoo-select&quot; slot=&quot;selectelement&quot;&gt;...&lt;/select&gt;</code></td>
+<td align="left"><code>select</code></td>
+<td align="left"><code>&lt;select id=&quot;zoo-select&quot; slot=&quot;select&quot;&gt;...&lt;/select&gt;</code></td>
 <td align="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>selectlabel</code></td>
+<td align="left"><code>label</code></td>
 <td align="left"><code>&lt;label for=&quot;zoo-select&quot;&gt;Label&lt;/label&gt;</code></td>
 <td align="center">&#10003;</td>
 </tr>
@@ -1553,25 +1391,39 @@ when supplying such input for this component remember to add:</p>
 <td align="left"><code>&lt;slot name=&quot;input&quot;&gt;&lt;/slot&gt;</code> can be used for composition of select and input</td>
 <td align="center">&#10003;</td>
 </tr>
+<tr>
+<td align="left"><code>info</code></td>
+<td align="left">accepts any element, foe example <code>span</code></td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>link</code></td>
+<td align="left">accepts <code>a</code></td>
+<td align="center">&#10003;</td>
+</tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="spinner" class="anchor" href="#spinner">
-                <span class="header-link">Spinner</span>
-            </a>
-            </h1><p>Spinner svg.</p>
+</div><div class="component"><h1 id="spinner"><a href="#spinner">Spinner</a></h1>
+<p>Spinner svg.</p>
 <hr>
 <blockquote>
 <p>Spinner has <code>position: absolute</code>, you have to place it inside an element with <code>position: relative</code>.</p>
 </blockquote>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;position: relative; height: 100px; width: auto&quot;&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;div style=&quot;position: relative; height: 100px; width: auto&quot;&gt;
     &lt;zoo-spinner&gt;&lt;/zoo-spinner&gt;
 &lt;/div&gt;</code></pre>
-<h2>Rendered</h2><div style="position: relative; height: 100px; width: auto">
+<h2 id="rendered">Rendered</h2>
+<div style="position: relative; height: 100px; width: auto">
     <zoo-spinner></zoo-spinner>
 </div>
 
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1583,13 +1435,10 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="theming" class="anchor" href="#theming">
-                <span class="header-link">Theming</span>
-            </a>
-            </h1><p>The following CSS Custom Properties can be overriden by the user.</p>
-<h2>CSS variables</h2><pre><code>--primary-ultralight - `#EBF4E5`;
+</div><div class="component"><h1 id="theming"><a href="#theming">Theming</a></h1>
+<p>The following CSS Custom Properties can be overriden by the user.</p>
+<h2 id="css-variables">CSS variables</h2>
+<pre><code>--primary-ultralight - `#EBF4E5`;
 --primary-light - `#66B100`;
 --primary-mid - `#3C9700`;
 --primary-dark - `#286400`;
@@ -1605,15 +1454,15 @@ when supplying such input for this component remember to add:</p>
 --warning-ultralight - `#FDE8E9`;
 --warning-mid - `#ED1C24`;
 --warning-dark - `#BD161C`;</code></pre>
-</div><div class="component">
-			<h1>
-            <a name="toast" class="anchor" href="#toast">
-                <span class="header-link">Toast</span>
-            </a>
-            </h1><p>Container component which has fly-in/out animations. It can be controlled via exported functions.</p>
+</div><div class="component"><h1 id="toast"><a href="#toast">Toast</a></h1>
+<p>Container component which has fly-in/out animations. It can be controlled via exported functions.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toast id=&quot;zoo-toast&quot; text=&quot;This is an info message.&quot;&gt;&lt;/zoo-toast&gt;</code></pre>
-<h2>Attributes</h2><table>
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-toast&gt;
+    &lt;span slot=&quot;content&quot;&gt;This is an info message.&lt;/span&gt;
+&lt;/zoo-toast&gt;</code></pre>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1631,13 +1480,6 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>text</code></td>
-<td align="left">text to be rendered in the toast box</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
 <td align="left"><code>timeout</code></td>
 <td align="left">how long the toast should be visible for (in seconds)</td>
 <td align="left">number</td>
@@ -1645,7 +1487,8 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1677,7 +1520,8 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2>Functions</h2><table>
+<h2 id="functions">Functions</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1696,49 +1540,37 @@ when supplying such input for this component remember to add:</p>
 <td align="left"><code>document.querySelector(&#39;#zoo-toast&#39;).hide();</code></td>
 </tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="toggle-switch" class="anchor" href="#toggle-switch">
-                <span class="header-link">Toggle Switch</span>
-            </a>
-            </h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
-<hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toggle-switch infotext=&quot;Additional helpful information for our users&quot;&gt;
-    &lt;label for=&quot;input-toggle&quot; slot=&quot;label&quot;&gt;Toggle switch&lt;/label&gt;
-    &lt;input id=&quot;input-toggle&quot; slot=&quot;input&quot; type=&quot;checkbox&quot;/&gt;
-&lt;/zoo-toggle-switch&gt;</code></pre>
-<p>The above will render to:</p>
-<zoo-toggle-switch infotext="Additional helpful information for our users">
-    <label for="input-toggle" slot="label">Toggle switch</label>
-    <input id="input-toggle" slot="input" type="checkbox"/>
-</zoo-toggle-switch>
-
-<h2>Attributes</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
 <th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="center"><strong>Default</strong></th>
 <th align="center"><strong>Optional</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>labeltext</code></td>
-<td align="left">text to be presented as a label</td>
-<td align="left">text</td>
-<td align="center"></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>infotext</code></td>
-<td align="left">text that should be displayed as additional info below the input</td>
-<td align="left">text</td>
-<td align="center"></td>
+<td align="left"><code>content</code></td>
+<td align="left">arbitrary content</td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2>CSS Variables</h2><table>
+</div><div class="component"><h1 id="toggle-switch"><a href="#toggle-switch">Toggle Switch</a></h1>
+<p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
+<hr>
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-toggle-switch&gt;
+    &lt;label for=&quot;input-toggle&quot; slot=&quot;label&quot;&gt;Toggle switch&lt;/label&gt;
+    &lt;input id=&quot;input-toggle&quot; slot=&quot;input&quot; type=&quot;checkbox&quot;/&gt;
+&lt;/zoo-toggle-switch&gt;</code></pre>
+<p>The above will render to:</p>
+<zoo-toggle-switch>
+    <label for="input-toggle" slot="label">Toggle switch</label>
+    <input id="input-toggle" slot="input" type="checkbox"/>
+</zoo-toggle-switch>
+
+<h2 id="css-variables">CSS Variables</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1750,7 +1582,8 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1768,29 +1601,37 @@ when supplying such input for this component remember to add:</p>
 <td align="left"><code>&lt;label for=&quot;input-id&quot; slot=&quot;label&quot;&gt;An example input&lt;/label&gt;</code></td>
 <td align="center">&#10003;</td>
 </tr>
+<tr>
+<td align="left"><code>info</code></td>
+<td align="left">accepts any element, foe example <code>span</code></td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>error</code></td>
+<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td align="center">&#10003;</td>
+</tr>
 </tbody></table>
-</div><div class="component">
-			<h1>
-            <a name="tooltip" class="anchor" href="#tooltip">
-                <span class="header-link">Tooltip</span>
-            </a>
-            </h1><p>Tooltip component.</p>
+</div><div class="component"><h1 id="tooltip"><a href="#tooltip">Tooltip</a></h1>
+<p>Tooltip component.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-button&gt;
+<h2 id="example-usage">Example usage</h2>
+<pre><code class="language-HTML">&lt;zoo-button&gt;
     &lt;button type=&quot;button&quot;&gt;
         Button
-        &lt;zoo-tooltip position=&quot;bottom&quot; text=&quot;Tooltip text&quot;&gt;&lt;/zoo-tooltip&gt;
+        &lt;zoo-tooltip position=&quot;bottom&quot;&gt;Tooltip text&lt;/zoo-tooltip&gt;
     &lt;/button&gt;
 &lt;/zoo-button&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-button>
     <button type="button">
         Button
-        <zoo-tooltip position="bottom" text="Tooltip text"></zoo-tooltip>
+        <zoo-tooltip position="bottom">Tooltip text</zoo-tooltip>
     </button>
 </zoo-button>
 
-<h2>Attributes</h2><table>
+<h2 id="attributes">Attributes</h2>
+<table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1807,15 +1648,9 @@ when supplying such input for this component remember to add:</p>
 <td align="left"><code>top</code></td>
 <td align="center">&#10003;</td>
 </tr>
-<tr>
-<td align="left"><code>text</code></td>
-<td align="left">text to be displayed inside tooltip</td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
-</tr>
 </tbody></table>
-<h2>Slots</h2><table>
+<h2 id="slots">Slots</h2>
+<table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1825,7 +1660,7 @@ when supplying such input for this component remember to add:</p>
 </thead>
 <tbody><tr>
 <td align="center"></td>
-<td align="left">arbitrary content which will replace <code>text</code> attribute</td>
+<td align="left">arbitrary content</td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>

@@ -17,25 +17,41 @@ input::-webkit-outer-spin-button, zoo-quantity-control input::-webkit-inner-spin
 
 ```HTML
 	<zoo-quantity-control>
+		<button type="button" slot="decrease" title="decrease">
+			<svg height="18" width="18"><line y1="9" x1="0" x2="18" y2="9"></line></svg>
+		</button>
 		<input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>
 		<label for="number-input" slot="label">Label</label>
+		<button type="button" slot="increase" title="increase">
+			<svg height="18" width="18">
+				<line y1="0" x1="9" x2="9" y2="18"></line>
+				<line y1="9" x1="0" x2="18" y2="9"></line>
+			</svg>
+		</button>
 	</zoo-quantity-control>
 ```
 
 The above will render to:
 
 <zoo-quantity-control>
+	<button type="button" slot="decrease" title="decrease">
+		<svg height="18" width="18"><line y1="9" x1="0" x2="18" y2="9"></line></svg>
+	</button>
 	<input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>
 	<label for="number-input" slot="label">Label</label>
+	<button type="button" slot="increase" title="increase">
+		<svg height="18" width="18">
+			<line y1="0" x1="9" x2="9" y2="18"></line>
+			<line y1="9" x1="0" x2="18" y2="9"></line>
+		</svg>
+	</button>
 </zoo-quantity-control>
 
 ## Attributes
 
-| **Name**           | **Description**                                              | **Type** | **Default** | **Optional** |
-| :----------------- | :----------------------------------------------------------- | :------- | :---------- | :----------: |
-| `invalid`          | flag which indicates whether the input is valid or not       | boolean  | `false`     |   &#10003;   |
-| `decreasedisabled` | flag which indicates whether the increase should be disabled | boolean  | `false`     |   &#10003;   |
-| `increasedisabled` | flag which indicates whether the increase should be disabled | boolean  | `false`     |   &#10003;   |
+| **Name**  | **Description**                                        | **Type** | **Default** | **Optional** |
+| :-------- | :----------------------------------------------------- | :------- | :---------- | :----------: |
+| `invalid` | flag which indicates whether the input is valid or not | boolean  | `false`     |   &#10003;   |
 
 ## CSS Variables
 
@@ -45,9 +61,11 @@ The above will render to:
 
 ## Slots
 
-| **Name** | **Description**                                                                            | **Optional** |
-| :------- | :----------------------------------------------------------------------------------------- | :----------: |
-| `input`  | `<input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>` |   &#10005;   |
-| `label`  | `<label for="input-id" slot="label">An example input</label>`                              |   &#10003;   |
-| `info`   | accepts any element, foe example `span`                                                    |   &#10003;   |
-| `error`  | accepts any element element that shows when `invalid` attribute is present                 |   &#10003;   |
+| **Name**   | **Description**                                                                            | **Optional** |
+| :--------- | :----------------------------------------------------------------------------------------- | :----------: |
+| `input`    | `<input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>` |   &#10005;   |
+| `label`    | `<label for="input-id" slot="label">An example input</label>`                              |   &#10003;   |
+| `info`     | accepts any element, foe example `span`                                                    |   &#10003;   |
+| `error`    | accepts any element that shows when `invalid` attribute is present                         |   &#10003;   |
+| `increase` | accepts any element that should act as a button for increase                               |   &#10003;   |
+| `decrease` | accepts any element that should act as a button for decrease                               |   &#10003;   |

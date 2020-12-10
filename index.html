@@ -1014,13 +1014,31 @@ when supplying such input for this component remember to add:</p>
 }</code></pre>
 <h2 id="example-usage">Example usage</h2>
 <pre><code class="language-HTML">    &lt;zoo-quantity-control&gt;
+        &lt;button type=&quot;button&quot; slot=&quot;decrease&quot; title=&quot;decrease&quot;&gt;
+            &lt;svg height=&quot;18&quot; width=&quot;18&quot;&gt;&lt;line y1=&quot;9&quot; x1=&quot;0&quot; x2=&quot;18&quot; y2=&quot;9&quot;&gt;&lt;/line&gt;&lt;/svg&gt;
+        &lt;/button&gt;
         &lt;input id=&quot;number-input&quot; slot=&quot;input&quot; readonly placeholder=&quot;0&quot; type=&quot;number&quot; step=&quot;50&quot;/&gt;
         &lt;label for=&quot;number-input&quot; slot=&quot;label&quot;&gt;Label&lt;/label&gt;
+        &lt;button type=&quot;button&quot; slot=&quot;increase&quot; title=&quot;increase&quot;&gt;
+            &lt;svg height=&quot;18&quot; width=&quot;18&quot;&gt;
+                &lt;line y1=&quot;0&quot; x1=&quot;9&quot; x2=&quot;9&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+                &lt;line y1=&quot;9&quot; x1=&quot;0&quot; x2=&quot;18&quot; y2=&quot;9&quot;&gt;&lt;/line&gt;
+            &lt;/svg&gt;
+        &lt;/button&gt;
     &lt;/zoo-quantity-control&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-quantity-control>
+    <button type="button" slot="decrease" title="decrease">
+        <svg height="18" width="18"><line y1="9" x1="0" x2="18" y2="9"></line></svg>
+    </button>
     <input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>
     <label for="number-input" slot="label">Label</label>
+    <button type="button" slot="increase" title="increase">
+        <svg height="18" width="18">
+            <line y1="0" x1="9" x2="9" y2="18"></line>
+            <line y1="9" x1="0" x2="18" y2="9"></line>
+        </svg>
+    </button>
 </zoo-quantity-control>
 
 <h2 id="attributes">Attributes</h2>
@@ -1037,20 +1055,6 @@ when supplying such input for this component remember to add:</p>
 <tbody><tr>
 <td align="left"><code>invalid</code></td>
 <td align="left">flag which indicates whether the input is valid or not</td>
-<td align="left">boolean</td>
-<td align="left"><code>false</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>decreasedisabled</code></td>
-<td align="left">flag which indicates whether the increase should be disabled</td>
-<td align="left">boolean</td>
-<td align="left"><code>false</code></td>
-<td align="center">&#10003;</td>
-</tr>
-<tr>
-<td align="left"><code>increasedisabled</code></td>
-<td align="left">flag which indicates whether the increase should be disabled</td>
 <td align="left">boolean</td>
 <td align="left"><code>false</code></td>
 <td align="center">&#10003;</td>
@@ -1095,7 +1099,17 @@ when supplying such input for this component remember to add:</p>
 </tr>
 <tr>
 <td align="left"><code>error</code></td>
-<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td align="left">accepts any element that shows when <code>invalid</code> attribute is present</td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>increase</code></td>
+<td align="left">accepts any element that should act as a button for increase</td>
+<td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>decrease</code></td>
+<td align="left">accepts any element that should act as a button for decrease</td>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
@@ -1198,25 +1212,31 @@ when supplying such input for this component remember to add:</p>
 <hr>
 <h2 id="example-usage">Example usage</h2>
 <pre><code class="language-HTML">&lt;zoo-searchable-select&gt;
+    &lt;span slot=&quot;legend&quot;&gt;Searchable multiple select legend&lt;/span&gt;
+
     &lt;select id=&quot;searchable-select&quot; slot=&quot;select&quot;&gt;
         &lt;option value=&quot;value1&quot;&gt;Dog&lt;/option&gt;
         &lt;option value=&quot;value2&quot;&gt;Cat&lt;/option&gt;
         &lt;option value=&quot;value3&quot;&gt;Small Pet&lt;/option&gt;
         &lt;option value=&quot;value4&quot;&gt;Aquatic&lt;/option&gt;
     &lt;/select&gt;
-    &lt;label slot=&quot;label&quot; for=&quot;searchable-select&quot;&gt;Searchable select&lt;/label&gt;
-    &lt;span slot=&quot;info&quot;&gt;Additional helpful information for our users&lt;/span&gt;
+    &lt;label slot=&quot;selectlabel&quot; for=&quot;searchable-select&quot;&gt;Searchable select&lt;/label&gt;
+
+    &lt;input id=&quot;inserted-input&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Select multiple options&quot;/&gt;
+    &lt;label for=&quot;inserted-input&quot; slot=&quot;inputlabel&quot;&gt;Searchable multiple input&lt;/label&gt;
 &lt;/zoo-searchable-select&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-searchable-select>
+    <span slot="legend">Searchable multiple select legend</span>
     <select id="searchable-select" slot="select">
         <option value="value1">Dog</option>
         <option value="value2">Cat</option>
         <option value="value3">Small Pet</option>
         <option value="value4">Aquatic</option>
     </select>
-    <label slot="label" for="searchable-select">Searchable select</label>
-    <span slot="info">Additional helpful information for our users</span>
+    <label slot="selectlabel" for="searchable-select">Searchable select</label>
+    <input id="inserted-input" slot="input" type="text" placeholder="Select multiple options"/>
+    <label for="inserted-input" slot="inputlabel">Searchable multiple input</label>
 </zoo-searchable-select>
 
 <h2 id="attributes">Attributes</h2>
@@ -1241,12 +1261,6 @@ when supplying such input for this component remember to add:</p>
 <td align="left">boolean</td>
 <td align="center">&#10003;</td>
 </tr>
-<tr>
-<td align="left"><code>placeholder</code></td>
-<td align="left">text that should be displayed as a placeholder</td>
-<td align="left">type</td>
-<td align="center">&#10003;</td>
-</tr>
 </tbody></table>
 <h2 id="slots">Slots</h2>
 <table>
@@ -1258,13 +1272,18 @@ when supplying such input for this component remember to add:</p>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left"><code>label</code></td>
-<td align="left">name of the slot for label</td>
+<td align="left"><code>legend</code></td>
+<td align="left">name of the slot for legend</td>
 <td align="center">&#10005;</td>
 </tr>
 <tr>
 <td align="left"><code>select</code></td>
 <td align="left"><code>&lt;select slot=&quot;select&quot;&gt;...&lt;/select&gt;</code></td>
+<td align="center">&#10005;</td>
+</tr>
+<tr>
+<td align="left"><code>input</code></td>
+<td align="left"><code>&lt;input slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Select multiple options&quot;/&gt;</code></td>
 <td align="center">&#10005;</td>
 </tr>
 <tr>
@@ -1281,6 +1300,16 @@ when supplying such input for this component remember to add:</p>
 <td align="left"><code>link</code></td>
 <td align="left">accepts <code>a</code></td>
 <td align="center">&#10003;</td>
+</tr>
+<tr>
+<td align="left"><code>inputlabel</code></td>
+<td align="left">name of the slot for select label</td>
+<td align="center">&#10005;</td>
+</tr>
+<tr>
+<td align="left"><code>selectlabel</code></td>
+<td align="left">name of the slot for input label</td>
+<td align="center">&#10005;</td>
 </tr>
 </tbody></table>
 </div><div class="component"><h1 id="select"><a href="#select">Select</a></h1>

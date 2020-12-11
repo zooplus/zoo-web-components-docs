@@ -17,16 +17,14 @@ Grid component.
 		<div slot="row"><div>2020-05-10</div><div>23 kg</div><div>15 EUR</div></div>
 		<div slot="row"><div>2020-05-15</div><div>10 kg</div><div>5 EUR</div></div>
 
-		<div slot="pagesizeselector">
-			<zoo-select labelposition="left">
-				<select id="grid-page-size" slot="select">
-					<option selected>5</option>
-					<option>10</option>
-					<option>25</option>
-				</select>
-				<label for="grid-page-size" slot="label">Page Size</label>
-			</zoo-select>
-		</div>
+		<zoo-select labelposition="left" slot="pagesizeselector">
+			<select id="grid-page-size" slot="select">
+				<option selected>5</option>
+				<option>10</option>
+				<option>25</option>
+			</select>
+			<label for="grid-page-size" slot="label">Page Size</label>
+		</zoo-select>
 	</zoo-grid>
 </div>
 ```
@@ -43,16 +41,14 @@ The above will render to:
 		<div slot="row">
 			<div>2020-05-15</div><div>10 kg</div><div>5 EUR</div>
 		</div>
-		<div slot="pagesizeselector">
-			<zoo-select labelposition="left">
-				<select id="grid-page-size" slot="select">
-					<option selected>5</option>
-					<option>10</option>
-					<option>25</option>
-				</select>
-				<label for="grid-page-size" slot="label">Page Size</label>
-			</zoo-select>
-		</div>
+		<zoo-select labelposition="left" slot="pagesizeselector">
+			<select id="grid-page-size" slot="select">
+				<option selected>5</option>
+				<option>10</option>
+				<option>25</option>
+			</select>
+			<label for="grid-page-size" slot="label">Page Size</label>
+		</zoo-select>
 	</zoo-grid>
 </div>
 

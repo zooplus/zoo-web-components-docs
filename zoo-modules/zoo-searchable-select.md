@@ -8,34 +8,36 @@ Select component which provides styles for slotted **`<select>...</select>`**
 
 ```HTML
 <zoo-searchable-select>
-	<span slot="legend">Searchable multiple select legend</span>
+	<span slot="legend">Searchable select legend</span>
 
 	<select id="searchable-select" slot="select">
-		<option value="value1">Dog</option>
-		<option value="value2">Cat</option>
-		<option value="value3">Small Pet</option>
-		<option value="value4">Aquatic</option>
+		<option value="" selected="" disabled="">Please choose an option</option>
+		<option value="dog">Dog</option>
+		<option value="cat">Cat</option>
+		<option value="smallPet">Small Pet</option>
+		<option value="aquatic">Aquatic</option>
 	</select>
 	<label slot="selectlabel" for="searchable-select">Searchable select</label>
 
-	<input id="inserted-input" slot="input" type="text" placeholder="Select multiple options"/>
-	<label for="inserted-input" slot="inputlabel">Searchable multiple input</label>
+	<input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
+	<label for="inserted-input" slot="inputlabel">Searchable input</label>
 </zoo-searchable-select>
 ```
 
 The above will render to:
 
 <zoo-searchable-select>
-	<span slot="legend">Searchable multiple select legend</span>
+	<span slot="legend">Searchable select legend</span>
 	<select id="searchable-select" slot="select">
-		<option value="value1">Dog</option>
-		<option value="value2">Cat</option>
-		<option value="value3">Small Pet</option>
-		<option value="value4">Aquatic</option>
+		<option value="" selected="" disabled="">Please choose an option</option>
+		<option value="dog">Dog</option>
+		<option value="cat">Cat</option>
+		<option value="smallPet">Small Pet</option>
+		<option value="aquatic">Aquatic</option>
 	</select>
 	<label slot="selectlabel" for="searchable-select">Searchable select</label>
-	<input id="inserted-input" slot="input" type="text" placeholder="Select multiple options"/>
-	<label for="inserted-input" slot="inputlabel">Searchable multiple input</label>
+	<input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
+	<label for="inserted-input" slot="inputlabel">Searchable input</label>
 </zoo-searchable-select>
 
 ## Attributes

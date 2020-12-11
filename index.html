@@ -427,16 +427,14 @@
         &lt;div slot=&quot;row&quot;&gt;&lt;div&gt;2020-05-10&lt;/div&gt;&lt;div&gt;23 kg&lt;/div&gt;&lt;div&gt;15 EUR&lt;/div&gt;&lt;/div&gt;
         &lt;div slot=&quot;row&quot;&gt;&lt;div&gt;2020-05-15&lt;/div&gt;&lt;div&gt;10 kg&lt;/div&gt;&lt;div&gt;5 EUR&lt;/div&gt;&lt;/div&gt;
 
-        &lt;div slot=&quot;pagesizeselector&quot;&gt;
-            &lt;zoo-select labelposition=&quot;left&quot;&gt;
-                &lt;select id=&quot;grid-page-size&quot; slot=&quot;select&quot;&gt;
-                    &lt;option selected&gt;5&lt;/option&gt;
-                    &lt;option&gt;10&lt;/option&gt;
-                    &lt;option&gt;25&lt;/option&gt;
-                &lt;/select&gt;
-                &lt;label for=&quot;grid-page-size&quot; slot=&quot;label&quot;&gt;Page Size&lt;/label&gt;
-            &lt;/zoo-select&gt;
-        &lt;/div&gt;
+        &lt;zoo-select labelposition=&quot;left&quot; slot=&quot;pagesizeselector&quot;&gt;
+            &lt;select id=&quot;grid-page-size&quot; slot=&quot;select&quot;&gt;
+                &lt;option selected&gt;5&lt;/option&gt;
+                &lt;option&gt;10&lt;/option&gt;
+                &lt;option&gt;25&lt;/option&gt;
+            &lt;/select&gt;
+            &lt;label for=&quot;grid-page-size&quot; slot=&quot;label&quot;&gt;Page Size&lt;/label&gt;
+        &lt;/zoo-select&gt;
     &lt;/zoo-grid&gt;
 &lt;/div&gt;</code></pre>
 <p>The above will render to:</p>
@@ -450,16 +448,14 @@
         <div slot="row">
             <div>2020-05-15</div><div>10 kg</div><div>5 EUR</div>
         </div>
-        <div slot="pagesizeselector">
-            <zoo-select labelposition="left">
-                <select id="grid-page-size" slot="select">
-                    <option selected>5</option>
-                    <option>10</option>
-                    <option>25</option>
-                </select>
-                <label for="grid-page-size" slot="label">Page Size</label>
-            </zoo-select>
-        </div>
+        <zoo-select labelposition="left" slot="pagesizeselector">
+            <select id="grid-page-size" slot="select">
+                <option selected>5</option>
+                <option>10</option>
+                <option>25</option>
+            </select>
+            <label for="grid-page-size" slot="label">Page Size</label>
+        </zoo-select>
     </zoo-grid>
 </div>
 

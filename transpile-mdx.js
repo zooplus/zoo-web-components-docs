@@ -9,6 +9,23 @@ const walkTokens = (token) => {
 };
 
 marked.use({ walkTokens });
+
+function getWord(str) {
+    return str.match(/(^|\B)#(?![0-9_]+\b)([a-zA-Z0-9_/-]{1,30})(\b|\r)/)[2];
+}
+
+const renderer = new marked.Renderer();
+renderer.heading = (text, level) => {
+    if (level === 1) {
+        return `<h${level} id=${getWord(text)}>${text}</h${level}>`;
+    } else {
+        return `<h${level}>${text}</h${level}>`; 
+    }
+}
+
+marked.setOptions({
+    renderer
+});
   
 const files = [];
 function getFiles(nextPath) {
@@ -23,20 +40,17 @@ function getFiles(nextPath) {
     }
 }
 getFiles('./zoo-modules');
-function getComponentString (file) {
-    return `<div class="component">${file}</div>`;
-}
 function getHeaderString (header) {
-	return `<a class="header" href="${header.tokens[0].href}">${header.tokens[0].text}</a>`;
+	return `<a href="${header.tokens[0].href}">${header.tokens[0].text}</a>`;
 }
 const file = fs.readFileSync('./template.html', 'utf8');
 const result = file.replace('<app-root>', `
     <div class="menu">
-        <h2>Zoo web components</h2>
+        <h1>Zoo web components</h1>
 		${headers.map(header => getHeaderString(header)).join('')}
 	</div>
     <div class="content">
-        ${files.map(file => getComponentString(file)).join('')}
+        ${files.join('')}
     </div>
 `);
 

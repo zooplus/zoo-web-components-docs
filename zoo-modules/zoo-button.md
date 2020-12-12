@@ -5,10 +5,11 @@ Button component which provides styles for **`<button></button>`**
 ***
 
 ## Example
-
-	<zoo-button>
-		<button type="button" disabled>Disabled :(</button>
-	</zoo-button>
+```HTML
+<zoo-button>
+	<button type="button" disabled>Disabled :(</button>
+</zoo-button>
+```
 
 The above will render to:
 

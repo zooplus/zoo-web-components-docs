@@ -17,14 +17,7 @@ body {
 	margin: 15px 25px;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-	font-size: 1rem;
-	font-weight: 400;
-	line-height: 1.5;
-	color: #212529;
-	text-align: left;
-	background-color: #fff;
 }
-
 
 .content {
 	width: 80%;
@@ -37,10 +30,21 @@ body {
 	height: min-content;
 }
 
-.header {
+.menu a {
 	display: block;
-	padding: 0 0 5px 5px;
+	padding: 0 0 0.7rem 0;
 	width: max-content;
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+h1 a, .menu a, .menu h1 {
+	color: var(--primary-mid);
+	text-decoration: none;
+}
+
+h1 a:hover, .menu a:hover {
+	color: var(--primary-dark);
 }
 
 thead {
@@ -49,30 +53,10 @@ thead {
 	border-color: #dee2e6;
 }
 
-th {
-	border: 1px solid #dee2e6;
-}
-
-td {
-	border: 1px solid #dee2e6;
-}
-
 th,
 td {
 	padding: 0.75rem;
 	border: 1px solid #dee2e6;
-}
-
-pre {
-	background: #f8f8f8;
-}
-
-pre code {
-	display: block;
-	word-break: normal;
-	word-wrap: break-word;
-	overflow: auto;
-	padding: 10px;
 }
 
 blockquote {
@@ -83,19 +67,18 @@ blockquote {
 	quotes: "\201C""\201D""\2018""\2019";
 }
 
-label {
-	margin-bottom: revert;
+code {
+	padding: .2rem .5rem;
+	margin: 0 .2rem;
+	font-size: 90%;
+	white-space: nowrap;
+	background: #F1F1F1;
+	border: 1px solid #E1E1E1;
+	border-radius: 4px;
 }
 
-zoo-link a {
-	color: revert;
-}
-
-zoo-link a:hover {
-	text-decoration: revert;
-	color: revert;
-}
-
-button {
-	border-radius: 5px;
+pre>code {
+	display: block;
+	padding: 1rem 1.5rem;
+	white-space: pre;
 }

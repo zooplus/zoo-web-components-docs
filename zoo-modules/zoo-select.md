@@ -22,7 +22,7 @@ Select component which provides styles for slotted **`<select>...</select>`**
 The above will render to:
 
 <zoo-select>
-	<select slot="select">
+	<select id="zoo-select" slot="select">
 		<option value="value1">Dog</option>
 		<option value="value2">Cat</option>
 		<option value="value3">Small Pet</option>

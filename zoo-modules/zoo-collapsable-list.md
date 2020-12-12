@@ -7,16 +7,16 @@ Container component which provides styles for slotted content.
 ## Example usage
 
 ```HTML
-	<zoo-collapsable-list>
-		<zoo-collapsable-list-item>
-			<span slot="header">Header1</span>
-			<div slot="content">content</div>
-		</zoo-collapsable-list-item>
-		<zoo-collapsable-list-item>
-			<span slot="header">Header2</span>
-			<div slot="content">content</div>
-		</zoo-collapsable-list-item>
-	</zoo-collapsable-list>
+<zoo-collapsable-list>
+	<zoo-collapsable-list-item>
+		<span slot="header">Header1</span>
+		<div slot="content">content</div>
+	</zoo-collapsable-list-item>
+	<zoo-collapsable-list-item>
+		<span slot="header">Header2</span>
+		<div slot="content">content</div>
+	</zoo-collapsable-list-item>
+</zoo-collapsable-list>
 ```
 
 ### Rendered

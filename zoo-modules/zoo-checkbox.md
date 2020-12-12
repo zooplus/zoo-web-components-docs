@@ -6,16 +6,18 @@ Checkbox component which provides styles for **`<input type="checkbox"/>`**
 
 ## Example usage
 
-	<zoo-checkbox highlighted>
-		<input id="checkbox-id" slot="checkbox" type="checkbox"/>
-		<label for="checkbox-id" slot="label">An example checkbox</label>
-	</zoo-checkbox>
+```HTML
+<zoo-checkbox highlighted>
+	<input id="checkbox-id" slot="checkbox" type="checkbox"/>
+	<label for="checkbox-id" slot="label">An example checkbox</label>
+</zoo-checkbox>
+```
 
 The above will render to:
 
 <zoo-checkbox highlighted>
 	<input id="checkbox-id" slot="checkbox" type="checkbox"/>
-	<label htmlFor="checkbox-id" slot="label">An example checkbox</label>
+	<label for="checkbox-id" slot="label">An example checkbox</label>
 </zoo-checkbox>
 
 ## Attributes

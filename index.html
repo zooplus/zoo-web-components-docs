@@ -1,29 +1,25 @@
-<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/default.min.css">
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="prism.css">
 	<script src="zoo-web-components.js"></script>
 	<title>Zoo web components documentation</title>
 </head>
 
 <body>
-
 	
     <div class="menu">
-        <h2>Zoo web components</h2>
-		<a class="header" href="#button">Button</a><a class="header" href="#checkbox">Checkbox</a><a class="header" href="#collapsable-list">Collapsable List</a><a class="header" href="#feedback">Feedback</a><a class="header" href="#footer">Footer</a><a class="header" href="#grid">Grid</a><a class="header" href="#header">Header</a><a class="header" href="#input">Input</a><a class="header" href="#link">Link</a><a class="header" href="#modal">Modal</a><a class="header" href="#navigation">Navigation</a><a class="header" href="#quantity-control">Quantity Control</a><a class="header" href="#radio">Radio</a><a class="header" href="#searchable-select">Searchable Select</a><a class="header" href="#select">Select</a><a class="header" href="#spinner">Spinner</a><a class="header" href="#theming">Theming</a><a class="header" href="#toast">Toast</a><a class="header" href="#toggle-switch">Toggle Switch</a><a class="header" href="#tooltip">Tooltip</a>
+        <h1>Zoo web components</h1>
+		<a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#theming">Theming</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a>
 	</div>
     <div class="content">
-        <div class="component"><h1 id="button"><a href="#button">Button</a></h1>
-<p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
+        <h1 id=button><a href="#button">Button</a></h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
 <hr>
-<h2 id="example">Example</h2>
-<pre><code>&lt;zoo-button&gt;
+<h2>Example</h2><pre><code class="language-HTML">&lt;zoo-button&gt;
     &lt;button type=&quot;button&quot; disabled&gt;Disabled :(&lt;/button&gt;
 &lt;/zoo-button&gt;</code></pre>
 <p>The above will render to:</p>
@@ -31,8 +27,7 @@
     <button type="button" disabled>Disabled :(</button>
 </zoo-button>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -57,8 +52,7 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -90,8 +84,7 @@
 <td align="right"><code>#CC4E00</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -105,22 +98,19 @@
 <td align="center">&#10005;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="checkbox"><a href="#checkbox">Checkbox</a></h1>
-<p>Checkbox component which provides styles for <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
+<h1 id=checkbox><a href="#checkbox">Checkbox</a></h1><p>Checkbox component which provides styles for <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code>&lt;zoo-checkbox highlighted&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-checkbox highlighted&gt;
     &lt;input id=&quot;checkbox-id&quot; slot=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt;
     &lt;label for=&quot;checkbox-id&quot; slot=&quot;label&quot;&gt;An example checkbox&lt;/label&gt;
 &lt;/zoo-checkbox&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-checkbox highlighted>
     <input id="checkbox-id" slot="checkbox" type="checkbox"/>
-    <label htmlFor="checkbox-id" slot="label">An example checkbox</label>
+    <label for="checkbox-id" slot="label">An example checkbox</label>
 </zoo-checkbox>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -145,8 +135,7 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -162,8 +151,7 @@
 <td align="center"><code>#FF6200</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -192,22 +180,19 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="collapsable-list"><a href="#collapsable-list">Collapsable List</a></h1>
-<p>Container component which provides styles for slotted content.</p>
+<h1 id=collapsable-list><a href="#collapsable-list">Collapsable List</a></h1><p>Container component which provides styles for slotted content.</p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">    &lt;zoo-collapsable-list&gt;
-        &lt;zoo-collapsable-list-item&gt;
-            &lt;span slot=&quot;header&quot;&gt;Header1&lt;/span&gt;
-            &lt;div slot=&quot;content&quot;&gt;content&lt;/div&gt;
-        &lt;/zoo-collapsable-list-item&gt;
-        &lt;zoo-collapsable-list-item&gt;
-            &lt;span slot=&quot;header&quot;&gt;Header2&lt;/span&gt;
-            &lt;div slot=&quot;content&quot;&gt;content&lt;/div&gt;
-        &lt;/zoo-collapsable-list-item&gt;
-    &lt;/zoo-collapsable-list&gt;</code></pre>
-<h3 id="rendered">Rendered</h3>
-<zoo-collapsable-list>
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-collapsable-list&gt;
+    &lt;zoo-collapsable-list-item&gt;
+        &lt;span slot=&quot;header&quot;&gt;Header1&lt;/span&gt;
+        &lt;div slot=&quot;content&quot;&gt;content&lt;/div&gt;
+    &lt;/zoo-collapsable-list-item&gt;
+    &lt;zoo-collapsable-list-item&gt;
+        &lt;span slot=&quot;header&quot;&gt;Header2&lt;/span&gt;
+        &lt;div slot=&quot;content&quot;&gt;content&lt;/div&gt;
+    &lt;/zoo-collapsable-list-item&gt;
+&lt;/zoo-collapsable-list&gt;</code></pre>
+<h3>Rendered</h3><zoo-collapsable-list>
     <zoo-collapsable-list-item>
         <span slot="header">Header1</span>
         <div slot="content">content</div>
@@ -218,8 +203,7 @@
     </zoo-collapsable-list-item>
 </zoo-collapsable-list>
 
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -235,8 +219,7 @@
 <td align="center"><code>#286400</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -260,22 +243,18 @@
 <td align="center">&#10005;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="feedback"><a href="#feedback">Feedback</a></h1>
-<p>Container component which provides a styled container with preset icon.</p>
+<h1 id=feedback><a href="#feedback">Feedback</a></h1><p>Container component which provides a styled container with preset icon.</p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;div style=&quot;height: 50px; width: auto&quot;&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;height: 50px; width: auto&quot;&gt;
     &lt;zoo-feedback&gt;
         This is an info message.
     &lt;/zoo-feedback&gt;
 &lt;/div&gt;</code></pre>
-<h3 id="rendered">Rendered</h3>
-<div style="height: 50px; width: auto">
+<h3>Rendered</h3><div style="height: 50px; width: auto">
     <zoo-feedback>This is an info message.</zoo-feedback>
 </div>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -293,8 +272,7 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -326,8 +304,7 @@
 <td align="left"><code>#ED1C24</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -341,11 +318,9 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="footer"><a href="#footer">Footer</a></h1>
-<p>Container footer component.</p>
+<h1 id=footer><a href="#footer">Footer</a></h1><p>Container footer component.</p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-footer copyright=&quot;zooplus AG&quot;&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-footer copyright=&quot;zooplus AG&quot;&gt;
     &lt;zoo-link type=&quot;negative&quot;&gt;
         &lt;a slot=&quot;anchor&quot; href=&quot;https://github.com/zooplus/zoo-web-components&quot;&gt;Github&lt;/a&gt;
     &lt;/zoo-link&gt;
@@ -363,8 +338,7 @@
     </zoo-link>
 </zoo-footer>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -382,8 +356,7 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -399,8 +372,7 @@
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -414,11 +386,9 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="grid"><a href="#grid">Grid</a></h1>
-<p>Grid component.</p>
+<h1 id=grid><a href="#grid">Grid</a></h1><p>Grid component.</p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;div style=&quot;margin: 30px;box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)&quot;&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;margin: 30px;box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)&quot;&gt;
     &lt;zoo-grid currentpage=&quot;3&quot; maxpages=&quot;20&quot; reorderable stickyheader&gt;
         &lt;zoo-grid-header slot=&quot;headercell&quot; sortable=&quot;true&quot; sortableproperty=&quot;createdDate&quot;&gt;Created date&lt;/zoo-grid-header&gt;
         &lt;zoo-grid-header slot=&quot;headercell&quot; sortable=&quot;true&quot; sortableproperty=&quot;minWeight&quot;&gt;Min weight&lt;/zoo-grid-header&gt;
@@ -460,8 +430,7 @@
     </zoo-grid>
 </div>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -514,8 +483,7 @@
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS variables</h2>
-<table>
+<h2>CSS variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -544,8 +512,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <pre><code class="language-CSS"> zoo-grid div[column=&quot;1&quot;] {
     min-width: 150px;
  }</code></pre>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -579,8 +546,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h3 id="zoo-grid-header-attributes">zoo-grid-header attributes</h3>
-<table>
+<h3>zoo-grid-header attributes</h3><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -605,8 +571,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003; - when <code>sortable</code> is not set</td>
 </tr>
 </tbody></table>
-<h2 id="events">Events</h2>
-<table>
+<h2>Events</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -641,11 +606,9 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <ul>
 <li><code>pageNumber</code> - number of the page user wants to go to</li>
 </ul>
-</div><div class="component"><h1 id="header"><a href="#header">Header</a></h1>
-<p>Container header component.</p>
+<h1 id=header><a href="#header">Header</a></h1><p>Container header component.</p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-header&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-header&gt;
     &lt;img slot=&quot;img&quot; alt=&quot;Zooplus logo&quot; src=&quot;https://zooplus.github.io/zoo-web-components/logo.png&quot;/&gt;
     &lt;h2 slot=&quot;headertext&quot;&gt;Zooplus web components&lt;/h2&gt;
     &lt;zoo-button size=&quot;medium&quot; style=&quot;margin-left: 50px&quot;&gt;
@@ -661,8 +624,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     </zoo-button>
 </zoo-header>
 
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -674,8 +636,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -699,11 +660,9 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="input"><a href="#input">Input</a></h1>
-<p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
+<h1 id=input><a href="#input">Input</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code>&lt;zoo-input&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-input&gt;
     &lt;input id=&quot;input-type-text&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;input&quot;/&gt;
     &lt;label for=&quot;input-type-text&quot; slot=&quot;label&quot;&gt;Input type text&lt;/label&gt;
     &lt;span slot=&quot;info&quot;&gt;Additional helpful information for our users&lt;/span&gt;
@@ -717,8 +676,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-input>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -736,8 +694,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -761,8 +718,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center"><code>#ED1C24</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -796,11 +752,9 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="link"><a href="#link">Link</a></h1>
-<p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
+<h1 id=link><a href="#link">Link</a></h1><p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;div style=&quot;height: 10px; width: auto&quot;&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;height: 10px; width: auto&quot;&gt;
     &lt;zoo-link type=&quot;primary&quot;&gt;
         &lt;a slot=&quot;anchor&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot;&gt;Zoo web components&lt;/a&gt;
     &lt;/zoo-link&gt;
@@ -812,8 +766,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     </zoo-link>
 </div>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -838,8 +791,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -863,8 +815,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center"><code>#BD161C</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -888,12 +839,10 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="modal"><a href="#modal">Modal</a></h1>
-<p>Container component which provides styles for modal and slotted content.
+<h1 id=modal><a href="#modal">Modal</a></h1><p>Container component which provides styles for modal and slotted content.
 Modal visibility must be controlled by the client.</p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-modal style=&quot;display: none&quot;&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-modal style=&quot;display: none&quot;&gt;
     &lt;span slot=&quot;header&quot;&gt;Your basket contains licensed items&lt;/span&gt;
     &lt;div&gt;
         &lt;zoo-feedback&gt;This is an info message. Only one coupon can be accepted with each order.&lt;/zoo-feedback&gt;
@@ -908,8 +857,7 @@ Modal visibility must be controlled by the client.</p>
         &lt;/zoo-button&gt;
     &lt;/div&gt;
 &lt;/zoo-modal&gt;</code></pre>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -921,8 +869,7 @@ Modal visibility must be controlled by the client.</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -941,11 +888,9 @@ Modal visibility must be controlled by the client.</p>
 <td align="center">&#10005;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="navigation"><a href="#navigation">Navigation</a></h1>
-<p>Container component which provides styles for slotted content.</p>
+<h1 id=navigation><a href="#navigation">Navigation</a></h1><p>Container component which provides styles for slotted content.</p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-navigation&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-navigation&gt;
     &lt;div&gt;
         &lt;zoo-link type=&quot;negative&quot;&gt;
             &lt;a slot=&quot;anchor&quot; href=&quot;https://github.com/zooplus/zoo-web-components&quot;&gt;Github&lt;/a&gt;
@@ -967,8 +912,7 @@ Modal visibility must be controlled by the client.</p>
     </div>
 </zoo-navigation>
 
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -984,8 +928,7 @@ Modal visibility must be controlled by the client.</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -999,8 +942,7 @@ Modal visibility must be controlled by the client.</p>
 <td align="center">&#10005;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="quantity-control"><a href="#quantity-control">Quantity Control</a></h1>
-<p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
+<h1 id=quantity-control><a href="#quantity-control">Quantity Control</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
 <hr>
 <blockquote>
 <p>Webkit based browsers (Chrome/Safari) do not support hiding native number scroll on <code>input type=&quot;number&quot;</code>,
@@ -1009,20 +951,19 @@ when supplying such input for this component remember to add:</p>
 <pre><code class="language-CSS">input::-webkit-outer-spin-button, zoo-quantity-control input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }</code></pre>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">    &lt;zoo-quantity-control&gt;
-        &lt;button type=&quot;button&quot; slot=&quot;decrease&quot; title=&quot;decrease&quot;&gt;
-            &lt;svg height=&quot;18&quot; width=&quot;18&quot;&gt;&lt;line y1=&quot;9&quot; x1=&quot;0&quot; x2=&quot;18&quot; y2=&quot;9&quot;&gt;&lt;/line&gt;&lt;/svg&gt;
-        &lt;/button&gt;
-        &lt;input id=&quot;number-input&quot; slot=&quot;input&quot; readonly placeholder=&quot;0&quot; type=&quot;number&quot; step=&quot;50&quot;/&gt;
-        &lt;label for=&quot;number-input&quot; slot=&quot;label&quot;&gt;Label&lt;/label&gt;
-        &lt;button type=&quot;button&quot; slot=&quot;increase&quot; title=&quot;increase&quot;&gt;
-            &lt;svg height=&quot;18&quot; width=&quot;18&quot;&gt;
-                &lt;line y1=&quot;0&quot; x1=&quot;9&quot; x2=&quot;9&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
-                &lt;line y1=&quot;9&quot; x1=&quot;0&quot; x2=&quot;18&quot; y2=&quot;9&quot;&gt;&lt;/line&gt;
-            &lt;/svg&gt;
-        &lt;/button&gt;
-    &lt;/zoo-quantity-control&gt;</code></pre>
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-quantity-control&gt;
+    &lt;button type=&quot;button&quot; slot=&quot;decrease&quot; title=&quot;decrease&quot;&gt;
+        &lt;svg height=&quot;18&quot; width=&quot;18&quot;&gt;&lt;line y1=&quot;9&quot; x1=&quot;0&quot; x2=&quot;18&quot; y2=&quot;9&quot;&gt;&lt;/line&gt;&lt;/svg&gt;
+    &lt;/button&gt;
+    &lt;input id=&quot;number-input&quot; slot=&quot;input&quot; readonly placeholder=&quot;0&quot; type=&quot;number&quot; step=&quot;50&quot;/&gt;
+    &lt;label for=&quot;number-input&quot; slot=&quot;label&quot;&gt;Label&lt;/label&gt;
+    &lt;button type=&quot;button&quot; slot=&quot;increase&quot; title=&quot;increase&quot;&gt;
+        &lt;svg height=&quot;18&quot; width=&quot;18&quot;&gt;
+            &lt;line y1=&quot;0&quot; x1=&quot;9&quot; x2=&quot;9&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
+            &lt;line y1=&quot;9&quot; x1=&quot;0&quot; x2=&quot;18&quot; y2=&quot;9&quot;&gt;&lt;/line&gt;
+        &lt;/svg&gt;
+    &lt;/button&gt;
+&lt;/zoo-quantity-control&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-quantity-control>
     <button type="button" slot="decrease" title="decrease">
@@ -1038,8 +979,7 @@ when supplying such input for this component remember to add:</p>
     </button>
 </zoo-quantity-control>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1057,8 +997,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1070,8 +1009,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1110,11 +1048,9 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="radio"><a href="#radio">Radio</a></h1>
-<p>Radio component which provides styles for <strong><code>&lt;input type=&quot;radio&quot;/&gt;</code></strong> and associated <strong><code>&lt;label&gt;&lt;/label&gt;</code></strong></p>
+<h1 id=radio><a href="#radio">Radio</a></h1><p>Radio component which provides styles for <strong><code>&lt;input type=&quot;radio&quot;/&gt;</code></strong> and associated <strong><code>&lt;label&gt;&lt;/label&gt;</code></strong></p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-radio&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-radio&gt;
     &lt;span slot=&quot;label&quot;&gt;Radio group&lt;/span&gt;
 
     &lt;input type=&quot;radio&quot; id=&quot;contactChoice1&quot; name=&quot;contact&quot; value=&quot;email&quot;&gt;
@@ -1138,8 +1074,7 @@ when supplying such input for this component remember to add:</p>
     <span slot="info">Additional information</span>
 </zoo-radio>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1157,8 +1092,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1174,8 +1108,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#ED1C24</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1204,11 +1137,9 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="searchable-select"><a href="#searchable-select">Searchable Select</a></h1>
-<p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+<h1 id=searchable-select><a href="#searchable-select">Searchable Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-searchable-select&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-searchable-select&gt;
     &lt;span slot=&quot;legend&quot;&gt;Searchable select legend&lt;/span&gt;
 
     &lt;select id=&quot;searchable-select&quot; slot=&quot;select&quot;&gt;
@@ -1238,8 +1169,7 @@ when supplying such input for this component remember to add:</p>
     <label for="inserted-input" slot="inputlabel">Searchable input</label>
 </zoo-searchable-select>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1261,8 +1191,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1311,11 +1240,9 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10005;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="select"><a href="#select">Select</a></h1>
-<p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+<h1 id=select><a href="#select">Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-select&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-select&gt;
     &lt;select id=&quot;zoo-select&quot; slot=&quot;select&quot;&gt;
         &lt;option value=&quot;value1&quot;&gt;Dog&lt;/option&gt;
         &lt;option value=&quot;value2&quot;&gt;Cat&lt;/option&gt;
@@ -1327,7 +1254,7 @@ when supplying such input for this component remember to add:</p>
 &lt;/zoo-select&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-select>
-    <select slot="select">
+    <select id="zoo-select" slot="select">
         <option value="value1">Dog</option>
         <option value="value2">Cat</option>
         <option value="value3">Small Pet</option>
@@ -1337,8 +1264,7 @@ when supplying such input for this component remember to add:</p>
     <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-select>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1370,8 +1296,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1395,8 +1320,7 @@ when supplying such input for this component remember to add:</p>
 <td align="left"><code>#ED1C24</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1435,23 +1359,19 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="spinner"><a href="#spinner">Spinner</a></h1>
-<p>Spinner svg.</p>
+<h1 id=spinner><a href="#spinner">Spinner</a></h1><p>Spinner svg.</p>
 <hr>
 <blockquote>
 <p>Spinner has <code>position: absolute</code>, you have to place it inside an element with <code>position: relative</code>.</p>
 </blockquote>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;div style=&quot;position: relative; height: 100px; width: auto&quot;&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;position: relative; height: 100px; width: auto&quot;&gt;
     &lt;zoo-spinner&gt;&lt;/zoo-spinner&gt;
 &lt;/div&gt;</code></pre>
-<h2 id="rendered">Rendered</h2>
-<div style="position: relative; height: 100px; width: auto">
+<h2>Rendered</h2><div style="position: relative; height: 100px; width: auto">
     <zoo-spinner></zoo-spinner>
 </div>
 
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1463,10 +1383,8 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="theming"><a href="#theming">Theming</a></h1>
-<p>The following CSS Custom Properties can be overriden by the user.</p>
-<h2 id="css-variables">CSS variables</h2>
-<pre><code>--primary-ultralight - `#EBF4E5`;
+<h1 id=theming><a href="#theming">Theming</a></h1><p>The following CSS Custom Properties can be overriden by the user.</p>
+<h2>CSS variables</h2><pre><code>--primary-ultralight - `#EBF4E5`;
 --primary-light - `#66B100`;
 --primary-mid - `#3C9700`;
 --primary-dark - `#286400`;
@@ -1482,15 +1400,12 @@ when supplying such input for this component remember to add:</p>
 --warning-ultralight - `#FDE8E9`;
 --warning-mid - `#ED1C24`;
 --warning-dark - `#BD161C`;</code></pre>
-</div><div class="component"><h1 id="toast"><a href="#toast">Toast</a></h1>
-<p>Container component which has fly-in/out animations. It can be controlled via exported functions.</p>
+<h1 id=toast><a href="#toast">Toast</a></h1><p>Container component which has fly-in/out animations. It can be controlled via exported functions.</p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-toast&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toast&gt;
     &lt;span slot=&quot;content&quot;&gt;This is an info message.&lt;/span&gt;
 &lt;/zoo-toast&gt;</code></pre>
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1515,8 +1430,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1548,8 +1462,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2 id="functions">Functions</h2>
-<table>
+<h2>Functions</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1568,8 +1481,7 @@ when supplying such input for this component remember to add:</p>
 <td align="left"><code>document.querySelector(&#39;#zoo-toast&#39;).hide();</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1583,11 +1495,9 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="toggle-switch"><a href="#toggle-switch">Toggle Switch</a></h1>
-<p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
+<h1 id=toggle-switch><a href="#toggle-switch">Toggle Switch</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-toggle-switch&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toggle-switch&gt;
     &lt;label for=&quot;input-toggle&quot; slot=&quot;label&quot;&gt;Toggle switch&lt;/label&gt;
     &lt;input id=&quot;input-toggle&quot; slot=&quot;input&quot; type=&quot;checkbox&quot;/&gt;
 &lt;/zoo-toggle-switch&gt;</code></pre>
@@ -1597,8 +1507,7 @@ when supplying such input for this component remember to add:</p>
     <input id="input-toggle" slot="input" type="checkbox"/>
 </zoo-toggle-switch>
 
-<h2 id="css-variables">CSS Variables</h2>
-<table>
+<h2>CSS Variables</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1610,8 +1519,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center"><code>#3C9700</code></td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1640,11 +1548,9 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div><div class="component"><h1 id="tooltip"><a href="#tooltip">Tooltip</a></h1>
-<p>Tooltip component.</p>
+<h1 id=tooltip><a href="#tooltip">Tooltip</a></h1><p>Tooltip component.</p>
 <hr>
-<h2 id="example-usage">Example usage</h2>
-<pre><code class="language-HTML">&lt;zoo-button&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-button&gt;
     &lt;button type=&quot;button&quot;&gt;
         Button
         &lt;zoo-tooltip position=&quot;bottom&quot;&gt;Tooltip text&lt;/zoo-tooltip&gt;
@@ -1658,8 +1564,7 @@ when supplying such input for this component remember to add:</p>
     </button>
 </zoo-button>
 
-<h2 id="attributes">Attributes</h2>
-<table>
+<h2>Attributes</h2><table>
 <thead>
 <tr>
 <th align="left"><strong>Name</strong></th>
@@ -1677,8 +1582,7 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-<h2 id="slots">Slots</h2>
-<table>
+<h2>Slots</h2><table>
 <thead>
 <tr>
 <th align="center"><strong>Name</strong></th>
@@ -1692,11 +1596,10 @@ when supplying such input for this component remember to add:</p>
 <td align="center">&#10003;</td>
 </tr>
 </tbody></table>
-</div>
+
     </div>
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="prism.js"></script>
 </body>
 
 </html>

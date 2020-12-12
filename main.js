@@ -1,1 +1,0 @@
-import '@zooplus/zoo-web-components';

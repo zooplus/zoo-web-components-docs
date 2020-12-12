@@ -23,6 +23,16 @@ renderer.heading = (text, level) => {
     }
 }
 
+renderer.table = (header, body) => {
+    while(header.indexOf('align') > -1) {
+        header = header.replace('align', 'class');
+    }
+    while(body.indexOf('align') > -1) {
+        body = body.replace('align', 'class');
+    }
+    return `<table><thead>${header}</thead> <tbody>${body}</tbody></table>`;
+}
+
 marked.setOptions({
     renderer
 });

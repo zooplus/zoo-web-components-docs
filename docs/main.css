@@ -82,3 +82,15 @@ pre>code {
 	padding: 1rem 1.5rem;
 	white-space: pre;
 }
+
+.center {
+	text-align: center;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}

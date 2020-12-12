@@ -28,14 +28,14 @@ The above will render to:
 
 <zoo-searchable-select>
 	<span slot="legend">Searchable select legend</span>
-	<select id="searchable-select" slot="select">
+	<select id="some-searchable-select-id" slot="select">
 		<option value="" selected="" disabled="">Please choose an option</option>
 		<option value="dog">Dog</option>
 		<option value="cat">Cat</option>
 		<option value="smallPet">Small Pet</option>
 		<option value="aquatic">Aquatic</option>
 	</select>
-	<label slot="selectlabel" for="searchable-select">Searchable select</label>
+	<label slot="selectlabel" for="some-searchable-select-id">Searchable select</label>
 	<input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
 	<label for="inserted-input" slot="inputlabel">Searchable input</label>
 </zoo-searchable-select>

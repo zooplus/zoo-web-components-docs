@@ -27,78 +27,66 @@
     <button type="button" disabled>Disabled :(</button>
 </zoo-button>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>type</code></td>
-<td align="left">primary, secondary, hollow</td>
-<td align="left">text</td>
-<td align="left"><code>primary</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="center"><code>type</code></td>
+<td class="left">primary, secondary, hollow</td>
+<td class="left">text</td>
+<td class="left"><code>primary</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="center"><code>size</code></td>
-<td align="left">small, medium</td>
-<td align="left">text</td>
-<td align="left"><code>small</code></td>
-<td align="center">&#10003;</td>
+<td class="center"><code>size</code></td>
+<td class="left">small, medium</td>
+<td class="left">text</td>
+<td class="left"><code>small</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="right"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="right"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-light</code></td>
-<td align="right"><code>#66B100</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-light</code></td>
+<td class="right"><code>#66B100</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="right"><code>#3C9700</code></td>
+<td class="left"><code>--primary-mid</code></td>
+<td class="right"><code>#3C9700</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-dark</code></td>
-<td align="right"><code>#286400</code></td>
+<td class="left"><code>--primary-dark</code></td>
+<td class="right"><code>#286400</code></td>
 </tr>
 <tr>
-<td align="left"><code>--secondary-light</code></td>
-<td align="right"><code>#FF8800</code></td>
+<td class="left"><code>--secondary-light</code></td>
+<td class="right"><code>#FF8800</code></td>
 </tr>
 <tr>
-<td align="left"><code>--secondary-mid</code></td>
-<td align="right"><code>#FF6200</code></td>
+<td class="left"><code>--secondary-mid</code></td>
+<td class="right"><code>#FF6200</code></td>
 </tr>
 <tr>
-<td align="left"><code>--secondary-dark</code></td>
-<td align="right"><code>#CC4E00</code></td>
+<td class="left"><code>--secondary-dark</code></td>
+<td class="right"><code>#CC4E00</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="center"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="center"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="center"><strong><code>&lt;button&gt;</code></strong> element with arbitrary content inside</td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="center"></td>
+<td class="center"><strong><code>&lt;button&gt;</code></strong> element with arbitrary content inside</td>
+<td class="center">&#10005;</td>
 </tr>
-</tbody></table>
-<h1 id=checkbox><a href="#checkbox">Checkbox</a></h1><p>Checkbox component which provides styles for <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
+</tbody></table><h1 id=checkbox><a href="#checkbox">Checkbox</a></h1><p>Checkbox component which provides styles for <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-checkbox highlighted&gt;
     &lt;input id=&quot;checkbox-id&quot; slot=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt;
@@ -110,77 +98,65 @@
     <label for="checkbox-id" slot="label">An example checkbox</label>
 </zoo-checkbox>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>invalid</code></td>
-<td align="left">flag which indicates whether the input is valid or not</td>
-<td align="left">boolean</td>
-<td align="left"><code>null</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>invalid</code></td>
+<td class="left">flag which indicates whether the input is valid or not</td>
+<td class="left">boolean</td>
+<td class="left"><code>null</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>highlighted</code></td>
-<td align="left">flag indicating whether the border around the input is visible</td>
-<td align="left">boolean</td>
-<td align="left"><code>null</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>highlighted</code></td>
+<td class="left">flag indicating whether the border around the input is visible</td>
+<td class="left">boolean</td>
+<td class="left"><code>null</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+</thead> <tbody><tr>
+<td class="center"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
 <tr>
-<td align="center"><code>--warning-mid</code></td>
-<td align="center"><code>#FF6200</code></td>
+<td class="center"><code>--warning-mid</code></td>
+<td class="center"><code>#FF6200</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>checkbox</code></td>
-<td align="left"><code>&lt;input id=&quot;checkbox-id&quot; slot=&quot;checkbox&quot; type=&quot;checkbox/&gt;</code></td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="left"><code>checkbox</code></td>
+<td class="left"><code>&lt;input id=&quot;checkbox-id&quot; slot=&quot;checkbox&quot; type=&quot;checkbox/&gt;</code></td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>label</code></td>
-<td align="left"><code>&lt;label for=&quot;checkbox-id&quot; slot=&quot;label&quot;&gt;An example checkbox&lt;/label&gt;</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>label</code></td>
+<td class="left"><code>&lt;label for=&quot;checkbox-id&quot; slot=&quot;label&quot;&gt;An example checkbox&lt;/label&gt;</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>info</code></td>
-<td align="left">accepts any element, foe example <code>span</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>info</code></td>
+<td class="left">accepts any element, foe example <code>span</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>error</code></td>
-<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>error</code></td>
+<td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=collapsable-list><a href="#collapsable-list">Collapsable List</a></h1><p>Container component which provides styles for slotted content.</p>
+</tbody></table><h1 id=collapsable-list><a href="#collapsable-list">Collapsable List</a></h1><p>Container component which provides styles for slotted content.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-collapsable-list&gt;
     &lt;zoo-collapsable-list-item&gt;
@@ -203,47 +179,39 @@
     </zoo-collapsable-list-item>
 </zoo-collapsable-list>
 
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+<h2>CSS Variables</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+</thead> <tbody><tr>
+<td class="center"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
 <tr>
-<td align="center"><code>--primary-dark</code></td>
-<td align="center"><code>#286400</code></td>
+<td class="center"><code>--primary-dark</code></td>
+<td class="center"><code>#286400</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"></td>
-<td align="left">injected element must be <code>zoo-collapsable-list-item</code>, which accepts <code>header</code> and <code>content</code> slots</td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="left"></td>
+<td class="left">injected element must be <code>zoo-collapsable-list-item</code>, which accepts <code>header</code> and <code>content</code> slots</td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>header</code></td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10005;</td>
+<td class="left"><code>header</code></td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>content</code></td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10005;</td>
+<td class="left"><code>content</code></td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10005;</td>
 </tr>
-</tbody></table>
-<h1 id=feedback><a href="#feedback">Feedback</a></h1><p>Container component which provides a styled container with preset icon.</p>
+</tbody></table><h1 id=feedback><a href="#feedback">Feedback</a></h1><p>Container component which provides a styled container with preset icon.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;height: 50px; width: auto&quot;&gt;
     &lt;zoo-feedback&gt;
@@ -254,71 +222,59 @@
     <zoo-feedback>This is an info message.</zoo-feedback>
 </div>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>type</code></td>
-<td align="left"><code>info</code>, <code>error</code>, <code>success</code></td>
-<td align="left">text</td>
-<td align="left"><code>info</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>type</code></td>
+<td class="left"><code>info</code>, <code>error</code>, <code>success</code></td>
+<td class="left">text</td>
+<td class="left"><code>info</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-ultralight</code></td>
-<td align="left"><code>#EBF4E5</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-ultralight</code></td>
+<td class="left"><code>#EBF4E5</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="left"><code>#3C9700</code></td>
+<td class="left"><code>--primary-mid</code></td>
+<td class="left"><code>#3C9700</code></td>
 </tr>
 <tr>
-<td align="left"><code>--info-ultralight</code></td>
-<td align="left"><code>#ECF5FA</code></td>
+<td class="left"><code>--info-ultralight</code></td>
+<td class="left"><code>#ECF5FA</code></td>
 </tr>
 <tr>
-<td align="left"><code>--info-mid</code></td>
-<td align="left"><code>#459FD0</code></td>
+<td class="left"><code>--info-mid</code></td>
+<td class="left"><code>#459FD0</code></td>
 </tr>
 <tr>
-<td align="left"><code>--warning-ultralight</code></td>
-<td align="left"><code>#FDE8E9</code></td>
+<td class="left"><code>--warning-ultralight</code></td>
+<td class="left"><code>#FDE8E9</code></td>
 </tr>
 <tr>
-<td align="left"><code>--warning-mid</code></td>
-<td align="left"><code>#ED1C24</code></td>
+<td class="left"><code>--warning-mid</code></td>
+<td class="left"><code>#ED1C24</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="center"></td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=footer><a href="#footer">Footer</a></h1><p>Container footer component.</p>
+</tbody></table><h1 id=footer><a href="#footer">Footer</a></h1><p>Container footer component.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-footer copyright=&quot;zooplus AG&quot;&gt;
     &lt;zoo-link type=&quot;negative&quot;&gt;
@@ -338,55 +294,43 @@
     </zoo-link>
 </zoo-footer>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Type</strong></th>
-<th align="center"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Type</strong></th>
+<th class="center"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>copyright</code></td>
-<td align="left">arbitrary text to show in bottom left corner</td>
-<td align="center">text</td>
-<td align="center"></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>copyright</code></td>
+<td class="left">arbitrary text to show in bottom left corner</td>
+<td class="center">text</td>
+<td class="center"></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-light</code></td>
-<td align="center"><code>#66B100</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-light</code></td>
+<td class="center"><code>#66B100</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+<td class="left"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="center"></td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=grid><a href="#grid">Grid</a></h1><p>Grid component.</p>
+</tbody></table><h1 id=grid><a href="#grid">Grid</a></h1><p>Grid component.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;margin: 30px;box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)&quot;&gt;
     &lt;zoo-grid currentpage=&quot;3&quot; maxpages=&quot;20&quot; reorderable stickyheader&gt;
@@ -430,76 +374,68 @@
     </zoo-grid>
 </div>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left">loading</td>
-<td align="left">flag which indicates whether to show loader inside grid</td>
-<td align="left">boolean</td>
-<td align="left">false</td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left">loading</td>
+<td class="left">flag which indicates whether to show loader inside grid</td>
+<td class="left">boolean</td>
+<td class="left">false</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left">stickyheader</td>
-<td align="left">flag which indicates whether grid&#39;s header should be sticky when scrolling</td>
-<td align="left">boolean</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
+<td class="left">stickyheader</td>
+<td class="left">flag which indicates whether grid&#39;s header should be sticky when scrolling</td>
+<td class="left">boolean</td>
+<td class="left"></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left">resizable</td>
-<td align="left">flag which indicates whether grid columns should be resizable</td>
-<td align="left">boolean</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
+<td class="left">resizable</td>
+<td class="left">flag which indicates whether grid columns should be resizable</td>
+<td class="left">boolean</td>
+<td class="left"></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left">reorderable</td>
-<td align="left">flag which indicates whether grid&#39;s column should be reorderable</td>
-<td align="left">boolean</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
+<td class="left">reorderable</td>
+<td class="left">flag which indicates whether grid&#39;s column should be reorderable</td>
+<td class="left">boolean</td>
+<td class="left"></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left">currentpage</td>
-<td align="left">current page that the user is on, mandatory only when using paginator</td>
-<td align="left">number</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
+<td class="left">currentpage</td>
+<td class="left">current page that the user is on, mandatory only when using paginator</td>
+<td class="left">number</td>
+<td class="left"></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left">maxpages</td>
-<td align="left">maximum number of pages, mandatory only when using paginator</td>
-<td align="left">number</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
+<td class="left">maxpages</td>
+<td class="left">maximum number of pages, mandatory only when using paginator</td>
+<td class="left">number</td>
+<td class="left"></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Default</strong></th>
+</tbody></table><h2>CSS variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--warning-dark</code></td>
-<td align="left"><code>#BD161C</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--warning-dark</code></td>
+<td class="left"><code>#BD161C</code></td>
 </tr>
 <tr>
-<td align="left"><code>--grid-column-sizes</code></td>
-<td align="left"><code>repeat(var(--grid-column-num), minmax(50px, 1fr))</code></td>
+<td class="left"><code>--grid-column-sizes</code></td>
+<td class="left"><code>repeat(var(--grid-column-num), minmax(50px, 1fr))</code></td>
 </tr>
-</tbody></table>
-<blockquote>
+</tbody></table><blockquote>
 <p>By default, grid will calculate number of headers supplied via slot,
 and apply <code>repeat(var(--grid-column-num), minmax(50px, 1fr))</code> css rule
 to header and each row; If you want to change some of widths of some columns
@@ -512,98 +448,82 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <pre><code class="language-CSS"> zoo-grid div[column=&quot;1&quot;] {
     min-width: 150px;
  }</code></pre>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left">headercell</td>
-<td align="left"><code>&lt;zoo-grid-header slot=&quot;headercell&quot;&gt;Header&lt;/zoo-grid-header&gt;</code></td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="left">headercell</td>
+<td class="left"><code>&lt;zoo-grid-header slot=&quot;headercell&quot;&gt;Header&lt;/zoo-grid-header&gt;</code></td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left">row</td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10003;</td>
+<td class="left">row</td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left">paginator</td>
-<td align="left">arbitrary content, default is: <code>&lt;zoo-grid-paginator&gt;&lt;slot name=&quot;pagesizeselector&quot;&gt;&lt;/slot&gt;&lt;/zoo-grid-paginator&gt;</code></td>
-<td align="center">&#10003;</td>
+<td class="left">paginator</td>
+<td class="left">arbitrary content, default is: <code>&lt;zoo-grid-paginator&gt;&lt;slot name=&quot;pagesizeselector&quot;&gt;&lt;/slot&gt;&lt;/zoo-grid-paginator&gt;</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left">pagesizeselector</td>
-<td align="left">arbitrary content, mandatory when <code>paginator</code> slot is filled</td>
-<td align="center">&#10003;</td>
+<td class="left">pagesizeselector</td>
+<td class="left">arbitrary content, mandatory when <code>paginator</code> slot is filled</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left">norecords</td>
-<td align="left">arbitrary content, whether to show it or not must be handled by the client</td>
-<td align="center">&#10003;</td>
+<td class="left">norecords</td>
+<td class="left">arbitrary content, whether to show it or not must be handled by the client</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h3>zoo-grid-header attributes</h3><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h3>zoo-grid-header attributes</h3><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>sortable</code></td>
-<td align="center"></td>
-<td align="left">boolean</td>
-<td align="left"><code>false</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>sortable</code></td>
+<td class="center"></td>
+<td class="left">boolean</td>
+<td class="left"><code>false</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>sortableproperty</code></td>
-<td align="center"></td>
-<td align="left">text</td>
-<td align="left"></td>
-<td align="center">&#10003; - when <code>sortable</code> is not set</td>
+<td class="left"><code>sortableproperty</code></td>
+<td class="center"></td>
+<td class="left">text</td>
+<td class="left"></td>
+<td class="center">&#10003; - when <code>sortable</code> is not set</td>
 </tr>
-</tbody></table>
-<h2>Events</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Event Content</strong></th>
+</tbody></table><h2>Events</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Event Content</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>sortChange</code></td>
-<td align="left">output event,  on <code>zoo-grid</code></td>
-<td align="left"><code>{detail: { property: $propertyName, direction: $direction }}</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>sortChange</code></td>
+<td class="left">output event,  on <code>zoo-grid</code></td>
+<td class="left"><code>{detail: { property: $propertyName, direction: $direction }}</code></td>
 </tr>
-</tbody></table>
-<ul>
+</tbody></table><ul>
 <li><code>propertyName</code> - name of property passed to header via <code>sortableproperty</code> attribute;</li>
 <li><code>direction</code> - either <code>desc</code>, <code>asc</code> or <code>undefined</code>; </li>
 </ul>
-<table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Event Content</strong></th>
+<table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Event Content</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>pageChange</code></td>
-<td align="left">output event, whenever user changes current page</td>
-<td align="left"><code>{detail: { pageNumber: $pageNumber }}</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>pageChange</code></td>
+<td class="left">output event, whenever user changes current page</td>
+<td class="left"><code>{detail: { pageNumber: $pageNumber }}</code></td>
 </tr>
-</tbody></table>
-<ul>
+</tbody></table><ul>
 <li><code>pageNumber</code> - number of the page user wants to go to</li>
 </ul>
 <h1 id=header><a href="#header">Header</a></h1><p>Container header component.</p>
@@ -624,43 +544,35 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     </zoo-button>
 </zoo-header>
 
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+<h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>img</code></td>
-<td align="left">logo image</td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>img</code></td>
+<td class="left">logo image</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>headertext</code></td>
-<td align="left">slot for header text, replaces <code>headertext</code> attribute is defined</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>headertext</code></td>
+<td class="left">slot for header text, replaces <code>headertext</code> attribute is defined</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left">arbitrary content after first two slots</td>
-<td align="center">&#10003;</td>
+<td class="left"></td>
+<td class="left">arbitrary content after first two slots</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=input><a href="#input">Input</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
+</tbody></table><h1 id=input><a href="#input">Input</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-input&gt;
     &lt;input id=&quot;input-type-text&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;input&quot;/&gt;
@@ -676,83 +588,71 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-input>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>invalid</code></td>
-<td align="left">flag which indicates whether the input is valid or not</td>
-<td align="left">boolean</td>
-<td align="left"><code>null</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>invalid</code></td>
+<td class="left">flag which indicates whether the input is valid or not</td>
+<td class="left">boolean</td>
+<td class="left"><code>null</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-light</code></td>
-<td align="center"><code>#66B100</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-light</code></td>
+<td class="center"><code>#66B100</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+<td class="left"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-dark</code></td>
-<td align="center"><code>#286400</code></td>
+<td class="left"><code>--primary-dark</code></td>
+<td class="center"><code>#286400</code></td>
 </tr>
 <tr>
-<td align="left"><code>--warning-mid</code></td>
-<td align="center"><code>#ED1C24</code></td>
+<td class="left"><code>--warning-mid</code></td>
+<td class="center"><code>#ED1C24</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>input</code></td>
-<td align="left">name of the slot for input</td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="left"><code>input</code></td>
+<td class="left">name of the slot for input</td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>label</code></td>
-<td align="left">name of the slot for label</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>label</code></td>
+<td class="left">name of the slot for label</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>info</code></td>
-<td align="left">accepts any element, foe example <code>span</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>info</code></td>
+<td class="left">accepts any element, foe example <code>span</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>error</code></td>
-<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>error</code></td>
+<td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>link</code></td>
-<td align="left">accepts <code>a</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>link</code></td>
+<td class="left">accepts <code>a</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=link><a href="#link">Link</a></h1><p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
+</tbody></table><h1 id=link><a href="#link">Link</a></h1><p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;height: 10px; width: auto&quot;&gt;
     &lt;zoo-link type=&quot;primary&quot;&gt;
@@ -766,80 +666,68 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     </zoo-link>
 </div>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>type</code></td>
-<td align="left"><code>negative</code>, <code>primary</code>, <code>grey</code>, <code>warning</code></td>
-<td align="left">text</td>
-<td align="left"><code>negative</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>type</code></td>
+<td class="left"><code>negative</code>, <code>primary</code>, <code>grey</code>, <code>warning</code></td>
+<td class="left">text</td>
+<td class="left"><code>negative</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>size</code></td>
-<td align="left"><code>regular</code>, <code>bold</code>, <code>large</code></td>
-<td align="left">text</td>
-<td align="left"><code>regular</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>size</code></td>
+<td class="left"><code>regular</code>, <code>bold</code>, <code>large</code></td>
+<td class="left">text</td>
+<td class="left"><code>regular</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-light</code></td>
-<td align="center"><code>#66B100</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-light</code></td>
+<td class="center"><code>#66B100</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+<td class="left"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-dark</code></td>
-<td align="center"><code>#286400</code></td>
+<td class="left"><code>--primary-dark</code></td>
+<td class="center"><code>#286400</code></td>
 </tr>
 <tr>
-<td align="left"><code>--warning-dark</code></td>
-<td align="center"><code>#BD161C</code></td>
+<td class="left"><code>--warning-dark</code></td>
+<td class="center"><code>#BD161C</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>pre</code></td>
-<td align="left">will be rendered before link text, for example: <code>&lt;svg slot=&quot;pre&quot;&gt;...&lt;/svg&gt;</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>pre</code></td>
+<td class="left">will be rendered before link text, for example: <code>&lt;svg slot=&quot;pre&quot;&gt;...&lt;/svg&gt;</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>anchor</code></td>
-<td align="left"><code>&lt;a&gt;</code> element</td>
-<td align="center">&#10005;</td>
+<td class="left"><code>anchor</code></td>
+<td class="left"><code>&lt;a&gt;</code> element</td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>post</code></td>
-<td align="left">will be rendered after link text, for example: <code>&lt;svg slot=&quot;post&quot;&gt;...&lt;/svg&gt;</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>post</code></td>
+<td class="left">will be rendered after link text, for example: <code>&lt;svg slot=&quot;post&quot;&gt;...&lt;/svg&gt;</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=modal><a href="#modal">Modal</a></h1><p>Container component which provides styles for modal and slotted content.
+</tbody></table><h1 id=modal><a href="#modal">Modal</a></h1><p>Container component which provides styles for modal and slotted content.
 Modal visibility must be controlled by the client.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-modal style=&quot;display: none&quot;&gt;
@@ -857,38 +745,30 @@ Modal visibility must be controlled by the client.</p>
         &lt;/zoo-button&gt;
     &lt;/div&gt;
 &lt;/zoo-modal&gt;</code></pre>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+<h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="center"></td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="center">header</td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10005;</td>
+<td class="center">header</td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10005;</td>
 </tr>
-</tbody></table>
-<h1 id=navigation><a href="#navigation">Navigation</a></h1><p>Container component which provides styles for slotted content.</p>
+</tbody></table><h1 id=navigation><a href="#navigation">Navigation</a></h1><p>Container component which provides styles for slotted content.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-navigation&gt;
     &lt;div&gt;
@@ -912,37 +792,29 @@ Modal visibility must be controlled by the client.</p>
     </div>
 </zoo-navigation>
 
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+<h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-light</code></td>
-<td align="center"><code>#66B100</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-light</code></td>
+<td class="center"><code>#66B100</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+<td class="left"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="center"></td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10005;</td>
 </tr>
-</tbody></table>
-<h1 id=quantity-control><a href="#quantity-control">Quantity Control</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
+</tbody></table><h1 id=quantity-control><a href="#quantity-control">Quantity Control</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
 <hr>
 <blockquote>
 <p>Webkit based browsers (Chrome/Safari) do not support hiding native number scroll on <code>input type=&quot;number&quot;</code>,
@@ -979,76 +851,64 @@ when supplying such input for this component remember to add:</p>
     </button>
 </zoo-quantity-control>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>invalid</code></td>
-<td align="left">flag which indicates whether the input is valid or not</td>
-<td align="left">boolean</td>
-<td align="left"><code>false</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>invalid</code></td>
+<td class="left">flag which indicates whether the input is valid or not</td>
+<td class="left">boolean</td>
+<td class="left"><code>false</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+</thead> <tbody><tr>
+<td class="center"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>input</code></td>
-<td align="left"><code>&lt;input id=&quot;number-input&quot; slot=&quot;input&quot; readonly placeholder=&quot;0&quot; type=&quot;number&quot; step=&quot;50&quot;/&gt;</code></td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="left"><code>input</code></td>
+<td class="left"><code>&lt;input id=&quot;number-input&quot; slot=&quot;input&quot; readonly placeholder=&quot;0&quot; type=&quot;number&quot; step=&quot;50&quot;/&gt;</code></td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>label</code></td>
-<td align="left"><code>&lt;label for=&quot;input-id&quot; slot=&quot;label&quot;&gt;An example input&lt;/label&gt;</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>label</code></td>
+<td class="left"><code>&lt;label for=&quot;input-id&quot; slot=&quot;label&quot;&gt;An example input&lt;/label&gt;</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>info</code></td>
-<td align="left">accepts any element, foe example <code>span</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>info</code></td>
+<td class="left">accepts any element, foe example <code>span</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>error</code></td>
-<td align="left">accepts any element that shows when <code>invalid</code> attribute is present</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>error</code></td>
+<td class="left">accepts any element that shows when <code>invalid</code> attribute is present</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>increase</code></td>
-<td align="left">accepts any element that should act as a button for increase</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>increase</code></td>
+<td class="left">accepts any element that should act as a button for increase</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>decrease</code></td>
-<td align="left">accepts any element that should act as a button for decrease</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>decrease</code></td>
+<td class="left">accepts any element that should act as a button for decrease</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=radio><a href="#radio">Radio</a></h1><p>Radio component which provides styles for <strong><code>&lt;input type=&quot;radio&quot;/&gt;</code></strong> and associated <strong><code>&lt;label&gt;&lt;/label&gt;</code></strong></p>
+</tbody></table><h1 id=radio><a href="#radio">Radio</a></h1><p>Radio component which provides styles for <strong><code>&lt;input type=&quot;radio&quot;/&gt;</code></strong> and associated <strong><code>&lt;label&gt;&lt;/label&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-radio&gt;
     &lt;span slot=&quot;label&quot;&gt;Radio group&lt;/span&gt;
@@ -1074,70 +934,58 @@ when supplying such input for this component remember to add:</p>
     <span slot="info">Additional information</span>
 </zoo-radio>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>invalid</code></td>
-<td align="left">flag which indicates whether the input is valid or not</td>
-<td align="left">boolean</td>
-<td align="left"><code>null</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>invalid</code></td>
+<td class="left">flag which indicates whether the input is valid or not</td>
+<td class="left">boolean</td>
+<td class="left"><code>null</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
 <tr>
-<td align="left"><code>--warning-mid</code></td>
-<td align="center"><code>#ED1C24</code></td>
+<td class="left"><code>--warning-mid</code></td>
+<td class="center"><code>#ED1C24</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="left">arbitrary amount of <code>input type=&quot;radio&quot;</code> and labels for them</td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="center"></td>
+<td class="left">arbitrary amount of <code>input type=&quot;radio&quot;</code> and labels for them</td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="center"><code>label</code></td>
-<td align="left">name of the slot for label</td>
-<td align="center">&#10003;</td>
+<td class="center"><code>label</code></td>
+<td class="left">name of the slot for label</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="center"><code>info</code></td>
-<td align="left">accepts any element, foe example <code>span</code></td>
-<td align="center">&#10003;</td>
+<td class="center"><code>info</code></td>
+<td class="left">accepts any element, foe example <code>span</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="center"><code>error</code></td>
-<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
-<td align="center">&#10003;</td>
+<td class="center"><code>error</code></td>
+<td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=searchable-select><a href="#searchable-select">Searchable Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+</tbody></table><h1 id=searchable-select><a href="#searchable-select">Searchable Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-searchable-select&gt;
     &lt;span slot=&quot;legend&quot;&gt;Searchable select legend&lt;/span&gt;
@@ -1157,90 +1005,82 @@ when supplying such input for this component remember to add:</p>
 <p>The above will render to:</p>
 <zoo-searchable-select>
     <span slot="legend">Searchable select legend</span>
-    <select id="searchable-select" slot="select">
+    <select id="some-searchable-select-id" slot="select">
         <option value="" selected="" disabled="">Please choose an option</option>
         <option value="dog">Dog</option>
         <option value="cat">Cat</option>
         <option value="smallPet">Small Pet</option>
         <option value="aquatic">Aquatic</option>
     </select>
-    <label slot="selectlabel" for="searchable-select">Searchable select</label>
+    <label slot="selectlabel" for="some-searchable-select-id">Searchable select</label>
     <input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
     <label for="inserted-input" slot="inputlabel">Searchable input</label>
 </zoo-searchable-select>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>invalid</code></td>
-<td align="left">flag which indicates whether the input is valid or not</td>
-<td align="left">boolean</td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>invalid</code></td>
+<td class="left">flag which indicates whether the input is valid or not</td>
+<td class="left">boolean</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>loading</code></td>
-<td align="left">flag which indicates whether to show loader inside slotted <code>select</code> element</td>
-<td align="left">boolean</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>loading</code></td>
+<td class="left">flag which indicates whether to show loader inside slotted <code>select</code> element</td>
+<td class="left">boolean</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>legend</code></td>
-<td align="left">name of the slot for legend</td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="left"><code>legend</code></td>
+<td class="left">name of the slot for legend</td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>select</code></td>
-<td align="left"><code>&lt;select slot=&quot;select&quot;&gt;...&lt;/select&gt;</code></td>
-<td align="center">&#10005;</td>
+<td class="left"><code>select</code></td>
+<td class="left"><code>&lt;select slot=&quot;select&quot;&gt;...&lt;/select&gt;</code></td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>input</code></td>
-<td align="left"><code>&lt;input slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Select multiple options&quot;/&gt;</code></td>
-<td align="center">&#10005;</td>
+<td class="left"><code>input</code></td>
+<td class="left"><code>&lt;input slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Select multiple options&quot;/&gt;</code></td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>info</code></td>
-<td align="left">accepts any element, foe example <code>span</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>info</code></td>
+<td class="left">accepts any element, foe example <code>span</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>error</code></td>
-<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>error</code></td>
+<td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>link</code></td>
-<td align="left">accepts <code>a</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>link</code></td>
+<td class="left">accepts <code>a</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>inputlabel</code></td>
-<td align="left">name of the slot for select label</td>
-<td align="center">&#10005;</td>
+<td class="left"><code>inputlabel</code></td>
+<td class="left">name of the slot for select label</td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>selectlabel</code></td>
-<td align="left">name of the slot for input label</td>
-<td align="center">&#10005;</td>
+<td class="left"><code>selectlabel</code></td>
+<td class="left">name of the slot for input label</td>
+<td class="center">&#10005;</td>
 </tr>
-</tbody></table>
-<h1 id=select><a href="#select">Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+</tbody></table><h1 id=select><a href="#select">Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-select&gt;
     &lt;select id=&quot;zoo-select&quot; slot=&quot;select&quot;&gt;
@@ -1264,102 +1104,90 @@ when supplying such input for this component remember to add:</p>
     <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-select>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>labelposition</code></td>
-<td align="left"><code>top</code>, <code>left</code></td>
-<td align="left">text</td>
-<td align="left"><code>top</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>labelposition</code></td>
+<td class="left"><code>top</code>, <code>left</code></td>
+<td class="left">text</td>
+<td class="left"><code>top</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>invalid</code></td>
-<td align="left">flag which indicates whether the input is valid or not</td>
-<td align="left">boolean</td>
-<td align="left"><code>null</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>invalid</code></td>
+<td class="left">flag which indicates whether the input is valid or not</td>
+<td class="left">boolean</td>
+<td class="left"><code>null</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>loading</code></td>
-<td align="left">flag which indicates whether to show loader</td>
-<td align="left">boolean</td>
-<td align="left"></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>loading</code></td>
+<td class="left">flag which indicates whether to show loader</td>
+<td class="left">boolean</td>
+<td class="left"></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-light</code></td>
-<td align="left"><code>#66B100</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-light</code></td>
+<td class="left"><code>#66B100</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="left"><code>#3C9700</code></td>
+<td class="left"><code>--primary-mid</code></td>
+<td class="left"><code>#3C9700</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-dark</code></td>
-<td align="left"><code>#286400</code></td>
+<td class="left"><code>--primary-dark</code></td>
+<td class="left"><code>#286400</code></td>
 </tr>
 <tr>
-<td align="left"><code>--warning-mid</code></td>
-<td align="left"><code>#ED1C24</code></td>
+<td class="left"><code>--warning-mid</code></td>
+<td class="left"><code>#ED1C24</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>select</code></td>
-<td align="left"><code>&lt;select id=&quot;zoo-select&quot; slot=&quot;select&quot;&gt;...&lt;/select&gt;</code></td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="left"><code>select</code></td>
+<td class="left"><code>&lt;select id=&quot;zoo-select&quot; slot=&quot;select&quot;&gt;...&lt;/select&gt;</code></td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>label</code></td>
-<td align="left"><code>&lt;label for=&quot;zoo-select&quot;&gt;Label&lt;/label&gt;</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>label</code></td>
+<td class="left"><code>&lt;label for=&quot;zoo-select&quot;&gt;Label&lt;/label&gt;</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>input</code></td>
-<td align="left"><code>&lt;slot name=&quot;input&quot;&gt;&lt;/slot&gt;</code> can be used for composition of select and input</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>input</code></td>
+<td class="left"><code>&lt;slot name=&quot;input&quot;&gt;&lt;/slot&gt;</code> can be used for composition of select and input</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>info</code></td>
-<td align="left">accepts any element, foe example <code>span</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>info</code></td>
+<td class="left">accepts any element, foe example <code>span</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>error</code></td>
-<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>error</code></td>
+<td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>link</code></td>
-<td align="left">accepts <code>a</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>link</code></td>
+<td class="left">accepts <code>a</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=spinner><a href="#spinner">Spinner</a></h1><p>Spinner svg.</p>
+</tbody></table><h1 id=spinner><a href="#spinner">Spinner</a></h1><p>Spinner svg.</p>
 <hr>
 <blockquote>
 <p>Spinner has <code>position: absolute</code>, you have to place it inside an element with <code>position: relative</code>.</p>
@@ -1371,19 +1199,15 @@ when supplying such input for this component remember to add:</p>
     <zoo-spinner></zoo-spinner>
 </div>
 
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+<h2>CSS Variables</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+</thead> <tbody><tr>
+<td class="center"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
-</tbody></table>
-<h1 id=theming><a href="#theming">Theming</a></h1><p>The following CSS Custom Properties can be overriden by the user.</p>
+</tbody></table><h1 id=theming><a href="#theming">Theming</a></h1><p>The following CSS Custom Properties can be overriden by the user.</p>
 <h2>CSS variables</h2><pre><code>--primary-ultralight - `#EBF4E5`;
 --primary-light - `#66B100`;
 --primary-mid - `#3C9700`;
@@ -1405,97 +1229,81 @@ when supplying such input for this component remember to add:</p>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toast&gt;
     &lt;span slot=&quot;content&quot;&gt;This is an info message.&lt;/span&gt;
 &lt;/zoo-toast&gt;</code></pre>
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>type</code></td>
-<td align="left"><code>info</code>, <code>error</code>, <code>success</code></td>
-<td align="left">text</td>
-<td align="left"><code>info</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>type</code></td>
+<td class="left"><code>info</code>, <code>error</code>, <code>success</code></td>
+<td class="left">text</td>
+<td class="left"><code>info</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>timeout</code></td>
-<td align="left">how long the toast should be visible for (in seconds)</td>
-<td align="left">number</td>
-<td align="left"><code>3</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>timeout</code></td>
+<td class="left">how long the toast should be visible for (in seconds)</td>
+<td class="left">number</td>
+<td class="left"><code>3</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--info-ultralight</code></td>
-<td align="center"><code>#ECF5FA</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--info-ultralight</code></td>
+<td class="center"><code>#ECF5FA</code></td>
 </tr>
 <tr>
-<td align="left"><code>--info-mid</code></td>
-<td align="center"><code>#459FD0</code></td>
+<td class="left"><code>--info-mid</code></td>
+<td class="center"><code>#459FD0</code></td>
 </tr>
 <tr>
-<td align="left"><code>--warning-ultralight</code></td>
-<td align="center"><code>#FDE8E9</code></td>
+<td class="left"><code>--warning-ultralight</code></td>
+<td class="center"><code>#FDE8E9</code></td>
 </tr>
 <tr>
-<td align="left"><code>--warning-mid</code></td>
-<td align="center"><code>#ED1C24</code></td>
+<td class="left"><code>--warning-mid</code></td>
+<td class="center"><code>#ED1C24</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-ultralight</code></td>
-<td align="center"><code>#EBF4E5</code></td>
+<td class="left"><code>--primary-ultralight</code></td>
+<td class="center"><code>#EBF4E5</code></td>
 </tr>
 <tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+<td class="left"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
-</tbody></table>
-<h2>Functions</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Example</strong></th>
+</tbody></table><h2>Functions</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Example</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>show</code></td>
-<td align="left"><code>function</code> to show the toast.</td>
-<td align="left"><code>document.querySelector(&#39;#zoo-toast&#39;).show();</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>show</code></td>
+<td class="left"><code>function</code> to show the toast.</td>
+<td class="left"><code>document.querySelector(&#39;#zoo-toast&#39;).show();</code></td>
 </tr>
 <tr>
-<td align="left"><code>hide</code></td>
-<td align="left"><code>function</code> to hide the toast.</td>
-<td align="left"><code>document.querySelector(&#39;#zoo-toast&#39;).hide();</code></td>
+<td class="left"><code>hide</code></td>
+<td class="left"><code>function</code> to hide the toast.</td>
+<td class="left"><code>document.querySelector(&#39;#zoo-toast&#39;).hide();</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>content</code></td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>content</code></td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=toggle-switch><a href="#toggle-switch">Toggle Switch</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
+</tbody></table><h1 id=toggle-switch><a href="#toggle-switch">Toggle Switch</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toggle-switch&gt;
     &lt;label for=&quot;input-toggle&quot; slot=&quot;label&quot;&gt;Toggle switch&lt;/label&gt;
@@ -1507,48 +1315,40 @@ when supplying such input for this component remember to add:</p>
     <input id="input-toggle" slot="input" type="checkbox"/>
 </zoo-toggle-switch>
 
-<h2>CSS Variables</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="center"><strong>Default</strong></th>
+<h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="center"><strong>Default</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>--primary-mid</code></td>
-<td align="center"><code>#3C9700</code></td>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-mid</code></td>
+<td class="center"><code>#3C9700</code></td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>input</code></td>
-<td align="left"><code>&lt;input id=&quot;input-id&quot; slot=&quot;input&quot; type=&quot;checkbox&quot;/&gt;</code></td>
-<td align="center">&#10005;</td>
+</thead> <tbody><tr>
+<td class="left"><code>input</code></td>
+<td class="left"><code>&lt;input id=&quot;input-id&quot; slot=&quot;input&quot; type=&quot;checkbox&quot;/&gt;</code></td>
+<td class="center">&#10005;</td>
 </tr>
 <tr>
-<td align="left"><code>label</code></td>
-<td align="left"><code>&lt;label for=&quot;input-id&quot; slot=&quot;label&quot;&gt;An example input&lt;/label&gt;</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>label</code></td>
+<td class="left"><code>&lt;label for=&quot;input-id&quot; slot=&quot;label&quot;&gt;An example input&lt;/label&gt;</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>info</code></td>
-<td align="left">accepts any element, foe example <code>span</code></td>
-<td align="center">&#10003;</td>
+<td class="left"><code>info</code></td>
+<td class="left">accepts any element, foe example <code>span</code></td>
+<td class="center">&#10003;</td>
 </tr>
 <tr>
-<td align="left"><code>error</code></td>
-<td align="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
-<td align="center">&#10003;</td>
+<td class="left"><code>error</code></td>
+<td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h1 id=tooltip><a href="#tooltip">Tooltip</a></h1><p>Tooltip component.</p>
+</tbody></table><h1 id=tooltip><a href="#tooltip">Tooltip</a></h1><p>Tooltip component.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-button&gt;
     &lt;button type=&quot;button&quot;&gt;
@@ -1564,39 +1364,31 @@ when supplying such input for this component remember to add:</p>
     </button>
 </zoo-button>
 
-<h2>Attributes</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="left"><strong>Type</strong></th>
-<th align="left"><strong>Default</strong></th>
-<th align="center"><strong>Optional</strong></th>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Type</strong></th>
+<th class="left"><strong>Default</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="left"><code>position</code></td>
-<td align="left"><code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code></td>
-<td align="left">text</td>
-<td align="left"><code>top</code></td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="left"><code>position</code></td>
+<td class="left"><code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code></td>
+<td class="left">text</td>
+<td class="left"><code>top</code></td>
+<td class="center">&#10003;</td>
 </tr>
-</tbody></table>
-<h2>Slots</h2><table>
-<thead>
-<tr>
-<th align="center"><strong>Name</strong></th>
-<th align="left"><strong>Description</strong></th>
-<th align="center"><strong>Optional</strong></th>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
 </tr>
-</thead>
-<tbody><tr>
-<td align="center"></td>
-<td align="left">arbitrary content</td>
-<td align="center">&#10003;</td>
+</thead> <tbody><tr>
+<td class="center"></td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10003;</td>
 </tr>
 </tbody></table>
-
     </div>
 
 	<script src="prism.js"></script>

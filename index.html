@@ -11,11 +11,15 @@
 </head>
 
 <body>
-	
-    <div class="menu">
-        <h1>Zoo web components</h1>
+	<header>
+		<h1>Zoo web components documentation</h1>
+		<!-- <button onclick="document.body.classList.toggle('dark-mode')">dark mode</button> -->
+	</header>
+	<main>
+		
+    <nav>
 		<a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#theming">Theming</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a>
-	</div>
+	</nav>
     <div class="content">
         <h1 id=button><a href="#button">Button</a></h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
 <hr>
@@ -30,60 +34,57 @@
 <h2>Attributes</h2><table><thead><tr>
 <th class="center"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
 <th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="center"><code>type</code></td>
 <td class="left">primary, secondary, hollow</td>
-<td class="left">text</td>
 <td class="left"><code>primary</code></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="center"><code>size</code></td>
 <td class="left">small, medium</td>
-<td class="left">text</td>
 <td class="left"><code>small</code></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h2>CSS Variables</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
-<th class="right"><strong>Default</strong></th>
+<th class="left"><strong>Default</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>--primary-light</code></td>
-<td class="right"><code>#66B100</code></td>
+<td class="left"><code>#66B100</code></td>
 </tr>
 <tr>
 <td class="left"><code>--primary-mid</code></td>
-<td class="right"><code>#3C9700</code></td>
+<td class="left"><code>#3C9700</code></td>
 </tr>
 <tr>
 <td class="left"><code>--primary-dark</code></td>
-<td class="right"><code>#286400</code></td>
+<td class="left"><code>#286400</code></td>
 </tr>
 <tr>
 <td class="left"><code>--secondary-light</code></td>
-<td class="right"><code>#FF8800</code></td>
+<td class="left"><code>#FF8800</code></td>
 </tr>
 <tr>
 <td class="left"><code>--secondary-mid</code></td>
-<td class="right"><code>#FF6200</code></td>
+<td class="left"><code>#FF6200</code></td>
 </tr>
 <tr>
 <td class="left"><code>--secondary-dark</code></td>
-<td class="right"><code>#CC4E00</code></td>
+<td class="left"><code>#CC4E00</code></td>
 </tr>
 </tbody></table><h2>Slots</h2><table><thead><tr>
 <th class="center"><strong>Name</strong></th>
-<th class="center"><strong>Description</strong></th>
+<th class="left"><strong>Description</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="center"></td>
-<td class="center"><strong><code>&lt;button&gt;</code></strong> element with arbitrary content inside</td>
+<td class="left"><code>&lt;button&gt;</code> element with arbitrary content inside</td>
 <td class="center">&#10005;</td>
 </tr>
 </tbody></table><h1 id=checkbox><a href="#checkbox">Checkbox</a></h1><p>Checkbox component which provides styles for <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
@@ -98,25 +99,22 @@
     <label for="checkbox-id" slot="label">An example checkbox</label>
 </zoo-checkbox>
 
-<h2>Attributes</h2><table><thead><tr>
+<h2>Attributes</h2><blockquote>
+<p><code>invalid</code> and <code>highlighted</code> attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.</p>
+</blockquote>
+<table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
-<th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>invalid</code></td>
 <td class="left">flag which indicates whether the input is valid or not</td>
-<td class="left">boolean</td>
-<td class="left"><code>null</code></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left"><code>highlighted</code></td>
 <td class="left">flag indicating whether the border around the input is visible</td>
-<td class="left">boolean</td>
-<td class="left"><code>null</code></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h2>CSS Variables</h2><table><thead><tr>
@@ -225,14 +223,12 @@
 <h2>Attributes</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
 <th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>type</code></td>
 <td class="left"><code>info</code>, <code>error</code>, <code>success</code></td>
-<td class="left">text</td>
 <td class="left"><code>info</code></td>
 <td class="center">&#10003;</td>
 </tr>
@@ -297,15 +293,11 @@
 <h2>Attributes</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="center"><strong>Type</strong></th>
-<th class="center"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>copyright</code></td>
 <td class="left">arbitrary text to show in bottom left corner</td>
-<td class="center">text</td>
-<td class="center"></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h2>CSS Variables</h2><table><thead><tr>
@@ -374,53 +366,42 @@
     </zoo-grid>
 </div>
 
-<h2>Attributes</h2><table><thead><tr>
+<h2>Attributes</h2><blockquote>
+<p><code>loading</code>, <code>stickyheader</code>, <code>resizable</code> and <code>reorderable</code> attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.</p>
+</blockquote>
+<table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
-<th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left">loading</td>
 <td class="left">flag which indicates whether to show loader inside grid</td>
-<td class="left">boolean</td>
-<td class="left">false</td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left">stickyheader</td>
 <td class="left">flag which indicates whether grid&#39;s header should be sticky when scrolling</td>
-<td class="left">boolean</td>
-<td class="left"></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left">resizable</td>
 <td class="left">flag which indicates whether grid columns should be resizable</td>
-<td class="left">boolean</td>
-<td class="left"></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left">reorderable</td>
 <td class="left">flag which indicates whether grid&#39;s column should be reorderable</td>
-<td class="left">boolean</td>
-<td class="left"></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left">currentpage</td>
 <td class="left">current page that the user is on, mandatory only when using paginator</td>
-<td class="left">number</td>
-<td class="left"></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left">maxpages</td>
 <td class="left">maximum number of pages, mandatory only when using paginator</td>
-<td class="left">number</td>
-<td class="left"></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h2>CSS variables</h2><table><thead><tr>
@@ -478,25 +459,22 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="left">arbitrary content, whether to show it or not must be handled by the client</td>
 <td class="center">&#10003;</td>
 </tr>
-</tbody></table><h3>zoo-grid-header attributes</h3><table><thead><tr>
+</tbody></table><h3>zoo-grid-header attributes</h3><blockquote>
+<p><code>sortable</code> attribute should be used as boolean attribute, meaning that when attribute is present and has non-null value it is true, false otherwise.</p>
+</blockquote>
+<table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="center"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
-<th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>sortable</code></td>
 <td class="center"></td>
-<td class="left">boolean</td>
-<td class="left"><code>false</code></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left"><code>sortableproperty</code></td>
 <td class="center"></td>
-<td class="left">text</td>
-<td class="left"></td>
 <td class="center">&#10003; - when <code>sortable</code> is not set</td>
 </tr>
 </tbody></table><h2>Events</h2><table><thead><tr>
@@ -588,18 +566,17 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-input>
 
-<h2>Attributes</h2><table><thead><tr>
+<h2>Attributes</h2><blockquote>
+<p><code>invalid</code> attribute should be used as boolean attribute, meaning that when attribute is present and has non-null value it is true, false otherwise.</p>
+</blockquote>
+<table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
-<th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>invalid</code></td>
 <td class="left">flag which indicates whether the input is valid or not</td>
-<td class="left">boolean</td>
-<td class="left"><code>null</code></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h2>CSS Variables</h2><table><thead><tr>
@@ -669,21 +646,18 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <h2>Attributes</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
 <th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>type</code></td>
 <td class="left"><code>negative</code>, <code>primary</code>, <code>grey</code>, <code>warning</code></td>
-<td class="left">text</td>
 <td class="left"><code>negative</code></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left"><code>size</code></td>
 <td class="left"><code>regular</code>, <code>bold</code>, <code>large</code></td>
-<td class="left">text</td>
 <td class="left"><code>regular</code></td>
 <td class="center">&#10003;</td>
 </tr>
@@ -851,18 +825,17 @@ when supplying such input for this component remember to add:</p>
     </button>
 </zoo-quantity-control>
 
-<h2>Attributes</h2><table><thead><tr>
+<h2>Attributes</h2><blockquote>
+<p><code>invalid</code> attribute should be used as boolean attribute, meaning that when attribute is present and has non-null value it is true, false otherwise.</p>
+</blockquote>
+<table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
-<th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>invalid</code></td>
 <td class="left">flag which indicates whether the input is valid or not</td>
-<td class="left">boolean</td>
-<td class="left"><code>false</code></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h2>CSS Variables</h2><table><thead><tr>
@@ -934,18 +907,17 @@ when supplying such input for this component remember to add:</p>
     <span slot="info">Additional information</span>
 </zoo-radio>
 
-<h2>Attributes</h2><table><thead><tr>
+<h2>Attributes</h2><blockquote>
+<p><code>invalid</code> attribute should be used as boolean attribute, meaning that when attribute is present and has non-null value it is true, false otherwise.</p>
+</blockquote>
+<table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
-<th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>invalid</code></td>
 <td class="left">flag which indicates whether the input is valid or not</td>
-<td class="left">boolean</td>
-<td class="left"><code>null</code></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h2>CSS Variables</h2><table><thead><tr>
@@ -1017,22 +989,22 @@ when supplying such input for this component remember to add:</p>
     <label for="inserted-input" slot="inputlabel">Searchable input</label>
 </zoo-searchable-select>
 
-<h2>Attributes</h2><table><thead><tr>
+<h2>Attributes</h2><blockquote>
+<p><code>invalid</code> and <code>loading</code> attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.</p>
+</blockquote>
+<table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>invalid</code></td>
 <td class="left">flag which indicates whether the input is valid or not</td>
-<td class="left">boolean</td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left"><code>loading</code></td>
 <td class="left">flag which indicates whether to show loader inside slotted <code>select</code> element</td>
-<td class="left">boolean</td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h2>Slots</h2><table><thead><tr>
@@ -1104,32 +1076,31 @@ when supplying such input for this component remember to add:</p>
     <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-select>
 
-<h2>Attributes</h2><table><thead><tr>
+<h2>Attributes</h2><blockquote>
+<p><code>invalid</code> and <code>loading</code> attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.</p>
+</blockquote>
+<table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
 <th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>labelposition</code></td>
 <td class="left"><code>top</code>, <code>left</code></td>
-<td class="left">text</td>
 <td class="left"><code>top</code></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left"><code>invalid</code></td>
 <td class="left">flag which indicates whether the input is valid or not</td>
-<td class="left">boolean</td>
 <td class="left"><code>null</code></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left"><code>loading</code></td>
 <td class="left">flag which indicates whether to show loader</td>
-<td class="left">boolean</td>
-<td class="left"></td>
+<td class="left"><code>null</code></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h2>CSS Variables</h2><table><thead><tr>
@@ -1232,21 +1203,18 @@ when supplying such input for this component remember to add:</p>
 <h2>Attributes</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
 <th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>type</code></td>
 <td class="left"><code>info</code>, <code>error</code>, <code>success</code></td>
-<td class="left">text</td>
 <td class="left"><code>info</code></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
 <td class="left"><code>timeout</code></td>
 <td class="left">how long the toast should be visible for (in seconds)</td>
-<td class="left">number</td>
 <td class="left"><code>3</code></td>
 <td class="center">&#10003;</td>
 </tr>
@@ -1367,14 +1335,12 @@ when supplying such input for this component remember to add:</p>
 <h2>Attributes</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Type</strong></th>
 <th class="left"><strong>Default</strong></th>
 <th class="center"><strong>Optional</strong></th>
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>position</code></td>
 <td class="left"><code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code></td>
-<td class="left">text</td>
 <td class="left"><code>top</code></td>
 <td class="center">&#10003;</td>
 </tr>
@@ -1391,6 +1357,7 @@ when supplying such input for this component remember to add:</p>
 </tbody></table>
     </div>
 
+	</main>
 	<script src="prism.js"></script>
 </body>
 

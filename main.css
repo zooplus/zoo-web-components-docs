@@ -14,23 +14,67 @@
 
 body {
 	display: flex;
+	flex-direction: column;
 	margin: 15px 25px;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
 		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	background: whitesmoke;
+}
+
+body.dark-mode {
+	background: #0d1117;
+	color: darkgray;
+}
+
+body.dark-mode code {
+	color: #0d1117;
+}
+
+body.dark-mode thead {
+	background: black;
+	color: lavenderblush;
+}
+
+body.dark-mode code, body.dark-mode pre {
+	background: unset;
+	text-shadow: none;
+	color: lavenderblush;
+}
+
+body.dark-mode blockquote {
+	background: unset;
+}
+
+header {
+	display: flex;
+	color: var(--primary-mid);
+	border-bottom: 1px solid;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header button {
+	border-radius: 5px;
+	height: max-content;
+}
+
+main {
+	display: flex;
 }
 
 .content {
 	width: 80%;
 }
 
-.menu {
+nav {
 	width: 20%;
 	position: sticky;
 	top: 15px;
 	height: min-content;
+	margin-top: 30px;
 }
 
-.menu a {
+nav a {
 	display: block;
 	padding: 0 0 0.7rem 0;
 	width: max-content;
@@ -38,12 +82,12 @@ body {
 	font-size: 1.1rem;
 }
 
-h1 a, .menu a, .menu h1 {
+h1 a, nav a, nav h1 {
 	color: var(--primary-mid);
 	text-decoration: none;
 }
 
-h1 a:hover, .menu a:hover {
+h1 a:hover, nav a:hover {
 	color: var(--primary-dark);
 }
 

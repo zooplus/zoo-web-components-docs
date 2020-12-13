@@ -108,15 +108,15 @@ The above will render to:
 
 ## Events
 
-| **Name**     | **Description**              | **Event Content**                                              |
-| :----------- | :--------------------------- | :------------------------------------------------------------- |
-| `sortChange` | output event,  on `zoo-grid` | `{detail: { property: $propertyName, direction: $direction }}` |
+| **Name**     | **Description**             | **Event Content**                                              |
+| :----------- | :-------------------------- | :------------------------------------------------------------- |
+| `sortChange` | output event, on `zoo-grid` | `{detail: { property: $propertyName, direction: $direction }}` |
 
 - `propertyName` - name of property passed to header via `sortableproperty` attribute;
-- `direction` - either `desc`, `asc` or `undefined`; 
+- `direction` - either `desc`, `asc`;
 
-| **Name**     | **Description**                                  | **Event Content**                       |
-| :----------- | :----------------------------------------------- | :-------------------------------------- |
-| `pageChange` | output event, whenever user changes current page | `{detail: { pageNumber: $pageNumber }}` |
+> When `direction` becomes undefined, whole `detail` object emitted in the event is undefined. 
 
-- `pageNumber` - number of the page user wants to go to
+| **Name**     | **Description**                             | **Event Content**                       |
+| :----------- | :------------------------------------------ | :-------------------------------------- |
+| `pageChange` | output event, whenever current page changes | `{detail: { pageNumber: $pageNumber }}` |

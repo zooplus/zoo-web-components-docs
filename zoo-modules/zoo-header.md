@@ -9,7 +9,7 @@ Container header component.
 ```HTML
 <zoo-header>
 	<img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/>
-	<h2 slot="headertext">Zooplus web components</h2>
+	<h1 slot="headertext">Zooplus web components</h1>
 	<zoo-button size="medium" style="margin-left: 50px">
 		<button type="button">Zoo+ theme</button>
 	</zoo-button>
@@ -20,7 +20,7 @@ The above will render to:
 
 <zoo-header>
 	<img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/>
-	<h2 slot="headertext">Zooplus web components</h2>
+	<h1 slot="headertext">Zooplus web components</h1>
 	<zoo-button size="medium" style="margin-left: 50px">
 		<button type="button">Zoo+ theme</button>
 	</zoo-button>

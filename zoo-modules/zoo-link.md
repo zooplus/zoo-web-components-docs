@@ -8,7 +8,7 @@ Link wrapper component which provides styles for **`<a></a>`**
 
 ```HTML
 <div style="height: 10px; width: auto">
-	<zoo-link type="primary">
+	<zoo-link>
 		<a slot="anchor" href="https://zooplus.github.io/zoo-web-components/">Zoo web components</a>
 	</zoo-link>
 </div>
@@ -17,7 +17,7 @@ Link wrapper component which provides styles for **`<a></a>`**
 The above will render to:
 
 <div style="height: 10px; width: auto">
-	<zoo-link type="primary">
+	<zoo-link>
 		<a slot="anchor" href="https://zooplus.github.io/zoo-web-components/">Zoo web components</a>
 	</zoo-link>
 </div>

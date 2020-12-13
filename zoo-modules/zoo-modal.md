@@ -8,7 +8,7 @@ Modal visibility must be controlled by the client.
 ## Example usage
 
 ```HTML
-<zoo-modal style="display: none">
+<zoo-modal>
 	<span slot="header">Your basket contains licensed items</span>
 	<div>
 		<zoo-feedback>This is an info message. Only one coupon can be accepted with each order.</zoo-feedback>

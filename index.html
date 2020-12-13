@@ -484,13 +484,16 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>sortChange</code></td>
-<td class="left">output event,  on <code>zoo-grid</code></td>
+<td class="left">output event, on <code>zoo-grid</code></td>
 <td class="left"><code>{detail: { property: $propertyName, direction: $direction }}</code></td>
 </tr>
 </tbody></table><ul>
 <li><code>propertyName</code> - name of property passed to header via <code>sortableproperty</code> attribute;</li>
-<li><code>direction</code> - either <code>desc</code>, <code>asc</code> or <code>undefined</code>; </li>
+<li><code>direction</code> - either <code>desc</code>, <code>asc</code>;</li>
 </ul>
+<blockquote>
+<p>When <code>direction</code> becomes undefined, whole <code>detail</code> object emitted in the event is undefined. </p>
+</blockquote>
 <table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
@@ -498,17 +501,14 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </tr>
 </thead> <tbody><tr>
 <td class="left"><code>pageChange</code></td>
-<td class="left">output event, whenever user changes current page</td>
+<td class="left">output event, whenever current page changes</td>
 <td class="left"><code>{detail: { pageNumber: $pageNumber }}</code></td>
 </tr>
-</tbody></table><ul>
-<li><code>pageNumber</code> - number of the page user wants to go to</li>
-</ul>
-<h1 id=header><a href="#header">Header</a></h1><p>Container header component.</p>
+</tbody></table><h1 id=header><a href="#header">Header</a></h1><p>Container header component.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-header&gt;
     &lt;img slot=&quot;img&quot; alt=&quot;Zooplus logo&quot; src=&quot;https://zooplus.github.io/zoo-web-components/logo.png&quot;/&gt;
-    &lt;h2 slot=&quot;headertext&quot;&gt;Zooplus web components&lt;/h2&gt;
+    &lt;h1 slot=&quot;headertext&quot;&gt;Zooplus web components&lt;/h1&gt;
     &lt;zoo-button size=&quot;medium&quot; style=&quot;margin-left: 50px&quot;&gt;
         &lt;button type=&quot;button&quot;&gt;Zoo+ theme&lt;/button&gt;
     &lt;/zoo-button&gt;
@@ -516,7 +516,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <p>The above will render to:</p>
 <zoo-header>
     <img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/>
-    <h2 slot="headertext">Zooplus web components</h2>
+    <h1 slot="headertext">Zooplus web components</h1>
     <zoo-button size="medium" style="margin-left: 50px">
         <button type="button">Zoo+ theme</button>
     </zoo-button>
@@ -632,13 +632,13 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </tbody></table><h1 id=link><a href="#link">Link</a></h1><p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;height: 10px; width: auto&quot;&gt;
-    &lt;zoo-link type=&quot;primary&quot;&gt;
+    &lt;zoo-link&gt;
         &lt;a slot=&quot;anchor&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot;&gt;Zoo web components&lt;/a&gt;
     &lt;/zoo-link&gt;
 &lt;/div&gt;</code></pre>
 <p>The above will render to:</p>
 <div style="height: 10px; width: auto">
-    <zoo-link type="primary">
+    <zoo-link>
         <a slot="anchor" href="https://zooplus.github.io/zoo-web-components/">Zoo web components</a>
     </zoo-link>
 </div>
@@ -704,7 +704,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </tbody></table><h1 id=modal><a href="#modal">Modal</a></h1><p>Container component which provides styles for modal and slotted content.
 Modal visibility must be controlled by the client.</p>
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-modal style=&quot;display: none&quot;&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-modal&gt;
     &lt;span slot=&quot;header&quot;&gt;Your basket contains licensed items&lt;/span&gt;
     &lt;div&gt;
         &lt;zoo-feedback&gt;This is an info message. Only one coupon can be accepted with each order.&lt;/zoo-feedback&gt;

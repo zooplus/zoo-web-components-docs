@@ -22,9 +22,9 @@ Container component which provides a styled container with preset icon.
 
 ## Attributes
 
-| **Name** | **Description**            | **Type** | **Default** | **Optional** |
-| :------- | :------------------------- | :------- | :---------- | :----------: |
-| `type`   | `info`, `error`, `success` | text     | `info`      |   &#10003;   |
+| **Name** | **Description**            | **Default** | **Optional** |
+| :------- | :------------------------- | :---------- | :----------: |
+| `type`   | `info`, `error`, `success` | `info`      |   &#10003;   |
 
 ## CSS Variables
 

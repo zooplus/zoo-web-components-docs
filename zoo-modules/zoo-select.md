@@ -34,11 +34,13 @@ The above will render to:
 
 ## Attributes
 
-| **Name**        | **Description**                                        | **Type** | **Default** | **Optional** |
-| :-------------- | :----------------------------------------------------- | :------- | :---------- | :----------: |
-| `labelposition` | `top`, `left`                                          | text     | `top`       |   &#10003;   |
-| `invalid`       | flag which indicates whether the input is valid or not | boolean  | `null`      |   &#10003;   |
-| `loading`       | flag which indicates whether to show loader            | boolean  |             |   &#10003;   |
+> `invalid` and `loading` attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.
+
+| **Name**        | **Description**                                        | **Default** | **Optional** |
+| :-------------- | :----------------------------------------------------- | :---------- | :----------: |
+| `labelposition` | `top`, `left`                                          | `top`       |   &#10003;   |
+| `invalid`       | flag which indicates whether the input is valid or not | `null`      |   &#10003;   |
+| `loading`       | flag which indicates whether to show loader            | `null`      |   &#10003;   |
 
 ## CSS Variables
 

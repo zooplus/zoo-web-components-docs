@@ -54,14 +54,16 @@ The above will render to:
 
 ## Attributes
 
-| **Name**     | **Description**                                                            | **Type** | **Default** | **Optional** |
-| :----------- | :------------------------------------------------------------------------- | :------- | :---------- | :----------: |
-| loading      | flag which indicates whether to show loader inside grid                    | boolean  | false       |   &#10003;   |
-| stickyheader | flag which indicates whether grid's header should be sticky when scrolling | boolean  |             |   &#10003;   |
-| resizable    | flag which indicates whether grid columns should be resizable              | boolean  |             |   &#10003;   |
-| reorderable  | flag which indicates whether grid's column should be reorderable           | boolean  |             |   &#10003;   |
-| currentpage  | current page that the user is on, mandatory only when using paginator      | number   |             |   &#10003;   |
-| maxpages     | maximum number of pages, mandatory only when using paginator               | number   |             |   &#10003;   |
+> `loading`, `stickyheader`, `resizable` and `reorderable` attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.
+
+| **Name**     | **Description**                                                            | **Optional** |
+| :----------- | :------------------------------------------------------------------------- | :----------: |
+| loading      | flag which indicates whether to show loader inside grid                    |   &#10003;   |
+| stickyheader | flag which indicates whether grid's header should be sticky when scrolling |   &#10003;   |
+| resizable    | flag which indicates whether grid columns should be resizable              |   &#10003;   |
+| reorderable  | flag which indicates whether grid's column should be reorderable           |   &#10003;   |
+| currentpage  | current page that the user is on, mandatory only when using paginator      |   &#10003;   |
+| maxpages     | maximum number of pages, mandatory only when using paginator               |   &#10003;   |
 
 ## CSS variables
 
@@ -97,10 +99,12 @@ The above will render to:
 
 ### zoo-grid-header attributes
 
-| **Name**           | **Description** | **Type** | **Default** |             **Optional**              |
-| :----------------- | :-------------: | :------- | :---------- | :-----------------------------------: |
-| `sortable`         |                 | boolean  | `false`     |               &#10003;                |
-| `sortableproperty` |                 | text     |             | &#10003; - when `sortable` is not set |
+> `sortable` attribute should be used as boolean attribute, meaning that when attribute is present and has non-null value it is true, false otherwise.
+
+| **Name**           | **Description** |             **Optional**              |
+| :----------------- | :-------------: | :-----------------------------------: |
+| `sortable`         |                 |               &#10003;                |
+| `sortableproperty` |                 | &#10003; - when `sortable` is not set |
 
 ## Events
 

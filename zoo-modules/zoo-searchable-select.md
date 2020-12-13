@@ -42,10 +42,12 @@ The above will render to:
 
 ## Attributes
 
-| **Name**  | **Description**                                                             | **Type** | **Optional** |
-| :-------- | :-------------------------------------------------------------------------- | :------- | :----------: |
-| `invalid` | flag which indicates whether the input is valid or not                      | boolean  |   &#10003;   |
-| `loading` | flag which indicates whether to show loader inside slotted `select` element | boolean  |   &#10003;   |
+> `invalid` and `loading` attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.
+
+| **Name**  | **Description**                                                             | **Optional** |
+| :-------- | :-------------------------------------------------------------------------- | :----------: |
+| `invalid` | flag which indicates whether the input is valid or not                      |   &#10003;   |
+| `loading` | flag which indicates whether to show loader inside slotted `select` element |   &#10003;   |
 
 ## Slots
 

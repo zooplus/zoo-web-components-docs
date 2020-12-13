@@ -26,9 +26,9 @@ The above will render to:
 
 ## Attributes
 
-| **Name**   | **Description**                  | **Type** | **Default** | **Optional** |
-| :--------- | :------------------------------- | :------- | :---------- | :----------: |
-| `position` | `top`, `right`, `bottom`, `left` | text     | `top`       |   &#10003;   |
+| **Name**   | **Description**                  | **Default** | **Optional** |
+| :--------- | :------------------------------- | :---------- | :----------: |
+| `position` | `top`, `right`, `bottom`, `left` | `top`       |   &#10003;   |
 
 ## Slots
 

@@ -14,10 +14,10 @@ Container component which has fly-in/out animations. It can be controlled via ex
 
 ## Attributes
 
-| **Name**  | **Description**                                       | **Type** | **Default** | **Optional** |
-| :-------- | :---------------------------------------------------- | :------- | :---------- | :----------: |
-| `type`    | `info`, `error`, `success`                            | text     | `info`      |   &#10003;   |
-| `timeout` | how long the toast should be visible for (in seconds) | number   | `3`         |   &#10003;   |
+| **Name**  | **Description**                                       | **Default** | **Optional** |
+| :-------- | :---------------------------------------------------- | :---------- | :----------: |
+| `type`    | `info`, `error`, `success`                            | `info`      |   &#10003;   |
+| `timeout` | how long the toast should be visible for (in seconds) | `3`         |   &#10003;   |
 
 ## CSS Variables
 

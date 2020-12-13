@@ -30,9 +30,9 @@ The above will render to:
 
 ## Attributes
 
-| **Name**    | **Description**                              | **Type** | **Default** | **Optional** |
-| :---------- | :------------------------------------------- | :------: | :---------: | :----------: |
-| `copyright` | arbitrary text to show in bottom left corner |   text   |             |   &#10003;   |
+| **Name**    | **Description**                              | **Optional** |
+| :---------- | :------------------------------------------- | :----------: |
+| `copyright` | arbitrary text to show in bottom left corner |   &#10003;   |
 
 ## CSS Variables
 

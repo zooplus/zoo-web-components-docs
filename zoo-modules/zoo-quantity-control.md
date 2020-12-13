@@ -49,9 +49,11 @@ The above will render to:
 
 ## Attributes
 
-| **Name**  | **Description**                                        | **Type** | **Default** | **Optional** |
-| :-------- | :----------------------------------------------------- | :------- | :---------- | :----------: |
-| `invalid` | flag which indicates whether the input is valid or not | boolean  | `false`     |   &#10003;   |
+> `invalid` attribute should be used as boolean attribute, meaning that when attribute is present and has non-null value it is true, false otherwise.
+
+| **Name**  | **Description**                                        | **Optional** |
+| :-------- | :----------------------------------------------------- | :----------: |
+| `invalid` | flag which indicates whether the input is valid or not |   &#10003;   |
 
 ## CSS Variables
 

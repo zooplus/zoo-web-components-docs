@@ -55,10 +55,9 @@ function getHeaderString (header) {
 }
 const file = fs.readFileSync('./template.html', 'utf8');
 const result = file.replace('<app-root>', `
-    <div class="menu">
-        <h1>Zoo web components</h1>
+    <nav>
 		${headers.map(header => getHeaderString(header)).join('')}
-	</div>
+	</nav>
     <div class="content">
         ${files.join('')}
     </div>

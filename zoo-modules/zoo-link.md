@@ -24,10 +24,10 @@ The above will render to:
 
 ## Attributes
 
-| **Name** | **Description**                          | **Type** | **Default** | **Optional** |
-| :------- | :--------------------------------------- | :------- | :---------- | :----------: |
-| `type`   | `negative`, `primary`, `grey`, `warning` | text     | `negative`  |   &#10003;   |
-| `size`   | `regular`, `bold`, `large`               | text     | `regular`   |   &#10003;   |
+| **Name** | **Description**                          | **Default** | **Optional** |
+| :------- | :--------------------------------------- | :---------- | :----------: |
+| `type`   | `negative`, `primary`, `grey`, `warning` | `negative`  |   &#10003;   |
+| `size`   | `regular`, `bold`, `large`               | `regular`   |   &#10003;   |
 
 ## CSS Variables
 

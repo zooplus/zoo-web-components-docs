@@ -22,10 +22,12 @@ The above will render to:
 
 ## Attributes
 
-| **Name**      | **Description**                                                | **Type** | **Default** | **Optional** |
-| :------------ | :------------------------------------------------------------- | :------- | :---------- | :----------: |
-| `invalid`     | flag which indicates whether the input is valid or not         | boolean  | `null`      |   &#10003;   |
-| `highlighted` | flag indicating whether the border around the input is visible | boolean  | `null`      |   &#10003;   |
+> `invalid` and `highlighted` attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.
+
+| **Name**      | **Description**                                                | **Optional** |
+| :------------ | :------------------------------------------------------------- | :----------: |
+| `invalid`     | flag which indicates whether the input is valid or not         |   &#10003;   |
+| `highlighted` | flag indicating whether the border around the input is visible |   &#10003;   |
 
 ## CSS Variables
 

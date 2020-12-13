@@ -26,9 +26,11 @@ The above will render to:
 
 ## Attributes
 
-| **Name**  | **Description**                                        | **Type** | **Default** | **Optional** |
-| :-------- | :----------------------------------------------------- | :------- | :---------- | :----------: |
-| `invalid` | flag which indicates whether the input is valid or not | boolean  | `null`      |   &#10003;   |
+> `invalid` attribute should be used as boolean attribute, meaning that when attribute is present and has non-null value it is true, false otherwise.
+
+| **Name**  | **Description**                                        | **Optional** |
+| :-------- | :----------------------------------------------------- | :----------: |
+| `invalid` | flag which indicates whether the input is valid or not |   &#10003;   |
 
 ## CSS Variables
 
@@ -41,10 +43,10 @@ The above will render to:
 
 ## Slots
 
-| **Name** | **Description**                                                                | **Optional** |
-| :------- | :----------------------------------------------------------------------------- | :----------: |
-| `input`  | name of the slot for input                                                     |   &#10005;   |
-| `label`  | name of the slot for label                                                     |   &#10003;   |
-| `info`   | accepts any element, foe example `span`                                        |   &#10003;   |
-| `error`  | accepts any element element that shows when `invalid` attribute is present     |   &#10003;   |
-| `link`   | accepts `a`                                                                    |   &#10003;   |
+| **Name** | **Description**                                                            | **Optional** |
+| :------- | :------------------------------------------------------------------------- | :----------: |
+| `input`  | name of the slot for input                                                 |   &#10005;   |
+| `label`  | name of the slot for label                                                 |   &#10003;   |
+| `info`   | accepts any element, foe example `span`                                    |   &#10003;   |
+| `error`  | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |
+| `link`   | accepts `a`                                                                |   &#10003;   |

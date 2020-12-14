@@ -1377,7 +1377,7 @@ angular forms since the basic elements like <code>&lt;input/&gt;</code>, <code>&
 a way of providing error messages.</p>
 </blockquote>
 <p>And the respective JavaScript handler:</p>
-<pre><code class="language-JS">document.querySelector(&#39;form&#39;).addEventListener(&#39;submit&#39;, async e =&gt; {
+<pre><code class="language-JavaScript">document.querySelector(&#39;form&#39;).addEventListener(&#39;submit&#39;, async e =&gt; {
     e.preventDefault();
     const valid = e.target.checkValidity();
     const backendURL = &#39;...&#39;;

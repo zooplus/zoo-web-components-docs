@@ -28,7 +28,7 @@ As a quick example you can refer to the following snippet:
 
 And the respective JavaScript handler:
 
-```JS
+```JavaScript
 document.querySelector('form').addEventListener('submit', async e => {
 	e.preventDefault();
 	const valid = e.target.checkValidity();

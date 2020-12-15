@@ -335,12 +335,12 @@
         &lt;div slot=&quot;row&quot;&gt;&lt;div&gt;2020-05-15&lt;/div&gt;&lt;div&gt;10 kg&lt;/div&gt;&lt;div&gt;5 EUR&lt;/div&gt;&lt;/div&gt;
 
         &lt;zoo-select labelposition=&quot;left&quot; slot=&quot;pagesizeselector&quot;&gt;
+            &lt;label for=&quot;grid-page-size&quot; slot=&quot;label&quot;&gt;Page Size&lt;/label&gt;
             &lt;select id=&quot;grid-page-size&quot; slot=&quot;select&quot;&gt;
                 &lt;option selected&gt;5&lt;/option&gt;
                 &lt;option&gt;10&lt;/option&gt;
                 &lt;option&gt;25&lt;/option&gt;
             &lt;/select&gt;
-            &lt;label for=&quot;grid-page-size&quot; slot=&quot;label&quot;&gt;Page Size&lt;/label&gt;
         &lt;/zoo-select&gt;
     &lt;/zoo-grid&gt;
 &lt;/div&gt;</code></pre>
@@ -356,12 +356,12 @@
             <div>2020-05-15</div><div>10 kg</div><div>5 EUR</div>
         </div>
         <zoo-select labelposition="left" slot="pagesizeselector">
+            <label for="grid-page-size" slot="label">Page Size</label>
             <select id="grid-page-size" slot="select">
                 <option selected>5</option>
                 <option>10</option>
                 <option>25</option>
             </select>
-            <label for="grid-page-size" slot="label">Page Size</label>
         </zoo-select>
     </zoo-grid>
 </div>
@@ -553,15 +553,15 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </tbody></table><h1 id=input><a href="#input">Input</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-input&gt;
-    &lt;input id=&quot;input-type-text&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;input&quot;/&gt;
     &lt;label for=&quot;input-type-text&quot; slot=&quot;label&quot;&gt;Input type text&lt;/label&gt;
+    &lt;input id=&quot;input-type-text&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;input&quot;/&gt;
     &lt;span slot=&quot;info&quot;&gt;Additional helpful information for our users&lt;/span&gt;
     &lt;a slot=&quot;link&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot; target=&quot;about:blank&quot;&gt;Forgotten your password?&lt;/a&gt;
 &lt;/zoo-input&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-input>
-    <input id="input-type-text" slot="input" type="text" placeholder="input"/>
     <label for="input-type-text" slot="label">Input type text</label>
+    <input id="input-type-text" slot="input" type="text" placeholder="input"/>
     <span slot="info">Additional helpful information for our users</span>
     <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-input>
@@ -710,8 +710,8 @@ Modal visibility must be controlled by the client.</p>
         &lt;zoo-feedback&gt;This is an info message. Only one coupon can be accepted with each order.&lt;/zoo-feedback&gt;
         &lt;br&gt;
         &lt;zoo-checkbox highlighted=&quot;true&quot;&gt;
-            &lt;input id=&quot;chkbx&quot; slot=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt;
             &lt;label for=&quot;chkbx&quot; slot=&quot;label&quot;&gt;I understand and confirm that ALL of the above statements are true&lt;/label&gt;
+            &lt;input id=&quot;chkbx&quot; slot=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt;
         &lt;/zoo-checkbox&gt;
         &lt;br&gt;
         &lt;zoo-button style=&quot;margin: 0 auto&quot; type=&quot;hollow&quot;&gt;
@@ -801,8 +801,8 @@ when supplying such input for this component remember to add:</p>
     &lt;button type=&quot;button&quot; slot=&quot;decrease&quot; title=&quot;decrease&quot;&gt;
         &lt;svg height=&quot;18&quot; width=&quot;18&quot;&gt;&lt;line y1=&quot;9&quot; x1=&quot;0&quot; x2=&quot;18&quot; y2=&quot;9&quot;&gt;&lt;/line&gt;&lt;/svg&gt;
     &lt;/button&gt;
-    &lt;input id=&quot;number-input&quot; slot=&quot;input&quot; readonly placeholder=&quot;0&quot; type=&quot;number&quot; step=&quot;50&quot;/&gt;
     &lt;label for=&quot;number-input&quot; slot=&quot;label&quot;&gt;Label&lt;/label&gt;
+    &lt;input id=&quot;number-input&quot; slot=&quot;input&quot; readonly placeholder=&quot;0&quot; type=&quot;number&quot; step=&quot;50&quot;/&gt;
     &lt;button type=&quot;button&quot; slot=&quot;increase&quot; title=&quot;increase&quot;&gt;
         &lt;svg height=&quot;18&quot; width=&quot;18&quot;&gt;
             &lt;line y1=&quot;0&quot; x1=&quot;9&quot; x2=&quot;9&quot; y2=&quot;18&quot;&gt;&lt;/line&gt;
@@ -815,8 +815,8 @@ when supplying such input for this component remember to add:</p>
     <button type="button" slot="decrease" title="decrease">
         <svg height="18" width="18"><line y1="9" x1="0" x2="18" y2="9"></line></svg>
     </button>
-    <input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>
     <label for="number-input" slot="label">Label</label>
+    <input id="number-input" slot="input" readonly placeholder="0" type="number" step="50"/>
     <button type="button" slot="increase" title="increase">
         <svg height="18" width="18">
             <line y1="0" x1="9" x2="9" y2="18"></line>
@@ -886,12 +886,12 @@ when supplying such input for this component remember to add:</p>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-radio&gt;
     &lt;span slot=&quot;label&quot;&gt;Radio group&lt;/span&gt;
 
-    &lt;input type=&quot;radio&quot; id=&quot;contactChoice1&quot; name=&quot;contact&quot; value=&quot;email&quot;&gt;
     &lt;label for=&quot;contactChoice1&quot;&gt;Email&lt;/label&gt;
-    &lt;input type=&quot;radio&quot; id=&quot;contactChoice2&quot; name=&quot;contact&quot; value=&quot;phone&quot;&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;contactChoice1&quot; name=&quot;contact&quot; value=&quot;email&quot;&gt;
     &lt;label for=&quot;contactChoice2&quot;&gt;Phone&lt;/label&gt;
-    &lt;input type=&quot;radio&quot; id=&quot;contactChoice3&quot; name=&quot;contact&quot; value=&quot;mail&quot;&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;contactChoice2&quot; name=&quot;contact&quot; value=&quot;phone&quot;&gt;
     &lt;label for=&quot;contactChoice3&quot;&gt;Mail&lt;/label&gt;
+    &lt;input type=&quot;radio&quot; id=&quot;contactChoice3&quot; name=&quot;contact&quot; value=&quot;mail&quot;&gt;
 
     &lt;span slot=&quot;info&quot;&gt;Additional information&lt;/span&gt;
 &lt;/zoo-radio&gt;</code></pre>
@@ -962,6 +962,7 @@ when supplying such input for this component remember to add:</p>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-searchable-select&gt;
     &lt;span slot=&quot;legend&quot;&gt;Searchable select legend&lt;/span&gt;
 
+    &lt;label slot=&quot;selectlabel&quot; for=&quot;searchable-select&quot;&gt;Searchable select&lt;/label&gt;
     &lt;select id=&quot;searchable-select&quot; slot=&quot;select&quot;&gt;
         &lt;option value=&quot;&quot; selected=&quot;&quot; disabled=&quot;&quot;&gt;Please choose an option&lt;/option&gt;
         &lt;option value=&quot;dog&quot;&gt;Dog&lt;/option&gt;
@@ -969,14 +970,14 @@ when supplying such input for this component remember to add:</p>
         &lt;option value=&quot;smallPet&quot;&gt;Small Pet&lt;/option&gt;
         &lt;option value=&quot;aquatic&quot;&gt;Aquatic&lt;/option&gt;
     &lt;/select&gt;
-    &lt;label slot=&quot;selectlabel&quot; for=&quot;searchable-select&quot;&gt;Searchable select&lt;/label&gt;
 
-    &lt;input id=&quot;inserted-input&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Select options&quot;/&gt;
     &lt;label for=&quot;inserted-input&quot; slot=&quot;inputlabel&quot;&gt;Searchable input&lt;/label&gt;
+    &lt;input id=&quot;inserted-input&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Select options&quot;/&gt;
 &lt;/zoo-searchable-select&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-searchable-select>
     <span slot="legend">Searchable select legend</span>
+    <label slot="selectlabel" for="some-searchable-select-id">Searchable select</label>
     <select id="some-searchable-select-id" slot="select">
         <option value="" selected="" disabled="">Please choose an option</option>
         <option value="dog">Dog</option>
@@ -984,9 +985,8 @@ when supplying such input for this component remember to add:</p>
         <option value="smallPet">Small Pet</option>
         <option value="aquatic">Aquatic</option>
     </select>
-    <label slot="selectlabel" for="some-searchable-select-id">Searchable select</label>
-    <input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
     <label for="inserted-input" slot="inputlabel">Searchable input</label>
+    <input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
 </zoo-searchable-select>
 
 <h2>Attributes</h2><blockquote>
@@ -1055,24 +1055,24 @@ when supplying such input for this component remember to add:</p>
 </tbody></table><h1 id=select><a href="#select">Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-select&gt;
+    &lt;label for=&quot;zoo-select&quot; slot=&quot;label&quot;&gt;Label&lt;/label&gt;
     &lt;select id=&quot;zoo-select&quot; slot=&quot;select&quot;&gt;
         &lt;option value=&quot;value1&quot;&gt;Dog&lt;/option&gt;
         &lt;option value=&quot;value2&quot;&gt;Cat&lt;/option&gt;
         &lt;option value=&quot;value3&quot;&gt;Small Pet&lt;/option&gt;
         &lt;option value=&quot;value4&quot;&gt;Aquatic&lt;/option&gt;
     &lt;/select&gt;
-    &lt;label for=&quot;zoo-select&quot; slot=&quot;label&quot;&gt;Label&lt;/label&gt;
     &lt;a slot=&quot;link&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot; target=&quot;about:blank&quot;&gt;Forgotten your password?&lt;/a&gt;
 &lt;/zoo-select&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-select>
+    <label for="zoo-select" slot="label">Label</label>
     <select id="zoo-select" slot="select">
         <option value="value1">Dog</option>
         <option value="value2">Cat</option>
         <option value="value3">Small Pet</option>
         <option value="value4">Aquatic</option>
     </select>
-    <label for="zoo-select" slot="label">Label</label>
     <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-select>
 
@@ -1257,13 +1257,13 @@ when supplying such input for this component remember to add:</p>
 </tbody></table><h1 id=toggle-switch><a href="#toggle-switch">Toggle Switch</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toggle-switch&gt;
-    &lt;label for=&quot;input-toggle&quot; slot=&quot;label&quot;&gt;Toggle switch&lt;/label&gt;
     &lt;input id=&quot;input-toggle&quot; slot=&quot;input&quot; type=&quot;checkbox&quot;/&gt;
+    &lt;label for=&quot;input-toggle&quot; slot=&quot;label&quot;&gt;Toggle switch&lt;/label&gt;
 &lt;/zoo-toggle-switch&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-toggle-switch>
-    <label for="input-toggle" slot="label">Toggle switch</label>
     <input id="input-toggle" slot="input" type="checkbox"/>
+    <label for="input-toggle" slot="label">Toggle switch</label>
 </zoo-toggle-switch>
 
 <h2>CSS Variables</h2><table><thead><tr>
@@ -1364,8 +1364,8 @@ angular forms since the basic elements like <code>&lt;input/&gt;</code>, <code>&
 <p>As a quick example you can refer to the following snippet:</p>
 <pre><code class="language-HTML">&lt;form novalidate&gt;
     &lt;zoo-input&gt;
-        &lt;input id=&quot;input-type-text&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;input&quot; required pattern=&quot;[A-Za-z ]+&quot;/&gt;
-        &lt;label for=&quot;input-type-text&quot; slot=&quot;label&quot;&gt;Input type text&lt;/label&gt;
+        &lt;label for=&quot;input-validation&quot; slot=&quot;label&quot;&gt;Input type text&lt;/label&gt;
+        &lt;input id=&quot;input-validation&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;input&quot; required pattern=&quot;[A-Za-z ]+&quot;/&gt;
         &lt;span slot=&quot;error&quot;&gt;This input field should contain only letters and it is required!&lt;/span&gt;
     &lt;/zoo-input&gt;
     &lt;zoo-button&gt;
@@ -1391,8 +1391,8 @@ a way of providing error messages.</p>
 <p>The above JS is already loaded into this page, the rendered HTML for you to try it is here:  </p>
 <form novalidate id="test-form">
     <zoo-input>
-        <input id="input-type-text" slot="input" type="text" placeholder="input" required pattern="[A-Za-z ]+"/>
-        <label for="input-type-text" slot="label">Input type text</label>
+        <label for="input-validation" slot="label">Input type text</label>
+        <input id="input-validation" slot="input" type="text" placeholder="input" required pattern="[A-Za-z ]+"/>
         <span slot="error">This input field should contain only letters and it is required!</span>
     </zoo-input>
     <zoo-button style="margin: 10px auto;">

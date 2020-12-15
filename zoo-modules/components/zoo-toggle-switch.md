@@ -8,16 +8,16 @@ Input component which provides styles for slotted **`<input type="checkbox"/>`**
 
 ```HTML
 <zoo-toggle-switch>
-	<label for="input-toggle" slot="label">Toggle switch</label>
 	<input id="input-toggle" slot="input" type="checkbox"/>
+	<label for="input-toggle" slot="label">Toggle switch</label>
 </zoo-toggle-switch>
 ```
 
 The above will render to:
 
 <zoo-toggle-switch>
-	<label for="input-toggle" slot="label">Toggle switch</label>
 	<input id="input-toggle" slot="input" type="checkbox"/>
+	<label for="input-toggle" slot="label">Toggle switch</label>
 </zoo-toggle-switch>
 
 ## CSS Variables

@@ -10,12 +10,12 @@ Radio component which provides styles for **`<input type="radio"/>`** and associ
 <zoo-radio>
 	<span slot="label">Radio group</span>
 
-	<input type="radio" id="contactChoice1" name="contact" value="email">
 	<label for="contactChoice1">Email</label>
-	<input type="radio" id="contactChoice2" name="contact" value="phone">
+	<input type="radio" id="contactChoice1" name="contact" value="email">
 	<label for="contactChoice2">Phone</label>
-	<input type="radio" id="contactChoice3" name="contact" value="mail">
+	<input type="radio" id="contactChoice2" name="contact" value="phone">
 	<label for="contactChoice3">Mail</label>
+	<input type="radio" id="contactChoice3" name="contact" value="mail">
 
 	<span slot="info">Additional information</span>
 </zoo-radio>

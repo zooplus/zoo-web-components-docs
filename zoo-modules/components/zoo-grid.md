@@ -18,12 +18,12 @@ Grid component.
 		<div slot="row"><div>2020-05-15</div><div>10 kg</div><div>5 EUR</div></div>
 
 		<zoo-select labelposition="left" slot="pagesizeselector">
+			<label for="grid-page-size" slot="label">Page Size</label>
 			<select id="grid-page-size" slot="select">
 				<option selected>5</option>
 				<option>10</option>
 				<option>25</option>
 			</select>
-			<label for="grid-page-size" slot="label">Page Size</label>
 		</zoo-select>
 	</zoo-grid>
 </div>
@@ -42,12 +42,12 @@ The above will render to:
 			<div>2020-05-15</div><div>10 kg</div><div>5 EUR</div>
 		</div>
 		<zoo-select labelposition="left" slot="pagesizeselector">
+			<label for="grid-page-size" slot="label">Page Size</label>
 			<select id="grid-page-size" slot="select">
 				<option selected>5</option>
 				<option>10</option>
 				<option>25</option>
 			</select>
-			<label for="grid-page-size" slot="label">Page Size</label>
 		</zoo-select>
 	</zoo-grid>
 </div>

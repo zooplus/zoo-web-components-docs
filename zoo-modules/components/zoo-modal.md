@@ -14,8 +14,8 @@ Modal visibility must be controlled by the client.
 		<zoo-feedback>This is an info message. Only one coupon can be accepted with each order.</zoo-feedback>
 		<br>
 		<zoo-checkbox highlighted="true">
-			<input id="chkbx" slot="checkbox" type="checkbox"/>
 			<label for="chkbx" slot="label">I understand and confirm that ALL of the above statements are true</label>
+			<input id="chkbx" slot="checkbox" type="checkbox"/>
 		</zoo-checkbox>
 		<br>
 		<zoo-button style="margin: 0 auto" type="hollow">

@@ -10,6 +10,7 @@ Select component which provides styles for slotted **`<select>...</select>`**
 <zoo-searchable-select>
 	<span slot="legend">Searchable select legend</span>
 
+	<label slot="selectlabel" for="searchable-select">Searchable select</label>
 	<select id="searchable-select" slot="select">
 		<option value="" selected="" disabled="">Please choose an option</option>
 		<option value="dog">Dog</option>
@@ -17,10 +18,9 @@ Select component which provides styles for slotted **`<select>...</select>`**
 		<option value="smallPet">Small Pet</option>
 		<option value="aquatic">Aquatic</option>
 	</select>
-	<label slot="selectlabel" for="searchable-select">Searchable select</label>
 
-	<input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
 	<label for="inserted-input" slot="inputlabel">Searchable input</label>
+	<input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
 </zoo-searchable-select>
 ```
 
@@ -28,6 +28,7 @@ The above will render to:
 
 <zoo-searchable-select>
 	<span slot="legend">Searchable select legend</span>
+	<label slot="selectlabel" for="some-searchable-select-id">Searchable select</label>
 	<select id="some-searchable-select-id" slot="select">
 		<option value="" selected="" disabled="">Please choose an option</option>
 		<option value="dog">Dog</option>
@@ -35,9 +36,8 @@ The above will render to:
 		<option value="smallPet">Small Pet</option>
 		<option value="aquatic">Aquatic</option>
 	</select>
-	<label slot="selectlabel" for="some-searchable-select-id">Searchable select</label>
-	<input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
 	<label for="inserted-input" slot="inputlabel">Searchable input</label>
+	<input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
 </zoo-searchable-select>
 
 ## Attributes

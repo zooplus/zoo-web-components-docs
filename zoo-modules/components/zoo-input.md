@@ -8,8 +8,8 @@ Input component which provides styles for slotted **`<input type="text"/>`**
 
 ```HTML
 <zoo-input>
-	<input id="input-type-text" slot="input" type="text" placeholder="input"/>
 	<label for="input-type-text" slot="label">Input type text</label>
+	<input id="input-type-text" slot="input" type="text" placeholder="input"/>
 	<span slot="info">Additional helpful information for our users</span>
 	<a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-input>
@@ -18,8 +18,8 @@ Input component which provides styles for slotted **`<input type="text"/>`**
 The above will render to:
 
 <zoo-input>
-	<input id="input-type-text" slot="input" type="text" placeholder="input"/>
 	<label for="input-type-text" slot="label">Input type text</label>
+	<input id="input-type-text" slot="input" type="text" placeholder="input"/>
 	<span slot="info">Additional helpful information for our users</span>
 	<a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-input>

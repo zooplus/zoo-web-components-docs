@@ -8,13 +8,13 @@ Select component which provides styles for slotted **`<select>...</select>`**
 
 ```HTML
 <zoo-select>
+	<label for="zoo-select" slot="label">Label</label>
 	<select id="zoo-select" slot="select">
 		<option value="value1">Dog</option>
 		<option value="value2">Cat</option>
 		<option value="value3">Small Pet</option>
 		<option value="value4">Aquatic</option>
 	</select>
-	<label for="zoo-select" slot="label">Label</label>
 	<a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-select>
 ```
@@ -22,13 +22,13 @@ Select component which provides styles for slotted **`<select>...</select>`**
 The above will render to:
 
 <zoo-select>
+	<label for="zoo-select" slot="label">Label</label>
 	<select id="zoo-select" slot="select">
 		<option value="value1">Dog</option>
 		<option value="value2">Cat</option>
 		<option value="value3">Small Pet</option>
 		<option value="value4">Aquatic</option>
 	</select>
-	<label for="zoo-select" slot="label">Label</label>
 	<a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-select>
 

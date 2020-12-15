@@ -13,8 +13,8 @@ As a quick example you can refer to the following snippet:
 ```HTML
 <form novalidate>
 	<zoo-input>
-		<input id="input-type-text" slot="input" type="text" placeholder="input" required pattern="[A-Za-z ]+"/>
-		<label for="input-type-text" slot="label">Input type text</label>
+		<label for="input-validation" slot="label">Input type text</label>
+		<input id="input-validation" slot="input" type="text" placeholder="input" required pattern="[A-Za-z ]+"/>
 		<span slot="error">This input field should contain only letters and it is required!</span>
 	</zoo-input>
 	<zoo-button>
@@ -46,8 +46,8 @@ The above JS is already loaded into this page, the rendered HTML for you to try 
 
 <form novalidate id="test-form">
 	<zoo-input>
-		<input id="input-type-text" slot="input" type="text" placeholder="input" required pattern="[A-Za-z ]+"/>
-		<label for="input-type-text" slot="label">Input type text</label>
+		<label for="input-validation" slot="label">Input type text</label>
+		<input id="input-validation" slot="input" type="text" placeholder="input" required pattern="[A-Za-z ]+"/>
 		<span slot="error">This input field should contain only letters and it is required!</span>
 	</zoo-input>
 	<zoo-button style="margin: 10px auto;">

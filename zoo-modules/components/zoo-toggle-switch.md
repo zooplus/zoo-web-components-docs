@@ -20,11 +20,13 @@ The above will render to:
 	<label for="input-toggle" slot="label">Toggle switch</label>
 </zoo-toggle-switch>
 
+> Note: `id` and `for` attributes on native elements are optional when you do not care about accessibility.
+
 ## CSS Variables
 
-| **Name**        | **Default** |
-| :-------------- | :---------: |
-| `--primary-mid` |  `#3C9700`  |
+| **Name**        | **Description**           |
+| :-------------- | :------------------------ |
+| `--primary-mid` | color of clickable toggle |
 
 ## Slots
 

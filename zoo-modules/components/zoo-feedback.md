@@ -28,14 +28,14 @@ Container component which provides a styled container with preset icon.
 
 ## CSS Variables
 
-| **Name**               | **Default** |
-| :--------------------- | :---------- |
-| `--primary-ultralight` | `#EBF4E5`   |
-| `--primary-mid`        | `#3C9700`   |
-| `--info-ultralight`    | `#ECF5FA`   |
-| `--info-mid`           | `#459FD0`   |
-| `--warning-ultralight` | `#FDE8E9`   |
-| `--warning-mid`        | `#ED1C24`   |
+| **Name**               | **Description**                  |
+| :--------------------- | :------------------------------- |
+| `--primary-ultralight` | background when `type="success"` |
+| `--primary-mid`        | icon color when `type="success"` |
+| `--info-ultralight`    | background when `type="info"`    |
+| `--info-mid`           | icon color when `type="info"`    |
+| `--warning-ultralight` | background when `type="error"`   |
+| `--warning-mid`        | icon color when `type="error"`   |
 
 ## Slots
 

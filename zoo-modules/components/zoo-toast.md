@@ -21,14 +21,14 @@ Container component which has fly-in/out animations. It can be controlled via ex
 
 ## CSS Variables
 
-| **Name**               | **Default** |
-| :--------------------- | :---------: |
-| `--info-ultralight`    |  `#ECF5FA`  |
-| `--info-mid`           |  `#459FD0`  |
-| `--warning-ultralight` |  `#FDE8E9`  |
-| `--warning-mid`        |  `#ED1C24`  |
-| `--primary-ultralight` |  `#EBF4E5`  |
-| `--primary-mid`        |  `#3C9700`  |
+| **Name**               | **Description**                                 |
+| :--------------------- | :---------------------------------------------- |
+| `--info-ultralight`    | background color of toast when `type="info"`    |
+| `--info-mid`           | icon color of toast when `type="info"`          |
+| `--warning-ultralight` | background color of toast when `type="error"`   |
+| `--warning-mid`        | icon color of toast when `type="error"`         |
+| `--primary-ultralight` | background color of toast when `type="success"` |
+| `--primary-mid`        | icon color of toast when `type="success"`       |
 
 ## Functions
 

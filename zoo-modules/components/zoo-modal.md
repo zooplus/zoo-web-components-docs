@@ -27,9 +27,9 @@ Modal visibility must be controlled by the client.
 
 ## CSS Variables
 
-| **Name**        | **Default** |
-| :-------------- | :---------: |
-| `--primary-mid` |  `#3C9700`  |
+| **Name**        | **Description**  |
+| :-------------- | :--------------- |
+| `--primary-mid` | close icon color |
 
 ## Slots
 

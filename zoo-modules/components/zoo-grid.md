@@ -54,8 +54,6 @@ The above will render to:
 
 ## Attributes
 
-> `loading`, `stickyheader`, `resizable` and `reorderable` attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.
-
 | **Name**     | **Description**                                                            | **Optional** |
 | :----------- | :------------------------------------------------------------------------- | :----------: |
 | loading      | flag which indicates whether to show loader inside grid                    |   &#10003;   |
@@ -65,12 +63,14 @@ The above will render to:
 | currentpage  | current page that the user is on, mandatory only when using paginator      |   &#10003;   |
 | maxpages     | maximum number of pages, mandatory only when using paginator               |   &#10003;   |
 
+> `loading`, `stickyheader`, `resizable` and `reorderable` attributes should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
+ 
 ## CSS variables
 
-| **Name**              | **Default**                                         |
-| :-------------------- | :-------------------------------------------------- |
-| `--warning-dark`      | `#BD161C`                                           |
-| `--grid-column-sizes` | `repeat(var(--grid-column-num), minmax(50px, 1fr))` |
+| **Name**              | **Description**                                                                        |
+| :-------------------- | :------------------------------------------------------------------------------------- |
+| `--warning-dark`      | user for text color for `norecords` slot                                               |
+| `--grid-column-sizes` | sizes of each column, for example: `repeat(var(--grid-column-num), minmax(50px, 1fr))` |
 
 > By default, grid will calculate number of headers supplied via slot,
 > and apply `repeat(var(--grid-column-num), minmax(50px, 1fr))` css rule
@@ -99,7 +99,7 @@ The above will render to:
 
 ### zoo-grid-header attributes
 
-> `sortable` attribute should be used as boolean attribute, meaning that when attribute is present and has non-null value it is true, false otherwise.
+> `sortable` attribute should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
 
 | **Name**           | **Description** |             **Optional**              |
 | :----------------- | :-------------: | :-----------------------------------: |

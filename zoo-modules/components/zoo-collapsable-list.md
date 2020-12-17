@@ -34,10 +34,10 @@ Container component which provides styles for slotted content.
 
 ## CSS Variables
 
-|     **Name**     | **Default** |
-| :--------------: | :---------: |
-| `--primary-mid`  |  `#3C9700`  |
-| `--primary-dark` |  `#286400`  |
+| **Name**         | **Description**                          |
+| :--------------- | :--------------------------------------- |
+| `--primary-mid`  | user for border and icon                 |
+| `--primary-dark` | user for header text when item is active |
 
 ## Slots
 

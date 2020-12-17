@@ -32,9 +32,9 @@ The above will render to:
 	<a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
 </zoo-select>
 
-## Attributes
+> Note: `id` and `for` attributes on native elements are optional when you do not care about accessibility.
 
-> `invalid` and `loading` attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.
+## Attributes
 
 | **Name**        | **Description**                                        | **Default** | **Optional** |
 | :-------------- | :----------------------------------------------------- | :---------- | :----------: |
@@ -42,14 +42,16 @@ The above will render to:
 | `invalid`       | flag which indicates whether the input is valid or not | `null`      |   &#10003;   |
 | `loading`       | flag which indicates whether to show loader            | `null`      |   &#10003;   |
 
+> `invalid` and `loading` attributes should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
+
 ## CSS Variables
 
-| **Name**          | **Default** |
-| :---------------- | :---------- |
-| `--primary-light` | `#66B100`   |
-| `--primary-mid`   | `#3C9700`   |
-| `--primary-dark`  | `#286400`   |
-| `--warning-mid`   | `#ED1C24`   |
+| **Name**          | **Description**        |
+| :---------------- | :--------------------- |
+| `--primary-light` | refer to `zoo-link`    |
+| `--primary-mid`   | refer to `zoo-link`    |
+| `--primary-dark`  | refer to `zoo-link`    |
+| `--warning-mid`   | color of error message |
 
 ## Slots
 

@@ -34,20 +34,22 @@ The above will render to:
 	<span slot="info">Additional information</span>
 </zoo-radio>
 
-## Attributes
+> Note: `id` and `for` attributes on native elements are optional when you do not care about accessibility, selecting an option by clicking on a label will not be possible without these attributes.
 
-> `invalid` attribute should be used as boolean attribute, meaning that when attribute is present and has non-null value it is true, false otherwise.
+## Attributes
 
 | **Name**  | **Description**                                        | **Optional** |
 | :-------- | :----------------------------------------------------- | :----------: |
 | `invalid` | flag which indicates whether the input is valid or not |   &#10003;   |
 
+> `invalid` attribute should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
+
 ## CSS Variables
 
-| **Name**        | **Default** |
-| :-------------- | :---------: |
-| `--primary-mid` |  `#3C9700`  |
-| `--warning-mid` |  `#ED1C24`  |
+| **Name**        | **Description**                                          |
+| :-------------- | :------------------------------------------------------- |
+| `--primary-mid` | color of radio input                                     |
+| `--warning-mid` | color of radio input when `invalid` attribute is present |
 
 ## Slots
 

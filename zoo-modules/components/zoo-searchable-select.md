@@ -40,14 +40,16 @@ The above will render to:
 	<input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
 </zoo-searchable-select>
 
-## Attributes
+> Note: `id` and `for` attributes on native elements are optional when you do not care about accessibility.
 
-> `invalid` and `loading` attributes should be used as boolean attributes, meaning that when attribute is present and has non-null value it is true, false otherwise.
+## Attributes
 
 | **Name**  | **Description**                                                             | **Optional** |
 | :-------- | :-------------------------------------------------------------------------- | :----------: |
 | `invalid` | flag which indicates whether the input is valid or not                      |   &#10003;   |
 | `loading` | flag which indicates whether to show loader inside slotted `select` element |   &#10003;   |
+
+> `invalid` and `loading` attributes should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
 
 ## Slots
 

@@ -28,9 +28,9 @@ The above will render to:
 
 ## CSS Variables
 
-| **Name**        | **Default** |
-| :-------------- | :---------: |
-| `--primary-mid` |  `#3C9700`  |
+| **Name**        | **Description** |
+| :-------------- | :---------- |
+| `--primary-mid` | text color  |
 
 ## Slots
 

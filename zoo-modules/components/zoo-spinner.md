@@ -22,6 +22,6 @@ Spinner svg.
 
 ## CSS Variables
 
-|    **Name**     | **Default** |
-| :-------------: | :---------: |
-| `--primary-mid` |  `#3C9700`  |
+|    **Name**     | **Description**  |
+| :-------------: | :--------------- |
+| `--primary-mid` | color of spinner |

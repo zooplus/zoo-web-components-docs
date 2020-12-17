@@ -22,18 +22,17 @@ The above will render to:
 | **Name** | **Description**            | **Default** | **Optional** |
 | :------: | :------------------------- | :---------- | :----------: |
 |  `type`  | primary, secondary, hollow | `primary`   |   &#10003;   |
-|  `size`  | small, medium              | `small`     |   &#10003;   |
 
 ## CSS Variables
 
-| **Name**            | **Default** |
-| :------------------ | :---------- |
-| `--primary-light`   | `#66B100`   |
-| `--primary-mid`     | `#3C9700`   |
-| `--primary-dark`    | `#286400`   |
-| `--secondary-light` | `#FF8800`   |
-| `--secondary-mid`   | `#FF6200`   |
-| `--secondary-dark`  | `#CC4E00`   |
+| **Name**            | **Description**                                                                                    |
+| :------------------ | :------------------------------------------------------------------------------------------------- |
+| `--primary-light`   | used as right end of gradient                                                                      |
+| `--primary-mid`     | used as left side of gradient, background on hover and focus and as text-color for `type="hollow"` |
+| `--primary-dark`    | used for background when button is active                                                          |
+| `--secondary-light` | same as `primary-light` for `type="secondary"`                                                     |
+| `--secondary-mid`   | same as `primary-mid` for `type="secondary"`                                                       |
+| `--secondary-dark`  | same as `primary-dark` for `type="secondary"`                                                      |
 
 ## Slots
 

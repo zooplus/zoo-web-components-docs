@@ -31,12 +31,11 @@ The above will render to:
 
 ## CSS Variables
 
-| **Name**          | **Default** |
-| :---------------- | :---------: |
-| `--primary-light` |  `#66B100`  |
-| `--primary-mid`   |  `#3C9700`  |
-| `--primary-dark`  |  `#286400`  |
-| `--warning-dark`  |  `#BD161C`  |
+| **Name**         | **Description**                            |
+| :--------------- | :----------------------------------------- |
+| `--primary-mid`  | link text color                            |
+| `--primary-dark` | link text color on hover, focus and active |
+| `--warning-dark` | link text when `type="warning"`            |
 
 ## Slots
 

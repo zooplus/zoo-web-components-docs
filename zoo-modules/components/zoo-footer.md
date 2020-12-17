@@ -36,10 +36,10 @@ The above will render to:
 
 ## CSS Variables
 
-| **Name**          | **Default** |
-| :---------------- | :---------: |
-| `--primary-light` |  `#66B100`  |
-| `--primary-mid`   |  `#3C9700`  |
+| **Name**          | **Description**                  |
+| :---------------- | :------------------------------- |
+| `--primary-light` | right end of background gradient |
+| `--primary-mid`   | left end of background gradient  |
 
 ## Slots
 

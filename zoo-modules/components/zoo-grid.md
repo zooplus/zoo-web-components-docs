@@ -100,10 +100,10 @@ The above will render to:
 
 > `sortable` attribute should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
 
-| **Name**           | **Description** |             **Optional**              |
-| :----------------- | :-------------: | :-----------------------------------: |
-| `sortable`         |                 |               &#10003;                |
-| `sortableproperty` |                 | &#10003; - when `sortable` is not set |
+| **Name**           | **Description**                                       | **Optional**                          |
+| :----------------- | :---------------------------------------------------- | :------------------------------------ |
+| `sortable`         | flag, which indicates whether this column is sortable | &#10003;                              |
+| `sortableproperty` | string that will be emitted when user changes sorting | &#10003; - when `sortable` is not set |
 
 ## Events
 

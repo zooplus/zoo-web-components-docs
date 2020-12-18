@@ -737,25 +737,13 @@ Modal visibility must be controlled by the client.</p>
 </tbody></table><h1 id=navigation><a href="#navigation">Navigation</a></h1><p>Container component which provides styles for slotted content.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-navigation&gt;
-    &lt;div&gt;
-        &lt;zoo-link type=&quot;negative&quot;&gt;
-            &lt;a slot=&quot;anchor&quot; href=&quot;https://github.com/zooplus/zoo-web-components&quot;&gt;Github&lt;/a&gt;
-        &lt;/zoo-link&gt;
-        &lt;zoo-link type=&quot;negative&quot;&gt;
-            &lt;a slot=&quot;anchor&quot; href=&quot;https://www.npmjs.com/package/@zooplus/zoo-web-components&quot;&gt;NPM&lt;/a&gt;
-        &lt;/zoo-link&gt;
-    &lt;/div&gt;
+    &lt;a href=&quot;https://github.com/zooplus/zoo-web-components&quot;&gt;Github&lt;/a&gt;
+    &lt;a href=&quot;https://www.npmjs.com/package/@zooplus/zoo-web-components&quot;&gt;NPM&lt;/a&gt;
 &lt;/zoo-navigation&gt;</code></pre>
 <p>The above will render to:</p>
 <zoo-navigation>
-    <div>
-        <zoo-link type="negative">
-            <a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
-        </zoo-link>
-        <zoo-link type="negative">
-            <a slot="anchor" href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
-        </zoo-link>
-    </div>
+    <a href="https://github.com/zooplus/zoo-web-components">Github</a>
+    <a href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
 </zoo-navigation>
 
 <h2>CSS Variables</h2><table><thead><tr>

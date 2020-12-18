@@ -8,28 +8,16 @@ Container component which provides styles for slotted content.
 
 ```HTML
 <zoo-navigation>
-	<div>
-		<zoo-link type="negative">
-			<a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
-		</zoo-link>
-		<zoo-link type="negative">
-			<a slot="anchor" href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
-		</zoo-link>
-	</div>
+	<a href="https://github.com/zooplus/zoo-web-components">Github</a>
+	<a href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
 </zoo-navigation>
 ```
 
 The above will render to:
 
 <zoo-navigation>
-	<div>
-		<zoo-link type="negative">
-			<a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
-		</zoo-link>
-		<zoo-link type="negative">
-			<a slot="anchor" href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
-		</zoo-link>
-	</div>
+	<a href="https://github.com/zooplus/zoo-web-components">Github</a>
+	<a href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
 </zoo-navigation>
 
 ## CSS Variables

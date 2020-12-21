@@ -40,7 +40,8 @@ The above will render to:
 	<input id="inserted-input" slot="input" type="text" placeholder="Select options"/>
 </zoo-searchable-select>
 
-> Note: `id` and `for` attributes on native elements are optional when you do not care about accessibility.
+> Note: `id` and `for` attributes on native elements are optional when you do not care about accessibility.  
+> `inputlabel` and `selectlabel` slots are optional as well, since they are used only by screen readers.
 
 ## Attributes
 

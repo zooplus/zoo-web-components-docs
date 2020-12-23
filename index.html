@@ -17,11 +17,64 @@
 	</header>
 	<main>
 		
-    <nav>
-		<a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
-	</nav>
-    <div class="content">
-        <h1 id=button><a href="#button">Button</a></h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
+        <nav>
+            <a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
+        </nav>
+        <div class="content">
+            <h1 id=button><a href="#button">Button</a></h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-button')">open sandbox</button>
+</zoo-button>
+<template id="zoo-button-template">
+    <form>
+        <zoo-select>
+            <label slot="label">Type</label>
+            <select slot="select" data-type="attr" data-attrname="type">
+                <option value="">none</option>
+                <option value="primary">primary</option>
+                <option value="secondary">secondary</option>
+                <option value="hollow">hollow</option>
+            </select>
+        </zoo-select>
+        <zoo-input>
+            <label slot="label">--primary-light CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-light">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-dark CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-dark">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--secondary-light CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--secondary-light">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--secondary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--secondary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--secondary-dark CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--secondary-dark">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Slot</label>
+            <textarea slot="input" data-type="slot" data-slotname=""><button type="button">Button</button></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-button>
+    <button type="button">Button</button>
+</zoo-button>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example</h2><pre><code class="language-HTML">&lt;zoo-button&gt;
     &lt;button type=&quot;button&quot; disabled&gt;Disabled :(&lt;/button&gt;
@@ -82,6 +135,53 @@
 <td class="center">&#10005;</td>
 </tr>
 </tbody></table><h1 id=checkbox><a href="#checkbox">Checkbox</a></h1><p>Checkbox component which provides styles for <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-checkbox')">open sandbox</button>
+</zoo-button>
+<template id="zoo-checkbox-template">
+    <form>
+        <zoo-checkbox highlighted>
+            <input id="zoo-highlighted-checkbox-id" slot="checkbox" type="checkbox" checked data-type="attr" data-attrname="highlighted" data-attrboolean="true"/>
+            <label for="zoo-highlighted-checkbox-id" slot="label">Highlighted</label>
+        </zoo-checkbox>
+        <zoo-checkbox highlighted>
+            <input id="zoo-invalid-checkbox-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+            <label for="zoo-invalid-checkbox-id" slot="label">Invalid</label>
+        </zoo-checkbox>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--warning-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--warning-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Label slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="label"><label slot="label" for="sandbox-checkbox-id">An example checkbox</label></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Info slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Info</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Error slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error</span></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-checkbox highlighted>
+    <input id="sandbox-checkbox-id" slot="checkbox" type="checkbox"/>
+    <label for="sandbox-checkbox-id" slot="label">An example checkbox</label>
+    <span slot="info">Info</span>
+    <span slot="error">Error</span>
+</zoo-checkbox>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-checkbox highlighted&gt;
     &lt;input id=&quot;checkbox-id&quot; slot=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt;
@@ -153,6 +253,48 @@
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h1 id=collapsable-list><a href="#collapsable-list">Collapsable List</a></h1><p>Container component which provides styles for slotted content.</p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-collapsable-list')">open sandbox</button>
+</zoo-button>
+<template id="zoo-collapsable-list-template">
+    <form>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-dark CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-dark">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Collapsable list item slot</label>
+            <textarea slot="input" data-type="slot" data-slotname=""><zoo-collapsable-list-item>
+    <span slot="header">Header1</span>
+    <div slot="content">content</div>
+</zoo-collapsable-list-item>
+<zoo-collapsable-list-item>
+    <span slot="header">Header1</span>
+    <div slot="content">content</div>
+</zoo-collapsable-list-item></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-collapsable-list>
+    <zoo-collapsable-list-item>
+        <span slot="header">Header1</span>
+        <div slot="content">content</div>
+    </zoo-collapsable-list-item>
+    <zoo-collapsable-list-item>
+        <span slot="header">Header2</span>
+        <div slot="content">content</div>
+    </zoo-collapsable-list-item>
+</zoo-collapsable-list>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-collapsable-list&gt;
     &lt;zoo-collapsable-list-item&gt;
@@ -208,6 +350,61 @@
 <td class="center">&#10005;</td>
 </tr>
 </tbody></table><h1 id=feedback><a href="#feedback">Feedback</a></h1><p>Container component which provides a styled container with preset icon.</p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-feedback')">open sandbox</button>
+</zoo-button>
+<template id="zoo-feedback-template">
+    <form>
+        <zoo-select>
+            <label slot="label">Type</label>
+            <select slot="select" data-type="attr" data-attrname="type">
+                <option value="">none</option>
+                <option value="info">info</option>
+                <option value="error">error</option>
+                <option value="success">success</option>
+            </select>
+        </zoo-select>
+        <zoo-input>
+            <label slot="label">--primary-ultralight CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-ultralight">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--info-ultralight CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-ultralight">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--info-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--info-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--warning-ultralight CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--warning-ultralight">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--warning-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--warning-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="">Slotted content, this can be HMTL as well!</textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-feedback>
+    Slotted content, this can be HMTL as well!
+</zoo-feedback>
+        </output>
+        <h3>HTML code</h3>
+        <div style="height: 50px; width: auto">
+            <pre class=" language-html"><code></code></pre>
+        </div>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;height: 50px; width: auto&quot;&gt;
     &lt;zoo-feedback&gt;
@@ -269,6 +466,48 @@
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h1 id=footer><a href="#footer">Footer</a></h1><p>Container footer component.</p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-footer')">open sandbox</button>
+</zoo-button>
+<template id="zoo-footer-template">
+    <form>
+        <zoo-input>
+            <label slot="label">Copyright attribute</label>
+            <input slot="input" type="text" data-type="attr" data-attrname="copyright" value="zooplus AG">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-light CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-light">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Slot</label>
+            <textarea slot="input" data-type="slot" data-slotname=""><zoo-link type="negative">
+    <a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
+</zoo-link>
+<zoo-link type="negative">
+    <a slot="anchor" href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
+</zoo-link></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-footer copyright="zooplus AG">
+    <zoo-link type="negative">
+        <a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
+    </zoo-link>
+    <zoo-link type="negative">
+        <a slot="anchor" href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
+    </zoo-link>
+</zoo-footer>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-footer copyright=&quot;zooplus AG&quot;&gt;
     &lt;zoo-link type=&quot;negative&quot;&gt;
@@ -498,11 +737,49 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="left"><code>{detail: { pageNumber: $pageNumber }}</code></td>
 </tr>
 </tbody></table><h1 id=header><a href="#header">Header</a></h1><p>Container header component.</p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-header')">open sandbox</button>
+</zoo-button>
+<template id="zoo-header-template">
+    <form>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Img slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="img"><img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">headertext slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="headertext"><h1 slot="headertext">Zooplus web components</h1></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Unnamed slot</label>
+            <textarea slot="input" data-type="slot" data-slotname=""><zoo-button style="margin-left: 50px">
+    <button type="button">Zoo+ theme</button>
+</zoo-button></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-header>
+    <img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/>
+    <h1 slot="headertext">Zooplus web components</h1>
+    <zoo-button style="margin-left: 50px">
+        <button type="button">Zoo+ theme</button>
+    </zoo-button>
+</zoo-header>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-header&gt;
     &lt;img slot=&quot;img&quot; alt=&quot;Zooplus logo&quot; src=&quot;https://zooplus.github.io/zoo-web-components/logo.png&quot;/&gt;
     &lt;h1 slot=&quot;headertext&quot;&gt;Zooplus web components&lt;/h1&gt;
-    &lt;zoo-button size=&quot;medium&quot; style=&quot;margin-left: 50px&quot;&gt;
+    &lt;zoo-button style=&quot;margin-left: 50px&quot;&gt;
         &lt;button type=&quot;button&quot;&gt;Zoo+ theme&lt;/button&gt;
     &lt;/zoo-button&gt;
 &lt;/zoo-header&gt;</code></pre>
@@ -510,7 +787,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <zoo-header>
     <img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/>
     <h1 slot="headertext">Zooplus web components</h1>
-    <zoo-button size="medium" style="margin-left: 50px">
+    <zoo-button style="margin-left: 50px">
         <button type="button">Zoo+ theme</button>
     </zoo-button>
 </zoo-header>
@@ -544,6 +821,62 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h1 id=input><a href="#input">Input</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-input')">open sandbox</button>
+</zoo-button>
+<template id="zoo-input-template">
+    <form>
+        <zoo-checkbox highlighted>
+            <input id="zoo-invalid-input-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+            <label for="zoo-invalid-input-id" slot="label">Invalid</label>
+        </zoo-checkbox>
+        <zoo-input>
+            <label slot="label">--primary-light CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-light">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-dark CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-dark">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--warning-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--warning-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Label slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="label"><label slot="label" for="sandbox-input-id">Input type text</label></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Link slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="link"><a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Info slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Info</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Error slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error message</span></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-input>
+    <label for="sandbox-input-id" slot="label">Input type text</label>
+    <input id="sandbox-input-id" slot="input" type="text" placeholder="input"/>
+    <span slot="info">Additional helpful information for our users</span>
+    <span slot="error">Error message</span>
+    <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
+</zoo-input>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-input&gt;
     &lt;label for=&quot;input-type-text&quot; slot=&quot;label&quot;&gt;Input type text&lt;/label&gt;
@@ -626,6 +959,85 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h1 id=link><a href="#link">Link</a></h1><p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-link')">open sandbox</button>
+</zoo-button>
+<template id="zoo-link-template">
+    <form>
+        <zoo-select>
+            <label slot="label">Type</label>
+            <select slot="select" data-type="attr" data-attrname="type">
+                <option value="">none</option>
+                <option value="negative">negative</option>
+                <option value="primary">primary</option>
+                <option value="grey">grey</option>
+                <option value="warning">warning</option>
+            </select>
+        </zoo-select>
+        <zoo-select>
+            <label slot="label">Size</label>
+            <select slot="select" data-type="attr" data-attrname="size">
+                <option value="">none</option>
+                <option value="regular">regular</option>
+                <option value="bold">bold</option>
+                <option value="large">large</option>
+            </select>
+        </zoo-select>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-dark CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-dark">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--warning-dark CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--warning-dark">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Pre slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="pre"><svg slot="pre" height="24" width="24" viewBox="0 0 25 25">
+    <path d="M12 15.75a1.125 1.125 0 11.001 2.25A1.125 1.125 0 0112 15.75zm.75-2.25a.75.75 0 11-1.5 0V5.25a.75.75 0 111.5 0v8.25zm7.205-9.455l.53-.53c4.687 4.686 4.687 12.284 0 16.97-4.686 4.687-12.284 4.687-16.97 0-4.687-4.686-4.687-12.284 0-16.97 4.686-4.687 12.284-4.687 16.97 0l-.53.53zm0 0l-.53.53c-4.1-4.1-10.75-4.1-14.85 0s-4.1 10.75 0 14.85 10.75 4.1 14.85 0 4.1-10.75 0-14.85l.53-.53z"/>
+</svg></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Achor slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="anchor"><a slot="anchor" style="text-align:center" href="https://zooplus.github.io/zoo-web-components/">Zoo web components</a></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Post slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="post"><svg slot="post" height="24" width="24" viewBox="0 -2 55 75">
+    <path d="M30.7 53.3c-.8 3.7-1.4 5.6-2.6 7-2.5 2.4-5.6 1.8-8.1-.7a8.9 8.9 0 01-2.7-4.6s0-2.2-3-4.8c-2.6-3-4.8-3-4.8-3-2.7-.9-3.4-1.6-4.5-2.7-2.5-2.5-3.2-5.5-.7-8 1.3-1.3 3.2-1.8 7-2.7 0 0 7.2-1.8 11.8-1.5a10 10 0 015.7 2.6l.8.8s2.6 2.6 2.7 5.8c0 4.5-1.6 11.8-1.6 11.8z"/>
+    <path class="fade-in" d="M14.5 28.8c2.8 1 6.4-1.7 8-6s.6-8.9-2.2-10-6.4 1.8-8 6.1c-1.6 4.4-.7 8.8 2.2 9.9z"/>
+    <path class="fade-in fade-in--two" d="M26.1 26.2c2.7 2.6 8 1.4 12.2-2.7s5.2-9.5 2.6-12.1-8-1.4-12.1 2.6-5.3 9.6-2.7 12.2z"/>
+    <path class="fade-in fade-in--three" d="M37.2 37.2c2.6 2.6 8 1.4 12-2.7s5.3-9.5 2.7-12S44 21 39.8 25c-4 4-5.3 9.5-2.6 12z"/>
+    <path class="fade-in fade-in--four" d="M50.4 43c-1-2.8-5.4-3.8-9.8-2.2s-7 5.3-6 8c1 2.9 5.4 3.9 9.8 2.2s7-5.2 6-8z"/>
+</svg></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-link>
+    <svg slot="pre" height="24" width="24" viewBox="0 0 25 25">
+        <path d="M12 15.75a1.125 1.125 0 11.001 2.25A1.125 1.125 0 0112 15.75zm.75-2.25a.75.75 0 11-1.5 0V5.25a.75.75 0 111.5 0v8.25zm7.205-9.455l.53-.53c4.687 4.686 4.687 12.284 0 16.97-4.686 4.687-12.284 4.687-16.97 0-4.687-4.686-4.687-12.284 0-16.97 4.686-4.687 12.284-4.687 16.97 0l-.53.53zm0 0l-.53.53c-4.1-4.1-10.75-4.1-14.85 0s-4.1 10.75 0 14.85 10.75 4.1 14.85 0 4.1-10.75 0-14.85l.53-.53z"/>
+    </svg>
+    <a slot="anchor" style="text-align:center" href="https://zooplus.github.io/zoo-web-components/">Zoo web components</a>
+    <svg slot="post" height="24" width="24" viewBox="0 -2 55 75">
+        <path d="M30.7 53.3c-.8 3.7-1.4 5.6-2.6 7-2.5 2.4-5.6 1.8-8.1-.7a8.9 8.9 0 01-2.7-4.6s0-2.2-3-4.8c-2.6-3-4.8-3-4.8-3-2.7-.9-3.4-1.6-4.5-2.7-2.5-2.5-3.2-5.5-.7-8 1.3-1.3 3.2-1.8 7-2.7 0 0 7.2-1.8 11.8-1.5a10 10 0 015.7 2.6l.8.8s2.6 2.6 2.7 5.8c0 4.5-1.6 11.8-1.6 11.8z"/>
+        <path class="fade-in" d="M14.5 28.8c2.8 1 6.4-1.7 8-6s.6-8.9-2.2-10-6.4 1.8-8 6.1c-1.6 4.4-.7 8.8 2.2 9.9z"/>
+        <path class="fade-in fade-in--two" d="M26.1 26.2c2.7 2.6 8 1.4 12.2-2.7s5.2-9.5 2.6-12.1-8-1.4-12.1 2.6-5.3 9.6-2.7 12.2z"/>
+        <path class="fade-in fade-in--three" d="M37.2 37.2c2.6 2.6 8 1.4 12-2.7s5.3-9.5 2.7-12S44 21 39.8 25c-4 4-5.3 9.5-2.6 12z"/>
+        <path class="fade-in fade-in--four" d="M50.4 43c-1-2.8-5.4-3.8-9.8-2.2s-7 5.3-6 8c1 2.9 5.4 3.9 9.8 2.2s7-5.2 6-8z"/>
+    </svg>
+</zoo-link>
+        </output>
+        <h3>HTML code</h3>
+        <div style="height: 10px; width: auto">
+            <pre class=" language-html"><code></code></pre>
+        </div>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;height: 10px; width: auto&quot;&gt;
     &lt;zoo-link&gt;
@@ -719,6 +1131,21 @@ Modal visibility must be controlled by the client.</p>
 <td class="left"><code>--primary-mid</code></td>
 <td class="left">close icon color</td>
 </tr>
+</tbody></table><h2>Functions</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Example</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>openModal</code></td>
+<td class="left"><code>function</code> to show the modal.</td>
+<td class="left"><code>document.querySelector(&#39;#zoo-modal&#39;).openModal();</code></td>
+</tr>
+<tr>
+<td class="left"><code>closeModal</code></td>
+<td class="left"><code>function</code> to hide the modal.</td>
+<td class="left"><code>document.querySelector(&#39;#zoo-modal&#39;).closeModal();</code></td>
+</tr>
 </tbody></table><h2>Slots</h2><table><thead><tr>
 <th class="center"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
@@ -735,6 +1162,36 @@ Modal visibility must be controlled by the client.</p>
 <td class="center">&#10005;</td>
 </tr>
 </tbody></table><h1 id=navigation><a href="#navigation">Navigation</a></h1><p>Container component which provides styles for slotted content.</p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-navigation')">open sandbox</button>
+</zoo-button>
+<template id="zoo-navigation-template">
+    <form>
+        <zoo-input>
+            <label slot="label">--primary-light CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-light">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Slot</label>
+            <textarea slot="input" data-type="slot" data-slotname=""><a href="https://github.com/zooplus/zoo-web-components">Github</a>
+<a href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-navigation>
+    <a href="https://github.com/zooplus/zoo-web-components">Github</a>
+    <a href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
+</zoo-navigation>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-navigation&gt;
     &lt;a href=&quot;https://github.com/zooplus/zoo-web-components&quot;&gt;Github&lt;/a&gt;
@@ -769,6 +1226,69 @@ Modal visibility must be controlled by the client.</p>
 <td class="center">&#10005;</td>
 </tr>
 </tbody></table><h1 id=quantity-control><a href="#quantity-control">Quantity Control</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-quantity-control')">open sandbox</button>
+</zoo-button>
+<template id="zoo-quantity-control-template">
+    <form>
+        <zoo-checkbox highlighted>
+            <input id="zoo-invalid-quantity-control-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+            <label for="zoo-invalid-quantity-control-id" slot="label">Invalid</label>
+        </zoo-checkbox>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Label slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="label"><label slot="label" for="quantity-control-sandbox-id">Label</label></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Info slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Info</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Error slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error message</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Decrease slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="decrease"><button type="button" slot="decrease" title="decrease">
+    <svg height="18" width="18"><line y1="9" x1="0" x2="18" y2="9"></line></svg>
+</button></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Increase slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="increase"><button type="button" slot="increase" title="increase">
+    <svg height="18" width="18">
+        <line y1="0" x1="9" x2="9" y2="18"></line>
+        <line y1="9" x1="0" x2="18" y2="9"></line>
+    </svg>
+</button></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-quantity-control>
+    <button type="button" slot="decrease" title="decrease">
+        <svg height="18" width="18"><line y1="9" x1="0" x2="18" y2="9"></line></svg>
+    </button>
+    <label for="quantity-control-sandbox-id" slot="label">Label</label>
+    <input id="quantity-control-sandbox-id" slot="input" readonly placeholder="0" type="number" step="50"/>
+    <button type="button" slot="increase" title="increase">
+        <svg height="18" width="18">
+            <line y1="0" x1="9" x2="9" y2="18"></line>
+            <line y1="9" x1="0" x2="18" y2="9"></line>
+        </svg>
+    </button>
+    <span slot="info">Info</span>
+    <span slot="error">Error message</span>
+</zoo-quantity-control>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <blockquote>
 <p>Webkit based browsers (Chrome/Safari) do not support hiding native number scroll on <code>input type=&quot;number&quot;</code>,
@@ -865,6 +1385,54 @@ when supplying such input for this component remember to add:</p>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h1 id=radio><a href="#radio">Radio</a></h1><p>Radio component which provides styles for <strong><code>&lt;input type=&quot;radio&quot;/&gt;</code></strong> and associated <strong><code>&lt;label&gt;&lt;/label&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-radio')">open sandbox</button>
+</zoo-button>
+<template id="zoo-radio-template">
+    <form>
+        <zoo-checkbox highlighted>
+            <input id="zoo-invalid-radio-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+            <label for="zoo-invalid-radio-id" slot="label">Invalid</label>
+        </zoo-checkbox>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--warning-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--warning-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Label slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="label"><span slot="label">Radio group</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Info slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Additional information</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Error slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error message</span></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-radio>
+    <span slot="label">Radio group</span>
+    <label for="contactChoice1">Email</label>
+    <input type="radio" id="contactChoice1" name="contact" value="email">
+    <label for="contactChoice2">Phone</label>
+    <input type="radio" id="contactChoice2" name="contact" value="phone">
+    <label for="contactChoice3">Mail</label>
+    <input type="radio" id="contactChoice3" name="contact" value="mail">
+    <span slot="info">Additional information</span>
+    <span slot="error">Error message</span>
+</zoo-radio>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-radio&gt;
     &lt;span slot=&quot;label&quot;&gt;Radio group&lt;/span&gt;
@@ -944,6 +1512,75 @@ when supplying such input for this component remember to add:</p>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h1 id=searchable-select><a href="#searchable-select">Searchable Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-select')">open sandbox</button>
+</zoo-button>
+<template id="zoo-select-template">
+    <form>
+        <fieldset>
+            <legend>Attributes, CSS Custom Properties and slots</legend>
+            <zoo-checkbox highlighted>
+                <input id="zoo-invalid-select-checkbox-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+                <label for="zoo-invalid-select-checkbox-id" slot="label">Invalid</label>
+            </zoo-checkbox>
+            <zoo-checkbox highlighted>
+                <input id="zoo-loading-select-checkbox-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="loading" data-attrboolean="true"/>
+                <label for="zoo-loading-select-checkbox-id" slot="label">Loading</label>
+            </zoo-checkbox>
+            <zoo-input>
+                <label slot="label">--primary-light CSS Custom Property</label>
+                <input slot="input" type="color" data-type="css" data-cssname="--primary-light">
+            </zoo-input>
+            <zoo-input>
+                <label slot="label">--primary-mid CSS Custom Property</label>
+                <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+            </zoo-input>
+            <zoo-input>
+                <label slot="label">--warning-dark CSS Custom Property</label>
+                <input slot="input" type="color" data-type="css" data-cssname="--warning-dark">
+            </zoo-input>
+            <zoo-input>
+                <label slot="label">--warning-mid CSS Custom Property</label>
+                <input slot="input" type="color" data-type="css" data-cssname="--warning-mid">
+            </zoo-input>
+            <zoo-input>
+                <label slot="label">Label slot</label>
+                <textarea slot="input" data-type="slot" data-slotname="legend"><label slot="legend">Label</label></textarea>
+            </zoo-input>
+            <zoo-input>
+                <label slot="label">Info slot</label>
+                <textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Info</span></textarea>
+            </zoo-input>
+            <zoo-input>
+                <label slot="label">Error slot</label>
+                <textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error</span></textarea>
+            </zoo-input>
+            <zoo-input>
+                <label slot="label">Link slot</label>
+                <textarea slot="input" data-type="slot" data-slotname="link"><a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a></textarea>
+            </zoo-input>
+        </fieldset>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-searchable-select>
+    <label slot="legend">Label</label>
+    <select slot="select">
+        <option value="value1">Dog</option>
+        <option value="value2">Cat</option>
+        <option value="value3">Small Pet</option>
+        <option value="value4">Aquatic</option>
+    </select>
+    <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
+    <input slot="input" type="text" placeholder="Select options"/>
+    <span slot="info">Info</span>
+    <span slot="error">Error</span>
+</zoo-searchable-select>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-searchable-select&gt;
     &lt;span slot=&quot;legend&quot;&gt;Searchable select legend&lt;/span&gt;
@@ -1042,6 +1679,79 @@ when supplying such input for this component remember to add:</p>
 <td class="center">&#10005;</td>
 </tr>
 </tbody></table><h1 id=select><a href="#select">Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-select')">open sandbox</button>
+</zoo-button>
+<template id="zoo-select-template">
+    <form>
+        <zoo-select>
+            <label slot="label">Label position</label>
+            <select slot="select" data-type="attr" data-attrname="labelposition">
+                <option value="">none</option>
+                <option value="top">top</option>
+                <option value="left">left</option>
+            </select>
+        </zoo-select>
+        <zoo-checkbox highlighted>
+            <input id="zoo-invalid-select-checkbox-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+            <label for="zoo-invalid-select-checkbox-id" slot="label">Invalid</label>
+        </zoo-checkbox>
+        <zoo-checkbox highlighted>
+            <input id="zoo-loading-select-checkbox-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="loading" data-attrboolean="true"/>
+            <label for="zoo-loading-select-checkbox-id" slot="label">Loading</label>
+        </zoo-checkbox>
+        <zoo-input>
+            <label slot="label">--primary-light CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-light">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--warning-dark CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--warning-dark">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--warning-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--warning-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Label slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="label"><label slot="label" for="sandbox-checkbox-id">Label</label></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Info slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Info</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Error slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Link slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="link"><a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-select>
+    <label for="zoo-sandbox-select" slot="label">Label</label>
+    <select id="zoo-sandbox-select" slot="select">
+        <option value="value1">Dog</option>
+        <option value="value2">Cat</option>
+        <option value="value3">Small Pet</option>
+        <option value="value4">Aquatic</option>
+    </select>
+    <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
+    <span slot="info">Info</span>
+    <span slot="error">Error</span>
+</zoo-select>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-select&gt;
     &lt;label for=&quot;zoo-select&quot; slot=&quot;label&quot;&gt;Label&lt;/label&gt;
@@ -1151,6 +1861,26 @@ when supplying such input for this component remember to add:</p>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h1 id=spinner><a href="#spinner">Spinner</a></h1><p>Spinner svg.</p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-spinner')">open sandbox</button>
+</zoo-button>
+<template id="zoo-spinner-template">
+    <form>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<div style="position: relative; height: 100px; width: auto">
+    <zoo-spinner></zoo-spinner>
+</div>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <blockquote>
 <p>Spinner has <code>position: absolute</code>, you have to place it inside an element with <code>position: relative</code>.</p>
@@ -1247,6 +1977,45 @@ when supplying such input for this component remember to add:</p>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h1 id=toggle-switch><a href="#toggle-switch">Toggle Switch</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;checkbox&quot;/&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-toggle-switch')">open sandbox</button>
+</zoo-button>
+<template id="zoo-toggle-switch-template">
+    <form>
+        <zoo-checkbox highlighted>
+            <input id="zoo-invalid-toggle-switch-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+            <label for="zoo-invalid-toggle-switch-id" slot="label">Invalid</label>
+        </zoo-checkbox>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Label slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="label"><label slot="label" for="sandbox-toggle-switch">Toggle switch</label></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Info slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Info</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Error slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error</span></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-toggle-switch>
+    <input id="sandbox-toggle-switch" slot="input" type="checkbox"/>
+    <label for="sandbox-toggle-switch" slot="label">Toggle switch</label>
+    <span slot="info">Info</span>
+    <span slot="error">Error</span>
+</zoo-toggle-switch>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toggle-switch&gt;
     &lt;input id=&quot;input-toggle&quot; slot=&quot;input&quot; type=&quot;checkbox&quot;/&gt;
@@ -1397,9 +2166,13 @@ a way of providing error messages.</p>
     </zoo-button>
 </form>
 
-    </div>
-
+        </div>
+    
 	</main>
+	<zoo-modal>
+		<span slot="header"></span>
+		<div id="sandbox-content"></div>
+	</zoo-modal>
 	<script src="prism.js"></script>
 	<script src="main.js"></script>
 </body>

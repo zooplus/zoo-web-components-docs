@@ -4,7 +4,7 @@
 	--primary-dark: #286400;
 	--primary-ultralight: #EBF4E5;
 	--secondary-mid: #FF6200;
-	--secondary-light: #F80;
+	--secondary-light: #FF8800;
 	--secondary-dark: #CC4E00;
 	--info-ultralight: #ECF5FA;
 	--info-mid: #459FD0;
@@ -172,4 +172,16 @@ pre>code {
 
 .right {
 	text-align: right;
+}
+
+zoo-modal form input[type="color"] {
+	padding: 5px;
+}
+
+#sandbox-content {
+	min-width: 720px;
+}
+
+.sandbox-btn {
+	width: 140px;
 }

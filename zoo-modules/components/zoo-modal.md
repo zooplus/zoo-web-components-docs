@@ -31,6 +31,13 @@ Modal visibility must be controlled by the client.
 | :-------------- | :--------------- |
 | `--primary-mid` | close icon color |
 
+## Functions
+
+| **Name**     | **Description**               | **Example**                                          |
+| :----------- | :---------------------------- | :--------------------------------------------------- |
+| `openModal`  | `function` to show the modal. | `document.querySelector('#zoo-modal').openModal();`  |
+| `closeModal` | `function` to hide the modal. | `document.querySelector('#zoo-modal').closeModal();` |
+
 ## Slots
 
 | **Name** | **Description**   | **Optional** |

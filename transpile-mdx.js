@@ -37,32 +37,36 @@ marked.setOptions({
     renderer
 });
   
-const files = [];
-function getFiles(nextPath) {
-    if(fs.existsSync(nextPath) && fs.lstatSync(nextPath).isDirectory()) {
-        const nextDirPath = fs.readdirSync(nextPath);
-        nextDirPath.forEach(filePath => getFiles(`${nextPath}/${filePath}`, files));
-    } else {
-        if (nextPath.indexOf('.md') > -1) {
-            const markdown = fs.readFileSync(nextPath, 'utf8');
-            files.push(marked(markdown));
+function transpile() {
+    const files = [];
+    function getFiles(nextPath) {
+        if(fs.existsSync(nextPath) && fs.lstatSync(nextPath).isDirectory()) {
+            const nextDirPath = fs.readdirSync(nextPath);
+            nextDirPath.forEach(filePath => getFiles(`${nextPath}/${filePath}`, files));
+        } else {
+            if (nextPath.indexOf('.md') > -1) {
+                const markdown = fs.readFileSync(nextPath, 'utf8');
+                files.push(marked(markdown));
+            }
         }
     }
+    getFiles('./zoo-modules');
+    function getHeaderString (header) {
+        return `<a href="${header.tokens[0].href}">${header.tokens[0].text}</a>`;
+    }
+    const file = fs.readFileSync('./template.html', 'utf8');
+    const result = file.replace('<app-root>', `
+        <nav>
+            ${headers.map(header => getHeaderString(header)).join('')}
+        </nav>
+        <div class="content">
+            ${files.join('')}
+        </div>
+    `);
+    
+    fs.writeFileSync('./docs/index.html', result);
+    console.log('Transpilation finished and files written!')
 }
-getFiles('./zoo-modules');
-function getHeaderString (header) {
-	return `<a href="${header.tokens[0].href}">${header.tokens[0].text}</a>`;
-}
-const file = fs.readFileSync('./template.html', 'utf8');
-const result = file.replace('<app-root>', `
-    <nav>
-		${headers.map(header => getHeaderString(header)).join('')}
-	</nav>
-    <div class="content">
-        ${files.join('')}
-    </div>
-`);
-
-fs.writeFileSync('./docs/index.html', result);
+transpile();
 const cmps = fs.readFileSync('./node_modules/@zooplus/zoo-web-components/dist/zoo-components-esm.js', 'utf8');
 fs.writeFileSync('./docs/zoo-web-components.js', cmps);

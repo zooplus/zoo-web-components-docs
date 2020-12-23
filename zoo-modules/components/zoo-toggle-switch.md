@@ -2,6 +2,45 @@
 
 Input component which provides styles for slotted **`<input type="checkbox"/>`**
 
+<zoo-button class="sandbox-btn">
+	<button type="button" onclick="openSandbox('zoo-toggle-switch')">open sandbox</button>
+</zoo-button>
+<template id="zoo-toggle-switch-template">
+	<form>
+		<zoo-checkbox highlighted>
+			<input id="zoo-invalid-toggle-switch-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+			<label for="zoo-invalid-toggle-switch-id" slot="label">Invalid</label>
+		</zoo-checkbox>
+		<zoo-input>
+			<label slot="label">--primary-mid CSS Custom Property</label>
+			<input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">Label slot</label>
+			<textarea slot="input" data-type="slot" data-slotname="label"><label slot="label" for="sandbox-toggle-switch">Toggle switch</label></textarea>
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">Info slot</label>
+			<textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Info</span></textarea>
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">Error slot</label>
+			<textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error</span></textarea>
+		</zoo-input>
+		<h3>Rendered output</h3>
+		<output>
+<zoo-toggle-switch>
+	<input id="sandbox-toggle-switch" slot="input" type="checkbox"/>
+	<label for="sandbox-toggle-switch" slot="label">Toggle switch</label>
+	<span slot="info">Info</span>
+	<span slot="error">Error</span>
+</zoo-toggle-switch>
+		</output>
+		<h3>HTML code</h3>
+		<pre class=" language-html"><code></code></pre>
+	</form>
+</template>
+
 ***
 
 ## Example usage

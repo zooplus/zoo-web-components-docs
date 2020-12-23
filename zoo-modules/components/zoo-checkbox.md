@@ -2,6 +2,53 @@
 
 Checkbox component which provides styles for **`<input type="checkbox"/>`**
 
+<zoo-button class="sandbox-btn">
+	<button type="button" onclick="openSandbox('zoo-checkbox')">open sandbox</button>
+</zoo-button>
+<template id="zoo-checkbox-template">
+	<form>
+		<zoo-checkbox highlighted>
+			<input id="zoo-highlighted-checkbox-id" slot="checkbox" type="checkbox" checked data-type="attr" data-attrname="highlighted" data-attrboolean="true"/>
+			<label for="zoo-highlighted-checkbox-id" slot="label">Highlighted</label>
+		</zoo-checkbox>
+		<zoo-checkbox highlighted>
+			<input id="zoo-invalid-checkbox-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+			<label for="zoo-invalid-checkbox-id" slot="label">Invalid</label>
+		</zoo-checkbox>
+		<zoo-input>
+			<label slot="label">--primary-mid CSS Custom Property</label>
+			<input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">--warning-mid CSS Custom Property</label>
+			<input slot="input" type="color" data-type="css" data-cssname="--warning-mid">
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">Label slot</label>
+			<textarea slot="input" data-type="slot" data-slotname="label"><label slot="label" for="sandbox-checkbox-id">An example checkbox</label></textarea>
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">Info slot</label>
+			<textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Info</span></textarea>
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">Error slot</label>
+			<textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error</span></textarea>
+		</zoo-input>
+		<h3>Rendered output</h3>
+		<output>
+<zoo-checkbox highlighted>
+	<input id="sandbox-checkbox-id" slot="checkbox" type="checkbox"/>
+	<label for="sandbox-checkbox-id" slot="label">An example checkbox</label>
+	<span slot="info">Info</span>
+	<span slot="error">Error</span>
+</zoo-checkbox>
+		</output>
+		<h3>HTML code</h3>
+		<pre class=" language-html"><code></code></pre>
+	</form>
+</template>
+
 ***
 
 ## Example usage

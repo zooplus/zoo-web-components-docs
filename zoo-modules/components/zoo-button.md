@@ -2,9 +2,63 @@
 
 Button component which provides styles for **`<button></button>`**
 
+<zoo-button class="sandbox-btn">
+	<button type="button" onclick="openSandbox('zoo-button')">open sandbox</button>
+</zoo-button>
+<template id="zoo-button-template">
+	<form>
+		<zoo-select>
+			<label slot="label">Type</label>
+			<select slot="select" data-type="attr" data-attrname="type">
+				<option value="">none</option>
+				<option value="primary">primary</option>
+				<option value="secondary">secondary</option>
+				<option value="hollow">hollow</option>
+			</select>
+		</zoo-select>
+		<zoo-input>
+			<label slot="label">--primary-light CSS Custom Property</label>
+			<input slot="input" type="color" data-type="css" data-cssname="--primary-light">
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">--primary-mid CSS Custom Property</label>
+			<input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">--primary-dark CSS Custom Property</label>
+			<input slot="input" type="color" data-type="css" data-cssname="--primary-dark">
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">--secondary-light CSS Custom Property</label>
+			<input slot="input" type="color" data-type="css" data-cssname="--secondary-light">
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">--secondary-mid CSS Custom Property</label>
+			<input slot="input" type="color" data-type="css" data-cssname="--secondary-mid">
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">--secondary-dark CSS Custom Property</label>
+			<input slot="input" type="color" data-type="css" data-cssname="--secondary-dark">
+		</zoo-input>
+		<zoo-input>
+			<label slot="label">Slot</label>
+			<textarea slot="input" data-type="slot" data-slotname=""><button type="button">Button</button></textarea>
+		</zoo-input>
+		<h3>Rendered output</h3>
+		<output>
+<zoo-button>
+	<button type="button">Button</button>
+</zoo-button>
+		</output>
+		<h3>HTML code</h3>
+		<pre class=" language-html"><code></code></pre>
+	</form>
+</template>
+
 ***
 
 ## Example
+
 ```HTML
 <zoo-button>
 	<button type="button" disabled>Disabled :(</button>

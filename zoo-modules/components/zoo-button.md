@@ -79,14 +79,14 @@ The above will render to:
 
 ## CSS Variables
 
-| **Name**            | **Description**                                                                                    |
-| :------------------ | :------------------------------------------------------------------------------------------------- |
-| `--primary-light`   | used as right end of gradient                                                                      |
-| `--primary-mid`     | used as left side of gradient, background on hover and focus and as text-color for `type="hollow"` |
-| `--primary-dark`    | used for background when button is active                                                          |
-| `--secondary-light` | same as `primary-light` for `type="secondary"`                                                     |
-| `--secondary-mid`   | same as `primary-mid` for `type="secondary"`                                                       |
-| `--secondary-dark`  | same as `primary-dark` for `type="secondary"`                                                      |
+| **Name**            | **Description**                                                                                |
+| :------------------ | :--------------------------------------------------------------------------------------------- |
+| `--primary-light`   | used as right end of gradient                                                                  |
+| `--primary-mid`     | used as left side of gradient, background on hover/focus and as text-color for `type="hollow"` |
+| `--primary-dark`    | used for background when button is active                                                      |
+| `--secondary-light` | same as `primary-light` for `type="secondary"`                                                 |
+| `--secondary-mid`   | same as `primary-mid` for `type="secondary"`                                                   |
+| `--secondary-dark`  | same as `primary-dark` for `type="secondary"`                                                  |
 
 ## Slots
 

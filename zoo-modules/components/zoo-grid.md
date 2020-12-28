@@ -54,17 +54,19 @@ The above will render to:
 
 ## Attributes
 
-| **Name**     | **Description**                                                            | **Optional** |
-| :----------- | :------------------------------------------------------------------------- | :----------: |
-| loading      | flag which indicates whether to show loader inside grid                    |   &#10003;   |
-| stickyheader | flag which indicates whether grid's header should be sticky when scrolling |   &#10003;   |
-| resizable    | flag which indicates whether grid columns should be resizable              |   &#10003;   |
-| reorderable  | flag which indicates whether grid's column should be reorderable           |   &#10003;   |
-| currentpage  | current page that the user is on, mandatory only when using paginator      |   &#10003;   |
-| maxpages     | maximum number of pages, mandatory only when using paginator               |   &#10003;   |
+| **Name**      | **Description**                                                            | **Optional** |
+| :------------ | :------------------------------------------------------------------------- | :----------: |
+| loading       | flag which indicates whether to show loader inside grid                    |   &#10003;   |
+| stickyheader  | flag which indicates whether grid's header should be sticky when scrolling |   &#10003;   |
+| resizable     | flag which indicates whether grid columns should be resizable              |   &#10003;   |
+| reorderable   | flag which indicates whether grid's column should be reorderable           |   &#10003;   |
+| currentpage   | current page that the user is on, mandatory only when using paginator      |   &#10003;   |
+| maxpages      | maximum number of pages, mandatory only when using paginator               |   &#10003;   |
+| prevpagetitle | title for previous page button for a11y                                    |   &#10003;   |
+| nextpagetitle | title for next page button for a11y                                        |   &#10003;   |
 
 > `loading`, `stickyheader`, `resizable` and `reorderable` attributes should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
- 
+
 ## CSS variables
 
 | **Name**              | **Description**                                                                        |
@@ -104,6 +106,8 @@ The above will render to:
 | :----------------- | :---------------------------------------------------- | :------------------------------------ |
 | `sortable`         | flag, which indicates whether this column is sortable | &#10003;                              |
 | `sortableproperty` | string that will be emitted when user changes sorting | &#10003; - when `sortable` is not set |
+| `sorttitle`        | title for sort icon for a11y                          | &#10003;                              |
+| `swaptitle`        | title for swap icon for a11y                          | &#10003;                              |
 
 ## Events
 

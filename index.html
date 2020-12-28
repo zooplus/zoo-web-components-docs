@@ -18,7 +18,7 @@
 	<main>
 		
         <nav>
-            <a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
+            <a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
         </nav>
         <div class="content">
             <h1 id=button><a href="#button">Button</a></h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
@@ -106,7 +106,7 @@
 </tr>
 <tr>
 <td class="left"><code>--primary-mid</code></td>
-<td class="left">used as left side of gradient, background on hover and focus and as text-color for <code>type=&quot;hollow&quot;</code></td>
+<td class="left">used as left side of gradient, background on hover/focus and as text-color for <code>type=&quot;hollow&quot;</code></td>
 </tr>
 <tr>
 <td class="left"><code>--primary-dark</code></td>
@@ -638,6 +638,16 @@
 <td class="left">maximum number of pages, mandatory only when using paginator</td>
 <td class="center">&#10003;</td>
 </tr>
+<tr>
+<td class="left">prevpagetitle</td>
+<td class="left">title for previous page button for a11y</td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left">nextpagetitle</td>
+<td class="left">title for next page button for a11y</td>
+<td class="center">&#10003;</td>
+</tr>
 </tbody></table><blockquote>
 <p><code>loading</code>, <code>stickyheader</code>, <code>resizable</code> and <code>reorderable</code> attributes should be used as a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes">boolean</a> attribute.</p>
 </blockquote>
@@ -708,6 +718,16 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="left"><code>sortableproperty</code></td>
 <td class="left">string that will be emitted when user changes sorting</td>
 <td class="left">&#10003; - when <code>sortable</code> is not set</td>
+</tr>
+<tr>
+<td class="left"><code>sorttitle</code></td>
+<td class="left">title for sort icon for a11y</td>
+<td class="left">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>swaptitle</code></td>
+<td class="left">title for swap icon for a11y</td>
+<td class="left">&#10003;</td>
 </tr>
 </tbody></table><h2>Events</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
@@ -1224,6 +1244,58 @@ Modal visibility must be controlled by the client.</p>
 <td class="center"></td>
 <td class="left">arbitrary content</td>
 <td class="center">&#10005;</td>
+</tr>
+</tbody></table><h1 id=paginator><a href="#paginator">Paginator</a></h1><p>Paginator component.</p>
+<hr>
+<h2>Example</h2><pre><code class="language-HTML">&lt;zoo-paginator currentpage=&quot;1&quot; maxpages=&quot;10&quot;&gt;&lt;/zoo-paginator&gt;</code></pre>
+<p>The above will render to:</p>
+<p><zoo-paginator currentpage="1" maxpages="10"></zoo-paginator></p>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>currentpage</code></td>
+<td class="left">current active page</td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>maxpages</code></td>
+<td class="left">number of the last page</td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-ultralight</code></td>
+<td class="left">used as background for active page</td>
+</tr>
+<tr>
+<td class="left"><code>--primary-mid</code></td>
+<td class="left">used as text color for page numbers</td>
+</tr>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>pagesizeselector</code></td>
+<td class="left">element that should allow used to set page size, it is just presentational slot, it does not handle events</td>
+<td class="center">&#10005;</td>
+</tr>
+</tbody></table><h2>Events</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Event Content</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>pageChange</code></td>
+<td class="left">output event whenever page is changed</td>
+<td class="left"><code>{detail: { pageNumber: $pageNumber }}</code></td>
 </tr>
 </tbody></table><h1 id=quantity-control><a href="#quantity-control">Quantity Control</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
 <zoo-button class="sandbox-btn">

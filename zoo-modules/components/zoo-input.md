@@ -101,10 +101,11 @@ The above will render to:
 
 ## Slots
 
-| **Name** | **Description**                                                            | **Optional** |
-| :------- | :------------------------------------------------------------------------- | :----------: |
-| `input`  | name of the slot for input                                                 |   &#10005;   |
-| `label`  | name of the slot for label                                                 |   &#10003;   |
-| `info`   | accepts any element, foe example `span`                                    |   &#10003;   |
-| `error`  | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |
-| `link`   | accepts `a`                                                                |   &#10003;   |
+| **Name**     | **Description**                                                            | **Optional** |
+| :----------- | :------------------------------------------------------------------------- | :----------: |
+| `input`      | name of the slot for input                                                 |   &#10005;   |
+| `label`      | name of the slot for label                                                 |   &#10003;   |
+| `info`       | accepts any element, foe example `span`                                    |   &#10003;   |
+| `error`      | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |
+| `link`       | accepts `a`                                                                |   &#10003;   |
+| `additional` | slot for additional content, inserted right after `slot="input"`           |   &#10005;   |

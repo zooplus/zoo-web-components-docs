@@ -16,10 +16,12 @@ The above will render to:
 
 ## Attributes
 
-| **Name**      | **Description**         | **Optional** |
-| :------------ | :---------------------- | :----------: |
-| `currentpage` | current active page     |   &#10003;   |
-| `maxpages`    | number of the last page |   &#10003;   |
+| **Name**          | **Description**                     | **Optional** |
+| :---------------- | :---------------------------------- | :----------: |
+| `currentpage`     | current active page                 |   &#10003;   |
+| `maxpages`        | number of the last page             |   &#10003;   |
+| `prev-page-title` | title for prev page button for a11y |   &#10003;   |
+| `next-page-title` | title for next page button for a11y |   &#10003;   |
 
 ## CSS Variables
 

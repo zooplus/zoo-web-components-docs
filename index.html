@@ -78,7 +78,8 @@
 <hr>
 <h2>Example</h2><pre><code class="language-HTML">&lt;zoo-button&gt;
     &lt;button type=&quot;button&quot; disabled&gt;Disabled :(&lt;/button&gt;
-&lt;/zoo-button&gt;</code></pre>
+&lt;/zoo-button&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-button>
     <button type="button" disabled>Disabled :(</button>
@@ -186,7 +187,8 @@
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-checkbox highlighted&gt;
     &lt;input id=&quot;checkbox-id&quot; slot=&quot;checkbox&quot; type=&quot;checkbox&quot;/&gt;
     &lt;label for=&quot;checkbox-id&quot; slot=&quot;label&quot;&gt;An example checkbox&lt;/label&gt;
-&lt;/zoo-checkbox&gt;</code></pre>
+&lt;/zoo-checkbox&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-checkbox highlighted>
     <input id="checkbox-id" slot="checkbox" type="checkbox"/>
@@ -305,7 +307,8 @@
         &lt;span slot=&quot;header&quot;&gt;Header2&lt;/span&gt;
         &lt;div slot=&quot;content&quot;&gt;content&lt;/div&gt;
     &lt;/zoo-collapsable-list-item&gt;
-&lt;/zoo-collapsable-list&gt;</code></pre>
+&lt;/zoo-collapsable-list&gt;
+</code></pre>
 <h3>Rendered</h3><zoo-collapsable-list>
     <zoo-collapsable-list-item>
         <span slot="header">Header1</span>
@@ -410,7 +413,8 @@
     &lt;zoo-feedback&gt;
         This is an info message.
     &lt;/zoo-feedback&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+</code></pre>
 <h3>Rendered</h3><div style="height: 50px; width: auto">
     <zoo-feedback>This is an info message.</zoo-feedback>
 </div>
@@ -516,7 +520,8 @@
     &lt;zoo-link type=&quot;negative&quot;&gt;
         &lt;a slot=&quot;anchor&quot; href=&quot;https://www.npmjs.com/package/@zooplus/zoo-web-components&quot;&gt;NPM&lt;/a&gt;
     &lt;/zoo-link&gt;
-&lt;/zoo-footer&gt;</code></pre>
+&lt;/zoo-footer&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-footer copyright="zooplus AG">
     <zoo-link type="negative">
@@ -580,7 +585,8 @@
             &lt;/select&gt;
         &lt;/zoo-select&gt;
     &lt;/zoo-grid&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+</code></pre>
 <p>The above will render to:</p>
 <div style="margin: 30px; box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)">
     <zoo-grid currentpage="3" maxpages="20" reorderable stickyheader>
@@ -675,7 +681,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </blockquote>
 <pre><code class="language-CSS"> zoo-grid div[column=&quot;1&quot;] {
     min-width: 150px;
- }</code></pre>
+ }
+</code></pre>
 <h2>Slots</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
@@ -802,7 +809,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     &lt;zoo-button style=&quot;margin-left: 50px&quot;&gt;
         &lt;button type=&quot;button&quot;&gt;Zoo+ theme&lt;/button&gt;
     &lt;/zoo-button&gt;
-&lt;/zoo-header&gt;</code></pre>
+&lt;/zoo-header&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-header>
     <img slot="img" alt="Zooplus logo" src="https://zooplus.github.io/zoo-web-components/logo.png"/>
@@ -903,7 +911,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     &lt;input id=&quot;input-type-text&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;input&quot;/&gt;
     &lt;span slot=&quot;info&quot;&gt;Additional helpful information for our users&lt;/span&gt;
     &lt;a slot=&quot;link&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot; target=&quot;about:blank&quot;&gt;Forgotten your password?&lt;/a&gt;
-&lt;/zoo-input&gt;</code></pre>
+&lt;/zoo-input&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-input>
     <label for="input-type-text" slot="label">Input type text</label>
@@ -1068,7 +1077,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
     &lt;zoo-link&gt;
         &lt;a slot=&quot;anchor&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot;&gt;Zoo web components&lt;/a&gt;
     &lt;/zoo-link&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+</code></pre>
 <p>The above will render to:</p>
 <div style="height: 10px; width: auto">
     <zoo-link>
@@ -1147,7 +1157,8 @@ Modal visibility must be controlled by the client.</p>
             &lt;span&gt;Add to cart&lt;/span&gt;
         &lt;/zoo-button&gt;
     &lt;/div&gt;
-&lt;/zoo-modal&gt;</code></pre>
+&lt;/zoo-modal&gt;
+</code></pre>
 <h2>CSS Variables</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
@@ -1221,7 +1232,8 @@ Modal visibility must be controlled by the client.</p>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-navigation&gt;
     &lt;a href=&quot;https://github.com/zooplus/zoo-web-components&quot;&gt;Github&lt;/a&gt;
     &lt;a href=&quot;https://www.npmjs.com/package/@zooplus/zoo-web-components&quot;&gt;NPM&lt;/a&gt;
-&lt;/zoo-navigation&gt;</code></pre>
+&lt;/zoo-navigation&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-navigation>
     <a href="https://github.com/zooplus/zoo-web-components">Github</a>
@@ -1252,7 +1264,8 @@ Modal visibility must be controlled by the client.</p>
 </tr>
 </tbody></table><h1 id=paginator><a href="#paginator">Paginator</a></h1><p>Paginator component.</p>
 <hr>
-<h2>Example</h2><pre><code class="language-HTML">&lt;zoo-paginator currentpage=&quot;1&quot; maxpages=&quot;10&quot;&gt;&lt;/zoo-paginator&gt;</code></pre>
+<h2>Example</h2><pre><code class="language-HTML">&lt;zoo-paginator currentpage=&quot;1&quot; maxpages=&quot;10&quot;&gt;&lt;/zoo-paginator&gt;
+</code></pre>
 <p>The above will render to:</p>
 <p><zoo-paginator currentpage="1" maxpages="10"></zoo-paginator></p>
 <h2>Attributes</h2><table><thead><tr>
@@ -1383,7 +1396,8 @@ when supplying such input for this component remember to add:</p>
 </blockquote>
 <pre><code class="language-CSS">input::-webkit-outer-spin-button, zoo-quantity-control input::-webkit-inner-spin-button {
     -webkit-appearance: none;
-}</code></pre>
+}
+</code></pre>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-quantity-control&gt;
     &lt;button type=&quot;button&quot; slot=&quot;decrease&quot; title=&quot;decrease&quot;&gt;
         &lt;svg height=&quot;18&quot; width=&quot;18&quot;&gt;&lt;line y1=&quot;9&quot; x1=&quot;0&quot; x2=&quot;18&quot; y2=&quot;9&quot;&gt;&lt;/line&gt;&lt;/svg&gt;
@@ -1396,7 +1410,8 @@ when supplying such input for this component remember to add:</p>
             &lt;line y1=&quot;9&quot; x1=&quot;0&quot; x2=&quot;18&quot; y2=&quot;9&quot;&gt;&lt;/line&gt;
         &lt;/svg&gt;
     &lt;/button&gt;
-&lt;/zoo-quantity-control&gt;</code></pre>
+&lt;/zoo-quantity-control&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-quantity-control>
     <button type="button" slot="decrease" title="decrease">
@@ -1532,7 +1547,8 @@ when supplying such input for this component remember to add:</p>
     &lt;input type=&quot;radio&quot; id=&quot;contactChoice3&quot; name=&quot;contact&quot; value=&quot;mail&quot;&gt;
 
     &lt;span slot=&quot;info&quot;&gt;Additional information&lt;/span&gt;
-&lt;/zoo-radio&gt;</code></pre>
+&lt;/zoo-radio&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-radio>
     <span slot="label">Radio group</span>
@@ -1683,7 +1699,8 @@ when supplying such input for this component remember to add:</p>
 
     &lt;label for=&quot;inserted-input&quot; slot=&quot;inputlabel&quot;&gt;Searchable input&lt;/label&gt;
     &lt;input id=&quot;inserted-input&quot; slot=&quot;input&quot; type=&quot;text&quot; placeholder=&quot;Select options&quot;/&gt;
-&lt;/zoo-searchable-select&gt;</code></pre>
+&lt;/zoo-searchable-select&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-searchable-select>
     <span slot="legend">Searchable select legend</span>
@@ -1849,7 +1866,8 @@ when supplying such input for this component remember to add:</p>
         &lt;option value=&quot;value4&quot;&gt;Aquatic&lt;/option&gt;
     &lt;/select&gt;
     &lt;a slot=&quot;link&quot; href=&quot;https://zooplus.github.io/zoo-web-components/&quot; target=&quot;about:blank&quot;&gt;Forgotten your password?&lt;/a&gt;
-&lt;/zoo-select&gt;</code></pre>
+&lt;/zoo-select&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-select>
     <label for="zoo-select" slot="label">Label</label>
@@ -1974,7 +1992,8 @@ when supplying such input for this component remember to add:</p>
 </blockquote>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;position: relative; height: 100px; width: auto&quot;&gt;
     &lt;zoo-spinner&gt;&lt;/zoo-spinner&gt;
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+</code></pre>
 <h2>Rendered</h2><div style="position: relative; height: 100px; width: auto">
     <zoo-spinner></zoo-spinner>
 </div>
@@ -1991,7 +2010,8 @@ when supplying such input for this component remember to add:</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toast&gt;
     &lt;span slot=&quot;content&quot;&gt;This is an info message.&lt;/span&gt;
-&lt;/zoo-toast&gt;</code></pre>
+&lt;/zoo-toast&gt;
+</code></pre>
 <h2>Attributes</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
@@ -2107,7 +2127,8 @@ when supplying such input for this component remember to add:</p>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toggle-switch&gt;
     &lt;input id=&quot;input-toggle&quot; slot=&quot;input&quot; type=&quot;checkbox&quot;/&gt;
     &lt;label for=&quot;input-toggle&quot; slot=&quot;label&quot;&gt;Toggle switch&lt;/label&gt;
-&lt;/zoo-toggle-switch&gt;</code></pre>
+&lt;/zoo-toggle-switch&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-toggle-switch>
     <input id="input-toggle" slot="input" type="checkbox"/>
@@ -2157,7 +2178,8 @@ when supplying such input for this component remember to add:</p>
         Button
         &lt;zoo-tooltip position=&quot;bottom&quot;&gt;Tooltip text&lt;/zoo-tooltip&gt;
     &lt;/button&gt;
-&lt;/zoo-button&gt;</code></pre>
+&lt;/zoo-button&gt;
+</code></pre>
 <p>The above will render to:</p>
 <zoo-button>
     <button type="button">
@@ -2206,7 +2228,8 @@ when supplying such input for this component remember to add:</p>
     --warning-ultralight: #FDE8E9;
     --warning-mid: #ED1C24;
     --warning-dark: #BD161C;
-}</code></pre>
+}
+</code></pre>
 <h1 id=validation><a href="#validation">Validation</a></h1><p>For validation you can use arbitrary tool. If you already use a framework you can use, for example,
 angular forms since the basic elements like <code>&lt;input/&gt;</code>, <code>&lt;select&gt;...&lt;/select&gt;</code> are already exposed.  </p>
 <p>However, the preffered way would be to use HTML5 form validation, good articles are:  </p>
@@ -2224,7 +2247,8 @@ angular forms since the basic elements like <code>&lt;input/&gt;</code>, <code>&
     &lt;zoo-button&gt;
         &lt;button type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
     &lt;/zoo-button&gt;
-&lt;/form&gt;</code></pre>
+&lt;/form&gt;
+</code></pre>
 <blockquote>
 <p><code>novalidate</code> attribute is defined to prevent browser from showing native error bubbles, since we already have
 a way of providing error messages.</p>
@@ -2240,7 +2264,8 @@ a way of providing error messages.</p>
     } else {
         // nothing, zoo-web-components library should show all errors provided via `slot=&#39;error&#39;` on each element.
     }
-});</code></pre>
+});
+</code></pre>
 <p>The above JS is already loaded into this page, the rendered HTML for you to try it is here:  </p>
 <form novalidate id="test-form">
     <zoo-input>

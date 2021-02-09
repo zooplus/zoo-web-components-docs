@@ -10,12 +10,12 @@
     "build": "node transpile-mdx.js"
   },
   "dependencies": {
-    "@zooplus/zoo-web-components": "8.2.10"
+    "@zooplus/zoo-web-components": "8.3.1"
   },
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
     "concurrently": "^5.3.0",
-    "marked": "^1.2.7"
+    "marked": "^2.0.0"
   },
   "repository": {
     "type": "git",

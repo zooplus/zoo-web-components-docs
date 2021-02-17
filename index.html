@@ -18,7 +18,7 @@
 	<main>
 		
         <nav>
-            <a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
+            <a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
         </nav>
         <div class="content">
             <h1 id=button><a href="#button">Button</a></h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
@@ -476,10 +476,6 @@
 <template id="zoo-footer-template">
     <form>
         <zoo-input>
-            <label slot="label">Copyright attribute</label>
-            <input slot="input" type="text" data-type="attr" data-attrname="copyright" value="zooplus AG">
-        </zoo-input>
-        <zoo-input>
             <label slot="label">--primary-light CSS Custom Property</label>
             <input slot="input" type="color" data-type="css" data-cssname="--primary-light">
         </zoo-input>
@@ -498,7 +494,7 @@
         </zoo-input>
         <h3>Rendered output</h3>
         <output>
-<zoo-footer copyright="zooplus AG">
+<zoo-footer>
     <zoo-link type="negative">
         <a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
     </zoo-link>
@@ -513,7 +509,7 @@
 </template>
 
 <hr>
-<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-footer copyright=&quot;zooplus AG&quot;&gt;
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-footer&gt;
     &lt;zoo-link type=&quot;negative&quot;&gt;
         &lt;a slot=&quot;anchor&quot; href=&quot;https://github.com/zooplus/zoo-web-components&quot;&gt;Github&lt;/a&gt;
     &lt;/zoo-link&gt;
@@ -523,7 +519,7 @@
 &lt;/zoo-footer&gt;
 </code></pre>
 <p>The above will render to:</p>
-<zoo-footer copyright="zooplus AG">
+<zoo-footer>
     <zoo-link type="negative">
         <a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
     </zoo-link>
@@ -532,17 +528,7 @@
     </zoo-link>
 </zoo-footer>
 
-<h2>Attributes</h2><table><thead><tr>
-<th class="left"><strong>Name</strong></th>
-<th class="left"><strong>Description</strong></th>
-<th class="center"><strong>Optional</strong></th>
-</tr>
-</thead> <tbody><tr>
-<td class="left"><code>copyright</code></td>
-<td class="left">arbitrary text to show in bottom left corner</td>
-<td class="center">&#10003;</td>
-</tr>
-</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<h2>CSS Variables</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
 </tr>
@@ -934,6 +920,11 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="left">flag which indicates whether the input is valid or not</td>
 <td class="center">&#10003;</td>
 </tr>
+<tr>
+<td class="left"><code>labelposition</code></td>
+<td class="left"><code>top</code>, <code>left</code></td>
+<td class="center">&#10003;</td>
+</tr>
 </tbody></table><blockquote>
 <p><code>invalid</code> attribute should be used as a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes">boolean</a> attribute.</p>
 </blockquote>
@@ -1240,7 +1231,17 @@ Modal visibility must be controlled by the client.</p>
     <a href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
 </zoo-navigation>
 
-<h2>CSS Variables</h2><table><thead><tr>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>direction</code></td>
+<td class="left"><code>vertical</code>, <code>horizontal</code></td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
 </tr>
@@ -1440,6 +1441,11 @@ when supplying such input for this component remember to add:</p>
 <td class="left">flag which indicates whether the input is valid or not</td>
 <td class="center">&#10003;</td>
 </tr>
+<tr>
+<td class="left"><code>labelposition</code></td>
+<td class="left"><code>top</code>, <code>left</code></td>
+<td class="center">&#10003;</td>
+</tr>
 </tbody></table><blockquote>
 <p><code>invalid</code> attribute should be used as a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes">boolean</a> attribute.</p>
 </blockquote>
@@ -1572,6 +1578,11 @@ when supplying such input for this component remember to add:</p>
 </thead> <tbody><tr>
 <td class="left"><code>invalid</code></td>
 <td class="left">flag which indicates whether the input is valid or not</td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>labelposition</code></td>
+<td class="left"><code>top</code>, <code>left</code></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><blockquote>
@@ -1732,6 +1743,11 @@ when supplying such input for this component remember to add:</p>
 <tr>
 <td class="left"><code>loading</code></td>
 <td class="left">flag which indicates whether to show loader inside slotted <code>select</code> element</td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>labelposition</code></td>
+<td class="left"><code>top</code>, <code>left</code></td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><blockquote>
@@ -2006,6 +2022,74 @@ when supplying such input for this component remember to add:</p>
 <td class="center"><code>--primary-mid</code></td>
 <td class="left">color of spinner</td>
 </tr>
+</tbody></table><h1 id=tag><a href="#tag">Tag</a></h1><p>Tag component.</p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-tag')">open sandbox</button>
+</zoo-button>
+<template id="zoo-tag-template">
+    <form>
+        <zoo-input>
+            <label slot="label">--color CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--color">
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-tag type="info" style="--color: red">
+    <span slot="content">Default info Default infoDefault infoDefault infoDefault infoDefault infoDefault</span>
+</zoo-tag>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
+<hr>
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-tag type=&quot;info&quot; style=&quot;--color: red&quot;&gt;
+    &lt;span slot=&quot;content&quot;&gt;Default info Default infoDefault infoDefault infoDefault infoDefault infoDefault&lt;/span&gt;
+&lt;/zoo-tag&gt;
+</code></pre>
+<h2>Rendered</h2><zoo-tag type="info" style="--color: red">
+    <span slot="content">Default info Default infoDefault infoDefault infoDefault infoDefault infoDefault</span>
+</zoo-tag>
+
+<h2>Attributes</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="center"><code>type</code></td>
+<td class="left">info, cloud</td>
+<td class="center">&#10005;</td>
+</tr>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="center"><code>--color</code></td>
+<td class="left">color of border and text of tag when type=&quot;info&quot;</td>
+</tr>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>pre</code></td>
+<td class="left">will be rendered before tag text, for example: <code>&lt;svg slot=&quot;pre&quot;&gt;...&lt;/svg&gt;</code></td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>content</code></td>
+<td class="left">content of the tag</td>
+<td class="center">&#10005;</td>
+</tr>
+<tr>
+<td class="left"><code>post</code></td>
+<td class="left">will be rendered after tag text, for example: <code>&lt;svg slot=&quot;post&quot;&gt;...&lt;/svg&gt;</code></td>
+<td class="center">&#10003;</td>
+</tr>
 </tbody></table><h1 id=toast><a href="#toast">Toast</a></h1><p>Container component which has fly-in/out animations. It can be controlled via exported functions.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-toast&gt;
@@ -2138,7 +2222,17 @@ when supplying such input for this component remember to add:</p>
 <blockquote>
 <p>Note: <code>id</code> and <code>for</code> attributes on native elements are optional when you do not care about accessibility.</p>
 </blockquote>
-<h2>CSS Variables</h2><table><thead><tr>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>labelposition</code></td>
+<td class="left"><code>top</code>, <code>left</code></td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
 </tr>

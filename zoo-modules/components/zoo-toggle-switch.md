@@ -61,6 +61,12 @@ The above will render to:
 
 > Note: `id` and `for` attributes on native elements are optional when you do not care about accessibility.
 
+## Attributes
+
+| **Name**        | **Description**                                        | **Optional** |
+| :-------------- | :----------------------------------------------------- | :----------: |
+| `labelposition` | `top`, `left`                                          |   &#10003;   |
+
 ## CSS Variables
 
 | **Name**        | **Description**           |

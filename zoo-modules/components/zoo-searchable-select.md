@@ -114,10 +114,11 @@ The above will render to:
 
 ## Attributes
 
-| **Name**  | **Description**                                                             | **Optional** |
-| :-------- | :-------------------------------------------------------------------------- | :----------: |
-| `invalid` | flag which indicates whether the input is valid or not                      |   &#10003;   |
-| `loading` | flag which indicates whether to show loader inside slotted `select` element |   &#10003;   |
+| **Name**        | **Description**                                                             | **Optional** |
+| :-------------- | :-------------------------------------------------------------------------- | :----------: |
+| `invalid`       | flag which indicates whether the input is valid or not                      |   &#10003;   |
+| `loading`       | flag which indicates whether to show loader inside slotted `select` element |   &#10003;   |
+| `labelposition` | `top`, `left`                                                               |   &#10003;   |
 
 > `invalid` and `loading` attributes should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
 

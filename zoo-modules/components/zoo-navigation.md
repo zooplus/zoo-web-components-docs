@@ -50,6 +50,12 @@ The above will render to:
 	<a href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
 </zoo-navigation>
 
+## Attributes
+
+| **Name**    | **Description**          | **Optional** |
+| :---------- | :----------------------- | :----------: |
+| `direction` | `vertical`, `horizontal` |   &#10003;   |
+
 ## CSS Variables
 
 | **Name**          | **Description**                  |

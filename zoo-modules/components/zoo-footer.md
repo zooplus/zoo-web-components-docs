@@ -8,10 +8,6 @@ Container footer component.
 <template id="zoo-footer-template">
 	<form>
 		<zoo-input>
-			<label slot="label">Copyright attribute</label>
-			<input slot="input" type="text" data-type="attr" data-attrname="copyright" value="zooplus AG">
-		</zoo-input>
-		<zoo-input>
 			<label slot="label">--primary-light CSS Custom Property</label>
 			<input slot="input" type="color" data-type="css" data-cssname="--primary-light">
 		</zoo-input>
@@ -30,7 +26,7 @@ Container footer component.
 		</zoo-input>
 		<h3>Rendered output</h3>
 		<output>
-<zoo-footer copyright="zooplus AG">
+<zoo-footer>
 	<zoo-link type="negative">
 		<a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
 	</zoo-link>
@@ -49,7 +45,7 @@ Container footer component.
 ## Example usage
 
 ```HTML
-<zoo-footer copyright="zooplus AG">
+<zoo-footer>
 	<zoo-link type="negative">
 		<a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
 	</zoo-link>
@@ -61,7 +57,7 @@ Container footer component.
 
 The above will render to:
 
-<zoo-footer copyright="zooplus AG">
+<zoo-footer>
 	<zoo-link type="negative">
 		<a slot="anchor" href="https://github.com/zooplus/zoo-web-components">Github</a>
 	</zoo-link>
@@ -69,12 +65,6 @@ The above will render to:
 		<a slot="anchor" href="https://www.npmjs.com/package/@zooplus/zoo-web-components">NPM</a>
 	</zoo-link>
 </zoo-footer>
-
-## Attributes
-
-| **Name**    | **Description**                              | **Optional** |
-| :---------- | :------------------------------------------- | :----------: |
-| `copyright` | arbitrary text to show in bottom left corner |   &#10003;   |
 
 ## CSS Variables
 

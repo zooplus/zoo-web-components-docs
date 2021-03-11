@@ -97,6 +97,7 @@ The above will render to:
 | row              | arbitrary content                                                          |   &#10003;   |
 | pagesizeselector | arbitrary content                                                          |   &#10003;   |
 | norecords        | arbitrary content, whether to show it or not must be handled by the client |   &#10003;   |
+| footer-content   | arbitrary content, shown on the same line as pagination                    |   &#10003;   |
 
 ### zoo-grid-header attributes
 

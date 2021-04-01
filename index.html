@@ -93,7 +93,7 @@
 </tr>
 </thead> <tbody><tr>
 <td class="center"><code>type</code></td>
-<td class="left">primary, secondary, hollow</td>
+<td class="left">primary, secondary, hollow, transparent</td>
 <td class="left"><code>primary</code></td>
 <td class="center">&#10003;</td>
 </tr>
@@ -681,7 +681,7 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </tr>
 <tr>
 <td class="left">row</td>
-<td class="left">arbitrary content</td>
+<td class="left">arbitrary content or <code>&lt;zoo-grid-row /&gt;</code></td>
 <td class="center">&#10003;</td>
 </tr>
 <tr>
@@ -697,6 +697,46 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <tr>
 <td class="left">footer-content</td>
 <td class="left">arbitrary content, shown on the same line as pagination</td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><h2>zoo-grid-row</h2><pre><code class="language-HTML">&lt;zoo-grid-row slot=&quot;row&quot;&gt;
+    &lt;div slot=&quot;row-details&quot;&gt;
+        &lt;div&gt;Valid&lt;/div&gt;
+        &lt;div&gt;2020-05-10&lt;/div&gt;
+        &lt;div&gt;Grid Row Expand&lt;/div&gt;
+        &lt;div&gt;
+            &lt;button type=&quot;button&quot; class=&quot;expander&quot;&gt;Expand&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div slot=&quot;row-content&quot; expanded&gt;
+        &lt;div&gt;Content&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/zoo-grid-row&gt;
+
+&lt;zoo-grid-row slot=&quot;row&quot;&gt;
+    &lt;div slot=&quot;row-details&quot;&gt;
+        &lt;div&gt;Valid&lt;/div&gt;
+        &lt;div&gt;2020-05-20&lt;/div&gt;
+        &lt;div&gt;Grid Row No Expand&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/zoo-grid-row&gt;
+</code></pre>
+<blockquote>
+<p>zoo-grid-row is special component that allows to define row with additional expandable content. 
+slot=&quot;row-content&quot; can be omitted and then zoo-grid-row works just like a standard <code>&lt;div slot=&quot;row&quot;&gt;...&lt;/div&gt;</code></p>
+<p>If slot=&quot;row-content&quot; is defined, then expand action should be defined to be able to expand additional content.
+To expand row-content add expanded attribute to <code>&lt;div slot=&quot;row-content&quot;&gt;&lt;/div&gt;</code>, like in example above.
+expanded attribute should be controlled by client code (button click, row click etc.)</p>
+</blockquote>
+<h3>zoo-grid-row attributes</h3><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>expanded</code></td>
+<td class="left">slot=&quot;row-content&quot; flag, that indicates if extra content will be visible</td>
 <td class="center">&#10003;</td>
 </tr>
 </tbody></table><h3>zoo-grid-header attributes</h3><blockquote>

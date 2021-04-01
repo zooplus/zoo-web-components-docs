@@ -94,60 +94,10 @@ The above will render to:
 | **Name**         | **Description**                                                            | **Optional** |
 | :--------------- | :------------------------------------------------------------------------- | :----------: |
 | headercell       | `<zoo-grid-header slot="headercell">Header</zoo-grid-header>`              |   &#10005;   |
-| row              | arbitrary content or `<zoo-grid-row />`                                                        |   &#10003;   |
+| row              | arbitrary content or `<zoo-grid-row />`                                    |   &#10003;   |
 | pagesizeselector | arbitrary content                                                          |   &#10003;   |
 | norecords        | arbitrary content, whether to show it or not must be handled by the client |   &#10003;   |
 | footer-content   | arbitrary content, shown on the same line as pagination                    |   &#10003;   |
-
-## zoo-grid-row
-```HTML
-<zoo-grid-row slot="row">
-    <div slot="row-details">
-        <div>Valid</div>
-        <div>2020-05-10</div>
-        <div>Grid Row Expand</div>
-        <div>
-            <button type="button" class="expander">Expand</button>
-        </div>
-    </div>
-    <div slot="row-content" expanded>
-        <div>Content</div>
-    </div>
-</zoo-grid-row>
-
-<zoo-grid-row slot="row">
-    <div slot="row-details">
-        <div>Valid</div>
-        <div>2020-05-20</div>
-        <div>Grid Row No Expand</div>
-        <div></div>
-    </div>
-</zoo-grid-row>
-```
-
-> zoo-grid-row is special component that allows to define row with additional expandable content. 
-> slot="row-content" can be omitted and then zoo-grid-row works just like a standard `<div slot="row">...</div>`
-> 
-> If slot="row-content" is defined, then expand action should be defined to be able to expand additional content.
-> To expand row-content add expanded attribute to `<div slot="row-content"></div>`, like in example above.
-> expanded attribute should be controlled by client code (button click, row click etc.)
-
-### zoo-grid-row attributes
-
-| **Name**         | **Description**                                                            | **Optional** |
-| :--------------- | :------------------------------------------------------------------------- | :----------: |
-| `expanded`       | slot="row-content" flag, that indicates if extra content will be visible   |   &#10003;   |
-
-### zoo-grid-header attributes
-
-> `sortable` attribute should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
-
-| **Name**           | **Description**                                       | **Optional**                          |
-| :----------------- | :---------------------------------------------------- | :------------------------------------ |
-| `sortable`         | flag, which indicates whether this column is sortable | &#10003;                              |
-| `sortableproperty` | string that will be emitted when user changes sorting | &#10003; - when `sortable` is not set |
-| `sort-title`       | title for sort icon for a11y                          | &#10003;                              |
-| `swap-title`       | title for swap icon for a11y                          | &#10003;                              |
 
 ## Events
 
@@ -158,7 +108,7 @@ The above will render to:
 - `propertyName` - name of property passed to header via `sortableproperty` attribute;
 - `direction` - either `desc`, `asc`;
 
-> When `direction` becomes undefined, whole `detail` object emitted in the event is undefined. 
+> When `direction` becomes undefined, whole `detail` object emitted in the event is undefined.
 
 | **Name**     | **Description**                             | **Event Content**                       |
 | :----------- | :------------------------------------------ | :-------------------------------------- |

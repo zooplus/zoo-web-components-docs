@@ -18,7 +18,7 @@
 	<main>
 		
         <nav>
-            <a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
+            <a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid-header">Grid Header</a><a href="#grid-row">Grid Row</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
         </nav>
         <div class="content">
             <h1 id=button><a href="#button">Button</a></h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
@@ -550,6 +550,100 @@
 <td class="left">arbitrary content</td>
 <td class="center">&#10003;</td>
 </tr>
+</tbody></table><h1 id=grid-header><a href="#grid-header">Grid Header</a></h1><p>Grid header component.</p>
+<hr>
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-grid-header slot=&quot;headercell&quot; sortable=&quot;true&quot; sortableproperty=&quot;createdDate&quot;&gt;Created date&lt;/zoo-grid-header&gt;
+</code></pre>
+<h2>Attributes</h2><blockquote>
+<p><code>sortable</code> attribute should be used as a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes">boolean</a> attribute.</p>
+</blockquote>
+<table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="left"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>sortable</code></td>
+<td class="left">flag, which indicates whether this column is sortable</td>
+<td class="left">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>sortableproperty</code></td>
+<td class="left">string that will be emitted when user changes sorting</td>
+<td class="left">&#10003; - when <code>sortable</code> is not set</td>
+</tr>
+<tr>
+<td class="left"><code>sort-title</code></td>
+<td class="left">title for sort icon for a11y</td>
+<td class="left">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>swap-title</code></td>
+<td class="left">title for swap icon for a11y</td>
+<td class="left">&#10003;</td>
+</tr>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"></td>
+<td class="left">Arbitrary content</td>
+<td class="center">&#10005;</td>
+</tr>
+</tbody></table><h1 id=grid-row><a href="#grid-row">Grid Row</a></h1><p>Grid row component.</p>
+<hr>
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-grid-row slot=&quot;row&quot;&gt;
+    &lt;div slot=&quot;row-details&quot;&gt;
+        &lt;div&gt;Valid&lt;/div&gt;
+        &lt;div&gt;2020-05-10&lt;/div&gt;
+        &lt;div&gt;Grid Row Expand&lt;/div&gt;
+        &lt;div&gt;
+            &lt;button type=&quot;button&quot; class=&quot;expander&quot;&gt;Expand&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div slot=&quot;row-content&quot; expanded&gt;
+        &lt;div&gt;Content&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/zoo-grid-row&gt;
+
+&lt;zoo-grid-row slot=&quot;row&quot;&gt;
+    &lt;div slot=&quot;row-details&quot;&gt;
+        &lt;div&gt;Valid&lt;/div&gt;
+        &lt;div&gt;2020-05-20&lt;/div&gt;
+        &lt;div&gt;Grid Row No Expand&lt;/div&gt;
+        &lt;div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/zoo-grid-row&gt;
+</code></pre>
+<blockquote>
+<p>zoo-grid-row is special component that allows to define row with additional expandable content. 
+slot=&quot;row-content&quot; can be omitted and then zoo-grid-row works just like a standard <code>&lt;div slot=&quot;row&quot;&gt;...&lt;/div&gt;</code></p>
+<p>If slot=&quot;row-content&quot; is defined, then expand action should be defined to be able to expand additional content.
+To expand row-content add expanded attribute to <code>&lt;div slot=&quot;row-content&quot;&gt;&lt;/div&gt;</code>, like in example above.
+expanded attribute should be controlled by client code (button click, row click etc.)</p>
+</blockquote>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>expanded</code></td>
+<td class="left">slot=&quot;row-content&quot; flag, that indicates if extra content will be visible</td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"></td>
+<td class="left">Arbitrary content</td>
+<td class="center">&#10005;</td>
+</tr>
 </tbody></table><h1 id=grid><a href="#grid">Grid</a></h1><p>Grid component.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;margin: 30px;box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)&quot;&gt;
@@ -699,74 +793,6 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="left">arbitrary content, shown on the same line as pagination</td>
 <td class="center">&#10003;</td>
 </tr>
-</tbody></table><h2>zoo-grid-row</h2><pre><code class="language-HTML">&lt;zoo-grid-row slot=&quot;row&quot;&gt;
-    &lt;div slot=&quot;row-details&quot;&gt;
-        &lt;div&gt;Valid&lt;/div&gt;
-        &lt;div&gt;2020-05-10&lt;/div&gt;
-        &lt;div&gt;Grid Row Expand&lt;/div&gt;
-        &lt;div&gt;
-            &lt;button type=&quot;button&quot; class=&quot;expander&quot;&gt;Expand&lt;/button&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div slot=&quot;row-content&quot; expanded&gt;
-        &lt;div&gt;Content&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/zoo-grid-row&gt;
-
-&lt;zoo-grid-row slot=&quot;row&quot;&gt;
-    &lt;div slot=&quot;row-details&quot;&gt;
-        &lt;div&gt;Valid&lt;/div&gt;
-        &lt;div&gt;2020-05-20&lt;/div&gt;
-        &lt;div&gt;Grid Row No Expand&lt;/div&gt;
-        &lt;div&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/zoo-grid-row&gt;
-</code></pre>
-<blockquote>
-<p>zoo-grid-row is special component that allows to define row with additional expandable content. 
-slot=&quot;row-content&quot; can be omitted and then zoo-grid-row works just like a standard <code>&lt;div slot=&quot;row&quot;&gt;...&lt;/div&gt;</code></p>
-<p>If slot=&quot;row-content&quot; is defined, then expand action should be defined to be able to expand additional content.
-To expand row-content add expanded attribute to <code>&lt;div slot=&quot;row-content&quot;&gt;&lt;/div&gt;</code>, like in example above.
-expanded attribute should be controlled by client code (button click, row click etc.)</p>
-</blockquote>
-<h3>zoo-grid-row attributes</h3><table><thead><tr>
-<th class="left"><strong>Name</strong></th>
-<th class="left"><strong>Description</strong></th>
-<th class="center"><strong>Optional</strong></th>
-</tr>
-</thead> <tbody><tr>
-<td class="left"><code>expanded</code></td>
-<td class="left">slot=&quot;row-content&quot; flag, that indicates if extra content will be visible</td>
-<td class="center">&#10003;</td>
-</tr>
-</tbody></table><h3>zoo-grid-header attributes</h3><blockquote>
-<p><code>sortable</code> attribute should be used as a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes">boolean</a> attribute.</p>
-</blockquote>
-<table><thead><tr>
-<th class="left"><strong>Name</strong></th>
-<th class="left"><strong>Description</strong></th>
-<th class="left"><strong>Optional</strong></th>
-</tr>
-</thead> <tbody><tr>
-<td class="left"><code>sortable</code></td>
-<td class="left">flag, which indicates whether this column is sortable</td>
-<td class="left">&#10003;</td>
-</tr>
-<tr>
-<td class="left"><code>sortableproperty</code></td>
-<td class="left">string that will be emitted when user changes sorting</td>
-<td class="left">&#10003; - when <code>sortable</code> is not set</td>
-</tr>
-<tr>
-<td class="left"><code>sort-title</code></td>
-<td class="left">title for sort icon for a11y</td>
-<td class="left">&#10003;</td>
-</tr>
-<tr>
-<td class="left"><code>swap-title</code></td>
-<td class="left">title for swap icon for a11y</td>
-<td class="left">&#10003;</td>
-</tr>
 </tbody></table><h2>Events</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
@@ -782,7 +808,7 @@ expanded attribute should be controlled by client code (button click, row click 
 <li><code>direction</code> - either <code>desc</code>, <code>asc</code>;</li>
 </ul>
 <blockquote>
-<p>When <code>direction</code> becomes undefined, whole <code>detail</code> object emitted in the event is undefined. </p>
+<p>When <code>direction</code> becomes undefined, whole <code>detail</code> object emitted in the event is undefined.</p>
 </blockquote>
 <table><thead><tr>
 <th class="left"><strong>Name</strong></th>

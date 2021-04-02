@@ -195,7 +195,6 @@
     <label for="checkbox-id" slot="label">An example checkbox</label>
 </zoo-checkbox>
 
-
 <blockquote>
 <p>Note: <code>id</code> and <code>for</code> attributes on native elements are optional when you do not care about accessibility.</p>
 </blockquote>
@@ -254,7 +253,11 @@
 <td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
 <td class="center">&#10003;</td>
 </tr>
-</tbody></table><h1 id=collapsable-list><a href="#collapsable-list">Collapsable List</a></h1><p>Container component which provides styles for slotted content.</p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-info</code></li>
+<li><code>zoo-attention-icon</code></li>
+</ul>
+<h1 id=collapsable-list><a href="#collapsable-list">Collapsable List</a></h1><p>Container component which provides styles for slotted content.</p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-collapsable-list')">open sandbox</button>
 </zoo-button>
@@ -352,7 +355,10 @@
 <td class="left">arbitrary content</td>
 <td class="center">&#10005;</td>
 </tr>
-</tbody></table><h1 id=feedback><a href="#feedback">Feedback</a></h1><p>Container component which provides a styled container with preset icon.</p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-collapsable-list-item</code></li>
+</ul>
+<h1 id=feedback><a href="#feedback">Feedback</a></h1><p>Container component which provides a styled container with preset icon.</p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-feedback')">open sandbox</button>
 </zoo-button>
@@ -469,7 +475,10 @@
 <td class="left">arbitrary content</td>
 <td class="center">&#10003;</td>
 </tr>
-</tbody></table><h1 id=footer><a href="#footer">Footer</a></h1><p>Container footer component.</p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-attention-icon</code></li>
+</ul>
+<h1 id=footer><a href="#footer">Footer</a></h1><p>Container footer component.</p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-footer')">open sandbox</button>
 </zoo-button>
@@ -592,7 +601,11 @@
 <td class="left">Arbitrary content</td>
 <td class="center">&#10005;</td>
 </tr>
-</tbody></table><h1 id=grid-row><a href="#grid-row">Grid Row</a></h1><p>Grid row component.</p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-grid</code></li>
+<li><code>zoo-arrow-icon</code></li>
+</ul>
+<h1 id=grid-row><a href="#grid-row">Grid Row</a></h1><p>Grid row component.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-grid-row slot=&quot;row&quot;&gt;
     &lt;div slot=&quot;row-details&quot;&gt;
@@ -644,7 +657,10 @@ expanded attribute should be controlled by client code (button click, row click 
 <td class="left">Arbitrary content</td>
 <td class="center">&#10005;</td>
 </tr>
-</tbody></table><h1 id=grid><a href="#grid">Grid</a></h1><p>Grid component.</p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-grid</code></li>
+</ul>
+<h1 id=grid><a href="#grid">Grid</a></h1><p>Grid component.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;div style=&quot;margin: 30px;box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12)&quot;&gt;
     &lt;zoo-grid currentpage=&quot;3&quot; maxpages=&quot;20&quot; reorderable stickyheader&gt;
@@ -820,7 +836,11 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="left">output event, whenever current page changes</td>
 <td class="left"><code>{detail: { pageNumber: $pageNumber }}</code></td>
 </tr>
-</tbody></table><h1 id=header><a href="#header">Header</a></h1><p>Container header component.</p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-paginator</code></li>
+<li><code>zoo-spinner</code></li>
+</ul>
+<h1 id=header><a href="#header">Header</a></h1><p>Container header component.</p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-header')">open sandbox</button>
 </zoo-button>
@@ -1054,7 +1074,13 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="left">slot for additional content, inserted right after <code>slot=&quot;input&quot;</code></td>
 <td class="center">&#10005;</td>
 </tr>
-</tbody></table><h1 id=link><a href="#link">Link</a></h1><p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-label</code></li>
+<li><code>zoo-info</code></li>
+<li><code>zoo-link</code></li>
+<li><code>zoo-attention-icon</code></li>
+</ul>
+<h1 id=link><a href="#link">Link</a></h1><p>Link wrapper component which provides styles for <strong><code>&lt;a&gt;&lt;/a&gt;</code></strong></p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-link')">open sandbox</button>
 </zoo-button>
@@ -1259,7 +1285,10 @@ Modal visibility must be controlled by the client.</p>
 <td class="left">arbitrary content</td>
 <td class="center">&#10005;</td>
 </tr>
-</tbody></table><h1 id=navigation><a href="#navigation">Navigation</a></h1><p>Container component which provides styles for slotted content.</p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-cross-icon</code></li>
+</ul>
+<h1 id=navigation><a href="#navigation">Navigation</a></h1><p>Container component which provides styles for slotted content.</p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-navigation')">open sandbox</button>
 </zoo-button>
@@ -1397,7 +1426,10 @@ Modal visibility must be controlled by the client.</p>
 <td class="left">output event whenever page is changed</td>
 <td class="left"><code>{detail: { pageNumber: $pageNumber }}</code></td>
 </tr>
-</tbody></table><h1 id=quantity-control><a href="#quantity-control">Quantity Control</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-arrow-icon</code></li>
+</ul>
+<h1 id=quantity-control><a href="#quantity-control">Quantity Control</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;number&quot;/&gt;</code></strong></p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-quantity-control')">open sandbox</button>
 </zoo-button>
@@ -1563,7 +1595,12 @@ when supplying such input for this component remember to add:</p>
 <td class="left">accepts any element that should act as a button for decrease</td>
 <td class="center">&#10003;</td>
 </tr>
-</tbody></table><h1 id=radio><a href="#radio">Radio</a></h1><p>Radio component which provides styles for <strong><code>&lt;input type=&quot;radio&quot;/&gt;</code></strong> and associated <strong><code>&lt;label&gt;&lt;/label&gt;</code></strong></p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-label</code></li>
+<li><code>zoo-info</code></li>
+<li><code>zoo-attention-icon</code></li>
+</ul>
+<h1 id=radio><a href="#radio">Radio</a></h1><p>Radio component which provides styles for <strong><code>&lt;input type=&quot;radio&quot;/&gt;</code></strong> and associated <strong><code>&lt;label&gt;&lt;/label&gt;</code></strong></p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-radio')">open sandbox</button>
 </zoo-button>
@@ -1696,7 +1733,12 @@ when supplying such input for this component remember to add:</p>
 <td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
 <td class="center">&#10003;</td>
 </tr>
-</tbody></table><h1 id=searchable-select><a href="#searchable-select">Searchable Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-label</code></li>
+<li><code>zoo-info</code></li>
+<li><code>zoo-attention-icon</code></li>
+</ul>
+<h1 id=searchable-select><a href="#searchable-select">Searchable Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-select')">open sandbox</button>
 </zoo-button>
@@ -1869,7 +1911,10 @@ when supplying such input for this component remember to add:</p>
 <td class="left">name of the slot for input label</td>
 <td class="center">&#10005;</td>
 </tr>
-</tbody></table><h1 id=select><a href="#select">Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-select</code></li>
+</ul>
+<h1 id=select><a href="#select">Select</a></h1><p>Select component which provides styles for slotted <strong><code>&lt;select&gt;...&lt;/select&gt;</code></strong></p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-select')">open sandbox</button>
 </zoo-button>
@@ -2052,7 +2097,15 @@ when supplying such input for this component remember to add:</p>
 <td class="left">accepts <code>a</code></td>
 <td class="center">&#10003;</td>
 </tr>
-</tbody></table><h1 id=spinner><a href="#spinner">Spinner</a></h1><p>Spinner svg.</p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-label</code></li>
+<li><code>zoo-info</code></li>
+<li><code>zoo-link</code></li>
+<li><code>zoo-attention-icon</code></li>
+<li><code>zoo-preloader</code></li>
+<li><code>zoo-arrow-icon</code></li>
+</ul>
+<h1 id=spinner><a href="#spinner">Spinner</a></h1><p>Spinner svg.</p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-spinner')">open sandbox</button>
 </zoo-button>
@@ -2336,7 +2389,12 @@ when supplying such input for this component remember to add:</p>
 <td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
 <td class="center">&#10003;</td>
 </tr>
-</tbody></table><h1 id=tooltip><a href="#tooltip">Tooltip</a></h1><p>Tooltip component.</p>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-label</code></li>
+<li><code>zoo-info</code></li>
+<li><code>zoo-attention-icon</code></li>
+</ul>
+<h1 id=tooltip><a href="#tooltip">Tooltip</a></h1><p>Tooltip component.</p>
 <hr>
 <h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-button&gt;
     &lt;button type=&quot;button&quot;&gt;

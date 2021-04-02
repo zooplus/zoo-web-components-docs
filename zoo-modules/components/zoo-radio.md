@@ -108,3 +108,9 @@ The above will render to:
 | `label`  | name of the slot for label                                                 |   &#10003;   |
 |  `info`  | accepts any element, foe example `span`                                    |   &#10003;   |
 | `error`  | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |
+
+## Dependencies
+
+- `zoo-label`
+- `zoo-info`
+- `zoo-attention-icon`

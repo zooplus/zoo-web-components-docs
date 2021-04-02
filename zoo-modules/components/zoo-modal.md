@@ -44,3 +44,7 @@ Modal visibility must be controlled by the client.
 | :------: | :---------------- | :----------: |
 |          | arbitrary content |   &#10005;   |
 |  header  | arbitrary content |   &#10005;   |
+
+## Dependencies
+
+- `zoo-cross-icon`

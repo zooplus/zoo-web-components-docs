@@ -26,3 +26,8 @@ Grid header component.
 | **Name** | **Description**   | **Optional** |
 | :------- | :---------------- | :----------: |
 |          | Arbitrary content |   &#10005;   |
+
+## Dependencies
+
+- `zoo-grid`
+- `zoo-arrow-icon`

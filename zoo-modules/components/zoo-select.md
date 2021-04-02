@@ -136,3 +136,12 @@ The above will render to:
 | `info`   | accepts any element, foe example `span`                                      |   &#10003;   |
 | `error`  | accepts any element element that shows when `invalid` attribute is present   |   &#10003;   |
 | `link`   | accepts `a`                                                                  |   &#10003;   |
+
+## Dependencies
+
+- `zoo-label`
+- `zoo-info`
+- `zoo-link`
+- `zoo-attention-icon`
+- `zoo-preloader`
+- `zoo-arrow-icon`

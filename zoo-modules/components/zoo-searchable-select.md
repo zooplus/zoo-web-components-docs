@@ -134,3 +134,7 @@ The above will render to:
 | `link`        | accepts `a`                                                                |   &#10003;   |
 | `inputlabel`  | name of the slot for select label                                          |   &#10005;   |
 | `selectlabel` | name of the slot for input label                                           |   &#10005;   |
+
+## Dependencies
+
+- `zoo-select`

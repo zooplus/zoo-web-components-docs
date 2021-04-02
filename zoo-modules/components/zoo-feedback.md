@@ -97,3 +97,7 @@ Container component which provides a styled container with preset icon.
 | **Name** | **Description**   | **Optional** |
 | :------: | :---------------- | :----------: |
 |          | arbitrary content |   &#10003;   |
+
+## Dependencies
+
+- `zoo-attention-icon`

@@ -113,3 +113,8 @@ The above will render to:
 | **Name**     | **Description**                             | **Event Content**                       |
 | :----------- | :------------------------------------------ | :-------------------------------------- |
 | `pageChange` | output event, whenever current page changes | `{detail: { pageNumber: $pageNumber }}` |
+
+## Dependencies
+
+- `zoo-paginator`
+- `zoo-spinner`

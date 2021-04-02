@@ -49,3 +49,7 @@ Grid row component.
 | **Name** | **Description**   | **Optional** |
 | :------- | :---------------- | :----------: |
 |          | Arbitrary content |   &#10005;   |
+
+## Dependencies
+
+- `zoo-grid`

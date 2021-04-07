@@ -81,3 +81,9 @@ The above will render to:
 | `label`  | `<label for="input-id" slot="label">An example input</label>`              |   &#10003;   |
 | `info`   | accepts any element, foe example `span`                                    |   &#10003;   |
 | `error`  | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |
+
+## Dependencies
+
+- `zoo-label`
+- `zoo-info`
+- `zoo-attention-icon`

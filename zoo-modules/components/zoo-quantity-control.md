@@ -137,3 +137,9 @@ The above will render to:
 | `error`    | accepts any element that shows when `invalid` attribute is present                         |   &#10003;   |
 | `increase` | accepts any element that should act as a button for increase                               |   &#10003;   |
 | `decrease` | accepts any element that should act as a button for decrease                               |   &#10003;   |
+
+## Dependencies
+
+- `zoo-label`
+- `zoo-info`
+- `zoo-attention-icon`

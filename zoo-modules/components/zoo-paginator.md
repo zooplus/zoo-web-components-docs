@@ -41,3 +41,7 @@ The above will render to:
 | **Name**     | **Description**                       | **Event Content**                       |
 | :----------- | :------------------------------------ | :-------------------------------------- |
 | `pageChange` | output event whenever page is changed | `{detail: { pageNumber: $pageNumber }}` |
+
+## Dependencies
+
+- `zoo-arrow-icon`

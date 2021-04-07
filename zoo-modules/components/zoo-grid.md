@@ -94,21 +94,10 @@ The above will render to:
 | **Name**         | **Description**                                                            | **Optional** |
 | :--------------- | :------------------------------------------------------------------------- | :----------: |
 | headercell       | `<zoo-grid-header slot="headercell">Header</zoo-grid-header>`              |   &#10005;   |
-| row              | arbitrary content                                                          |   &#10003;   |
+| row              | arbitrary content or `<zoo-grid-row />`                                    |   &#10003;   |
 | pagesizeselector | arbitrary content                                                          |   &#10003;   |
 | norecords        | arbitrary content, whether to show it or not must be handled by the client |   &#10003;   |
 | footer-content   | arbitrary content, shown on the same line as pagination                    |   &#10003;   |
-
-### zoo-grid-header attributes
-
-> `sortable` attribute should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
-
-| **Name**           | **Description**                                       | **Optional**                          |
-| :----------------- | :---------------------------------------------------- | :------------------------------------ |
-| `sortable`         | flag, which indicates whether this column is sortable | &#10003;                              |
-| `sortableproperty` | string that will be emitted when user changes sorting | &#10003; - when `sortable` is not set |
-| `sort-title`       | title for sort icon for a11y                          | &#10003;                              |
-| `swap-title`       | title for swap icon for a11y                          | &#10003;                              |
 
 ## Events
 
@@ -119,8 +108,13 @@ The above will render to:
 - `propertyName` - name of property passed to header via `sortableproperty` attribute;
 - `direction` - either `desc`, `asc`;
 
-> When `direction` becomes undefined, whole `detail` object emitted in the event is undefined. 
+> When `direction` becomes undefined, whole `detail` object emitted in the event is undefined.
 
 | **Name**     | **Description**                             | **Event Content**                       |
 | :----------- | :------------------------------------------ | :-------------------------------------- |
 | `pageChange` | output event, whenever current page changes | `{detail: { pageNumber: $pageNumber }}` |
+
+## Dependencies
+
+- `zoo-paginator`
+- `zoo-spinner`

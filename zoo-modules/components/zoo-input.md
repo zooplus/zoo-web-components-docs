@@ -110,3 +110,10 @@ The above will render to:
 | `error`      | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |
 | `link`       | accepts `a`                                                                |   &#10003;   |
 | `additional` | slot for additional content, inserted right after `slot="input"`           |   &#10005;   |
+
+## Dependencies
+
+- `zoo-label`
+- `zoo-info`
+- `zoo-link`
+- `zoo-attention-icon`

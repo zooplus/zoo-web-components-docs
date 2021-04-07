@@ -73,9 +73,9 @@ The above will render to:
 
 ## Attributes
 
-| **Name** | **Description**            | **Default** | **Optional** |
-| :------: | :------------------------- | :---------- | :----------: |
-|  `type`  | primary, secondary, hollow | `primary`   |   &#10003;   |
+| **Name** | **Description**                         | **Default** | **Optional** |
+| :------: | :-------------------------------------- | :---------- | :----------: |
+|  `type`  | primary, secondary, hollow, transparent | `primary`   |   &#10003;   |
 
 ## CSS Variables
 

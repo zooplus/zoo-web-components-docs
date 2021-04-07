@@ -67,7 +67,6 @@ The above will render to:
 	<label for="checkbox-id" slot="label">An example checkbox</label>
 </zoo-checkbox>
 
-
 > Note: `id` and `for` attributes on native elements are optional when you do not care about accessibility.
 
 ## Attributes
@@ -94,3 +93,8 @@ The above will render to:
 | `label`    | `<label for="checkbox-id" slot="label">An example checkbox</label>`        |   &#10003;   |
 | `info`     | accepts any element, for example `span`                                    |   &#10003;   |
 | `error`    | accepts any element element that shows when `invalid` attribute is present |   &#10003;   |
+
+## Dependencies
+
+- `zoo-info`
+- `zoo-attention-icon`

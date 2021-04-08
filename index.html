@@ -18,10 +18,63 @@
 	<main>
 		
         <nav>
-            <a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid-header">Grid Header</a><a href="#grid-row">Grid Row</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
+            <a href="#button-group">Button Group</a><a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid-header">Grid Header</a><a href="#grid-row">Grid Row</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
         </nav>
         <div class="content">
-            <h1 id=button><a href="#button">Button</a></h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
+            <h1 id=button-group><a href="#button-group">Button Group</a></h1><p>Button group renders group of <strong><code>&lt;zoo-button&gt;</code></strong> components and it works like a tabs, where only one button can be in active state.</p>
+<p>Set data-active attribute on one of <strong><code>&lt;zoo-button&gt;</code></strong> components to mark it as initially active.</p>
+<hr>
+<h2>Example</h2><pre><code class="language-HTML">&lt;zoo-button-group active-type=&quot;primary&quot; inactive-type=&quot;transparent&quot;&gt;
+    &lt;zoo-button&gt;
+        &lt;button type=&quot;button&quot;&gt;Status Pending&lt;/button&gt;
+    &lt;/zoo-button&gt;
+    &lt;zoo-button data-active&gt;
+        &lt;button type=&quot;button&quot;&gt;Fulfilled&lt;/button&gt;
+    &lt;/zoo-button&gt;
+    &lt;zoo-button&gt;
+        &lt;button type=&quot;button&quot;&gt;Status Failure&lt;/button&gt;
+    &lt;/zoo-button&gt;
+&lt;/zoo-button-group&gt;
+</code></pre>
+<p>The above will render to:</p>
+<zoo-button-group active-type="primary" inactive-type="transparent">
+    <zoo-button>
+        <button type="button">Status Pending</button>
+    </zoo-button>
+    <zoo-button data-active>
+        <button type="button">Fulfilled</button>
+    </zoo-button>
+    <zoo-button>
+        <button type="button">Status Failure</button>
+    </zoo-button>
+</zoo-button-group>
+
+<h2>Attributes</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="center"><code>active-type</code></td>
+<td class="left">zoo-button type (primary, secondary, hollow, transparent)</td>
+<td class="center">&#10005;</td>
+</tr>
+<tr>
+<td class="center"><code>inactive-type</code></td>
+<td class="left">zoo-button type (primary, secondary, hollow, transparent)</td>
+<td class="center">&#10005;</td>
+</tr>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="center"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="center"></td>
+<td class="left"><code>&lt;zoo-button&gt;</code> component with arbitrary content inside</td>
+<td class="center">&#10005;</td>
+</tr>
+</tbody></table><h1 id=button><a href="#button">Button</a></h1><p>Button component which provides styles for <strong><code>&lt;button&gt;&lt;/button&gt;</code></strong></p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-button')">open sandbox</button>
 </zoo-button>

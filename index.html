@@ -18,7 +18,7 @@
 	<main>
 		
         <nav>
-            <a href="#button-group">Button Group</a><a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid-header">Grid Header</a><a href="#grid-row">Grid Row</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
+            <a href="#button-group">Button Group</a><a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#date-range">Date Range</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid-header">Grid Header</a><a href="#grid-row">Grid Row</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
         </nav>
         <div class="content">
             <h1 id=button-group><a href="#button-group">Button Group</a></h1><p>Button group renders group of <strong><code>&lt;zoo-button&gt;</code></strong> components and it works like a tabs, where only one button can be in active state.</p>
@@ -410,6 +410,147 @@
 </tr>
 </tbody></table><h2>Dependencies</h2><ul>
 <li><code>zoo-collapsable-list-item</code></li>
+</ul>
+<h1 id=date-range><a href="#date-range">Date Range</a></h1><p>Date range component which provides styles for slotted <strong><code>&lt;input type=&quot;date&quot;/&gt;</code></strong></p>
+<zoo-button class="sandbox-btn">
+    <button type="button" onclick="openSandbox('zoo-date-range')">open sandbox</button>
+</zoo-button>
+<template id="zoo-date-range-template">
+    <form>
+        <zoo-checkbox highlighted>
+            <input id="zoo-invalid-date-range-id" slot="checkbox" type="checkbox" data-type="attr" data-attrname="invalid" data-attrboolean="true"/>
+            <label for="zoo-invalid-date-range-id" slot="label">Invalid</label>
+        </zoo-checkbox>
+        <zoo-input>
+            <label slot="label">--primary-light CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-light">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--primary-dark CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--primary-dark">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">--warning-mid CSS Custom Property</label>
+            <input slot="input" type="color" data-type="css" data-cssname="--warning-mid">
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Legend slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="label"><label slot="label" for="sandbox-input-id">Input type text</label></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Link slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="link"><a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Info slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="info"><span slot="info">Info</span></textarea>
+        </zoo-input>
+        <zoo-input>
+            <label slot="label">Error slot</label>
+            <textarea slot="input" data-type="slot" data-slotname="error"><span slot="error">Error message</span></textarea>
+        </zoo-input>
+        <h3>Rendered output</h3>
+        <output>
+<zoo-date-range>
+    <label slot="label">Input date range</label>
+    <input slot="date-from" type="date"/>
+    <input slot="date-to" type="date"/>
+    <span slot="info">Additional helpful information for our users</span>
+    <span slot="error">Date range is invalid!</span>
+</zoo-date-range>
+        </output>
+        <h3>HTML code</h3>
+        <pre class=" language-html"><code></code></pre>
+    </form>
+</template>
+
+<hr>
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-date-range&gt;
+    &lt;label slot=&quot;label&quot;&gt;Input date range&lt;/label&gt;
+    &lt;input slot=&quot;date-from&quot; type=&quot;date&quot;/&gt;
+    &lt;input slot=&quot;date-to&quot; type=&quot;date&quot;/&gt;
+    &lt;span slot=&quot;info&quot;&gt;Additional helpful information for our users&lt;/span&gt;
+    &lt;span slot=&quot;error&quot;&gt;Date range is invalid!&lt;/span&gt;
+&lt;/zoo-date-range&gt;
+</code></pre>
+<p>The above will render to:</p>
+<zoo-date-range>
+    <label slot="label">Input date range</label>
+    <input slot="date-from" type="date"/>
+    <input slot="date-to" type="date"/>
+    <span slot="info">Additional helpful information for our users</span>
+    <span slot="error">Date range is invalid!</span>
+</zoo-date-range>
+
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>invalid</code></td>
+<td class="left">flag which indicates whether the input is valid or not</td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><blockquote>
+<p><code>invalid</code> attribute should be used as a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes">boolean</a> attribute.</p>
+</blockquote>
+<h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-light</code></td>
+<td class="left">refer to <code>zoo-link</code></td>
+</tr>
+<tr>
+<td class="left"><code>--primary-mid</code></td>
+<td class="left">refer to <code>zoo-link</code></td>
+</tr>
+<tr>
+<td class="left"><code>--primary-dark</code></td>
+<td class="left">refer to <code>zoo-link</code></td>
+</tr>
+<tr>
+<td class="left"><code>--warning-mid</code></td>
+<td class="left">color of error message</td>
+</tr>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>date-from</code></td>
+<td class="left">name of the slot for input date-from</td>
+<td class="center">&#10005;</td>
+</tr>
+<tr>
+<td class="left"><code>date-to</code></td>
+<td class="left">name of the slot for input date-to</td>
+<td class="center">&#10005;</td>
+</tr>
+<tr>
+<td class="left"><code>label</code></td>
+<td class="left">name of the slot for label</td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>info</code></td>
+<td class="left">accepts any element, foe example <code>span</code></td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>error</code></td>
+<td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-input</code></li>
 </ul>
 <h1 id=feedback><a href="#feedback">Feedback</a></h1><p>Container component which provides a styled container with preset icon.</p>
 <zoo-button class="sandbox-btn">

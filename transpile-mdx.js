@@ -68,5 +68,5 @@ function transpile() {
     console.log('Transpilation finished and files written!')
 }
 transpile();
-const cmps = fs.readFileSync('./node_modules/@zooplus/zoo-web-components/dist/zoo-web-components-esm.js', 'utf8');
+const cmps = fs.readFileSync('./node_modules/@zooplus/zoo-web-components/dist/zoo-web-components.js', 'utf8');
 fs.writeFileSync('./docs/zoo-web-components.js', cmps);

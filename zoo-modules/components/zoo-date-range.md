@@ -33,7 +33,8 @@ Date range component which provides styles for slotted **`<input type="date"/>`*
 		</zoo-input>
 		<zoo-input>
 			<label slot="label">Link slot</label>
-			<textarea slot="input" data-type="slot" data-slotname="link"><a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a></textarea>
+			<a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
+			<textarea slot="input" data-type="slot" data-slotname="link"></textarea>
 		</zoo-input>
 		<zoo-input>
 			<label slot="label">Info slot</label>

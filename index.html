@@ -18,7 +18,7 @@
 	<main>
 		
         <nav>
-            <a href="#button-group">Button Group</a><a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#date-range">Date Range</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid-header">Grid Header</a><a href="#grid-row">Grid Row</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
+            <a href="#button-group">Button Group</a><a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#date-range">Date Range</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid-header">Grid Header</a><a href="#grid-row">Grid Row</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input-tag-option">Input Tag Option</a><a href="#input-tag">Input Tag</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
         </nav>
         <div class="content">
             <h1 id=button-group><a href="#button-group">Button Group</a></h1><p>Button group renders group of <strong><code>&lt;zoo-button&gt;</code></strong> components and it works like a tabs, where only one button can be in active state.</p>
@@ -443,7 +443,8 @@
         </zoo-input>
         <zoo-input>
             <label slot="label">Link slot</label>
-            <textarea slot="input" data-type="slot" data-slotname="link"><a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a></textarea>
+            <a slot="link" href="https://zooplus.github.io/zoo-web-components/" target="about:blank">Forgotten your password?</a>
+            <textarea slot="input" data-type="slot" data-slotname="link"></textarea>
         </zoo-input>
         <zoo-input>
             <label slot="label">Info slot</label>
@@ -1119,7 +1120,181 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 <td class="left">arbitrary content after first two slots</td>
 <td class="center">&#10003;</td>
 </tr>
-</tbody></table><h1 id=input><a href="#input">Input</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
+</tbody></table><h1 id=input-tag-option><a href="#input-tag-option">Input Tag Option</a></h1><p>Component which provides styles for slotted <strong><code>&lt;zoo-tag/&gt;</code></strong> inside <code>zoo-input-tag</code> element.</p>
+<h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>tag</code></td>
+<td class="left">slot for <code>zoo-tag</code> element</td>
+<td class="center">&#10005;</td>
+</tr>
+<tr>
+<td class="left"><code>description</code></td>
+<td class="left">arbitrary content</td>
+<td class="center">&#10005;</td>
+</tr>
+</tbody></table><h1 id=input-tag><a href="#input-tag">Input Tag</a></h1><p>Component which provides styles for slotted <strong><code>&lt;input/&gt;</code></strong>. Selected values are stored in slotted <strong><code>&lt;select&gt;</code></strong>.</p>
+<h2>Example usage</h2><pre><code class="language-HTML">&lt;zoo-input-tag&gt;
+    &lt;label for=&quot;input-tag&quot; slot=&quot;label&quot;&gt;Tag input&lt;/label&gt;
+    &lt;input id=&quot;input-tag&quot; slot=&quot;input&quot; placeholder=&quot;Type a tag name&quot;/&gt;
+    &lt;span slot=&quot;info&quot;&gt;Start typing to see available tags. Tag filtering should be done on client side by listening on &#39;input&#39; event on slotted input.&lt;/span&gt;
+    &lt;span slot=&quot;error&quot;&gt;At least one tag should be selected!&lt;/span&gt;
+    &lt;select slot=&quot;select&quot; multiple required&gt;
+        &lt;option value=&quot;Dog&quot;&gt;&lt;/option&gt;
+        &lt;option value=&quot;Cat&quot;&gt;&lt;/option&gt;
+        &lt;option value=&quot;Bird&quot;&gt;&lt;/option&gt;
+        &lt;option value=&quot;Aquatic&quot;&gt;&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;zoo-input-tag-option slot=&quot;tag-option&quot; id=&quot;dog-tag&quot;&gt;
+        &lt;zoo-tag slot=&quot;tag&quot; type=&quot;cloud&quot; data-value=&quot;Dog&quot; tabindex=&quot;0&quot;&gt;
+            &lt;span slot=&quot;content&quot;&gt;Dog&lt;/span&gt;
+        &lt;/zoo-tag&gt;
+        &lt;span slot=&quot;description&quot;&gt;The domestic dog (Canis familiaris or Canis lupus familiaris)[4] is a domesticated descendant of the wolf.&lt;/span&gt;
+    &lt;/zoo-input-tag-option&gt;
+    &lt;zoo-input-tag-option slot=&quot;tag-option&quot; id=&quot;cat-tag&quot;&gt;
+        &lt;zoo-tag slot=&quot;tag&quot; type=&quot;cloud&quot; data-value=&quot;Cat&quot; tabindex=&quot;0&quot;&gt;
+            &lt;span slot=&quot;content&quot;&gt;Cat&lt;/span&gt;
+        &lt;/zoo-tag&gt;
+        &lt;span slot=&quot;description&quot;&gt;The cat (Felis catus) is a domestic species of small carnivorous mammal.&lt;/span&gt;
+    &lt;/zoo-input-tag-option&gt;
+    &lt;zoo-input-tag-option slot=&quot;tag-option&quot; id=&quot;aquatic-tag&quot;&gt;
+        &lt;zoo-tag slot=&quot;tag&quot; type=&quot;cloud&quot; data-value=&quot;Aquatic&quot; tabindex=&quot;0&quot;&gt;
+            &lt;span slot=&quot;content&quot;&gt;Aquatic&lt;/span&gt;
+        &lt;/zoo-tag&gt;
+        &lt;span slot=&quot;description&quot;&gt;An aquatic animal is an animal, either vertebrate or invertebrate, which lives in the water for most or all of its lifetime.&lt;/span&gt;
+    &lt;/zoo-input-tag-option&gt;
+    &lt;zoo-input-tag-option slot=&quot;tag-option&quot; id=&quot;bird-tag&quot;&gt;
+        &lt;zoo-tag slot=&quot;tag&quot; type=&quot;cloud&quot; data-value=&quot;Bird&quot; tabindex=&quot;0&quot;&gt;
+            &lt;span slot=&quot;content&quot;&gt;Bird&lt;/span&gt;
+        &lt;/zoo-tag&gt;
+        &lt;span slot=&quot;description&quot;&gt;Birds are a group of warm-blooded vertebrates constituting the class Aves /ˈeɪviːz/, characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton.&lt;/span&gt;
+    &lt;/zoo-input-tag-option&gt;
+    &lt;span slot=&quot;no-results&quot;&gt;no results&lt;/span&gt;
+&lt;/zoo-input-tag&gt;
+</code></pre>
+<p>The above will render to:</p>
+<zoo-input-tag>
+    <label for="input-tag" slot="label">Tag input</label>
+    <input id="input-tag" slot="input" placeholder="Type a tag name"/>
+    <span slot="info">Start typing to see available tags. Tag filtering should be done on client side by listening on 'input' event on slotted input.</span>
+    <span slot="error">At least one tag should be selected!</span>
+    <select slot="select" multiple required>
+        <option value="Dog"></option>
+        <option value="Cat"></option>
+        <option value="Bird"></option>
+        <option value="Aquatic"></option>
+    </select>
+    <zoo-input-tag-option slot="tag-option" id="dog-tag">
+        <zoo-tag slot="tag" type="cloud" data-value="Dog" tabindex="0">
+            <span slot="content">Dog</span>
+        </zoo-tag>
+        <span slot="description">The domestic dog (Canis familiaris or Canis lupus familiaris)[4] is a domesticated descendant of the wolf.</span>
+    </zoo-input-tag-option>
+    <zoo-input-tag-option slot="tag-option" id="cat-tag">
+        <zoo-tag slot="tag" type="cloud" data-value="Cat" tabindex="0">
+            <span slot="content">Cat</span>
+        </zoo-tag>
+        <span slot="description">The cat (Felis catus) is a domestic species of small carnivorous mammal.</span>
+    </zoo-input-tag-option>
+    <zoo-input-tag-option slot="tag-option" id="aquatic-tag">
+        <zoo-tag slot="tag" type="cloud" data-value="Aquatic" tabindex="0">
+            <span slot="content">Aquatic</span>
+        </zoo-tag>
+        <span slot="description">An aquatic animal is an animal, either vertebrate or invertebrate, which lives in the water for most or all of its lifetime.</span>
+    </zoo-input-tag-option>
+    <zoo-input-tag-option slot="tag-option" id="bird-tag">
+        <zoo-tag slot="tag" type="cloud" data-value="Bird" tabindex="0">
+            <span slot="content">Bird</span>
+        </zoo-tag>
+        <span slot="description">Birds are a group of warm-blooded vertebrates constituting the class Aves /ˈeɪviːz/, characterised by feathers, toothless beaked jaws, the laying of hard-shelled eggs, a high metabolic rate, a four-chambered heart, and a strong yet lightweight skeleton.</span>
+    </zoo-input-tag-option>
+    <span slot="no-results">no results</span>
+</zoo-input-tag>
+
+<blockquote>
+<p>Note: <code>id</code> and <code>for</code> attributes on native elements are optional when you do not care about accessibility.</p>
+</blockquote>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>invalid</code></td>
+<td class="left">flag which indicates whether the input is valid or not</td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><blockquote>
+<p><code>invalid</code> attribute should be used as a <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes">boolean</a> attribute.</p>
+</blockquote>
+<h2>CSS Variables</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>--primary-light</code></td>
+<td class="left">refer to <code>zoo-link</code></td>
+</tr>
+<tr>
+<td class="left"><code>--primary-mid</code></td>
+<td class="left">refer to <code>zoo-link</code></td>
+</tr>
+<tr>
+<td class="left"><code>--primary-dark</code></td>
+<td class="left">refer to <code>zoo-link</code></td>
+</tr>
+<tr>
+<td class="left"><code>--warning-mid</code></td>
+<td class="left">color of error message</td>
+</tr>
+</tbody></table><h2>Slots</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>input</code></td>
+<td class="left">name of the slot for input</td>
+<td class="center">&#10005;</td>
+</tr>
+<tr>
+<td class="left"><code>select</code></td>
+<td class="left">slot for select which will hold state of selected options</td>
+<td class="center">&#10005;</td>
+</tr>
+<tr>
+<td class="left"><code>tag-option</code></td>
+<td class="left">slot for <code>zoo-input-tag-option</code> element.</td>
+<td class="center">&#10005;</td>
+</tr>
+<tr>
+<td class="left"><code>no-results</code></td>
+<td class="left">slot for arbitrary content when no options are matched element.</td>
+<td class="center">&#10005;</td>
+</tr>
+<tr>
+<td class="left"><code>label</code></td>
+<td class="left">name of the slot for label</td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>info</code></td>
+<td class="left">accepts any element, foe example <code>span</code></td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>error</code></td>
+<td class="left">accepts any element element that shows when <code>invalid</code> attribute is present</td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><h2>Dependencies</h2><ul>
+<li><code>zoo-input-tag-option</code></li>
+<li><code>zoo-cross-icon</code></li>
+</ul>
+<h1 id=input><a href="#input">Input</a></h1><p>Input component which provides styles for slotted <strong><code>&lt;input type=&quot;text&quot;/&gt;</code></strong></p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-input')">open sandbox</button>
 </zoo-button>

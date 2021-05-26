@@ -84,7 +84,8 @@ The above will render to:
 	<span slot="no-results">no results</span>
 </zoo-input-tag>
 
-> Note: `id` and `for` attributes on native elements are optional when you do not care about accessibility.
+> Note: nested `zoo-tag` should have a `data-value` attribute matching one of the options value from slotted `select`.
+> That's how the component holds the state of the form control.
 
 ## Attributes
 

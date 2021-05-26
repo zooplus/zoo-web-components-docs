@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
-    "concurrently": "^6.1.0",
+    "concurrently": "^6.2.0",
     "marked": "^2.0.5"
   },
   "repository": {

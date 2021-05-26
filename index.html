@@ -1215,7 +1215,8 @@ so <code>--grid-column-sizes</code> will not work, to force width of any column 
 </zoo-input-tag>
 
 <blockquote>
-<p>Note: <code>id</code> and <code>for</code> attributes on native elements are optional when you do not care about accessibility.</p>
+<p>Note: nested <code>zoo-tag</code> should have a <code>data-value</code> attribute matching one of the options value from slotted <code>select</code>.
+That&#39;s how the component holds the state of the form control.</p>
 </blockquote>
 <h2>Attributes</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>

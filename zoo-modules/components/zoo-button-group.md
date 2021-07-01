@@ -8,7 +8,7 @@ Set data-active attribute on one of **`<zoo-button>`** components to mark it as 
 ## Example
 
 ```HTML
-<zoo-button-group active-type="primary" inactive-type="transparent">
+<zoo-button-group active-type="primary" inactive-type="transparent" style="width: max-content">
     <zoo-button>
         <button type="button">Status Pending</button>
     </zoo-button>
@@ -23,7 +23,7 @@ Set data-active attribute on one of **`<zoo-button>`** components to mark it as 
 
 The above will render to:
 
-<zoo-button-group active-type="primary" inactive-type="transparent">
+<zoo-button-group active-type="primary" inactive-type="transparent" style="width: max-content">
     <zoo-button>
         <button type="button">Status Pending</button>
     </zoo-button>

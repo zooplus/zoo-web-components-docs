@@ -92,6 +92,7 @@ The above will render to:
 | **Name**  | **Description**                                        | **Optional** |
 | :-------- | :----------------------------------------------------- | :----------: |
 | `invalid` | flag which indicates whether the input is valid or not |   &#10003;   |
+| `data-initial-value` | a string value with initially selected options, separated with comma (data-initial-value="Dog,Cat") |   &#10003;   |
 
 > `invalid` attribute should be used as a [boolean](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#Boolean_Attributes) attribute.
 

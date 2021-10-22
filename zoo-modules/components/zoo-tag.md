@@ -42,7 +42,7 @@ Tag component.
 
 | **Name** | **Description** | **Optional** |
 | :------: | :-------------- | :----------: |
-|  `type`  | info, cloud     |   &#10005;   |
+|  `type`  | info, cloud, tag |   &#10005;   |
 
 ## CSS Variables
 

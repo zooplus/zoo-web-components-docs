@@ -18,7 +18,7 @@
 	<main>
 		
         <nav>
-            <a href="#button-group">Button Group</a><a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list">Collapsable List</a><a href="#date-range">Date Range</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid-header">Grid Header</a><a href="#grid-row">Grid Row</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input-tag-option">Input Tag Option</a><a href="#input-tag">Input Tag</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
+            <a href="#button-group">Button Group</a><a href="#button">Button</a><a href="#checkbox">Checkbox</a><a href="#collapsable-list-item">Collapsable List Item</a><a href="#collapsable-list">Collapsable List</a><a href="#date-range">Date Range</a><a href="#feedback">Feedback</a><a href="#footer">Footer</a><a href="#grid-header">Grid Header</a><a href="#grid-row">Grid Row</a><a href="#grid">Grid</a><a href="#header">Header</a><a href="#input-tag-option">Input Tag Option</a><a href="#input-tag">Input Tag</a><a href="#input">Input</a><a href="#link">Link</a><a href="#modal">Modal</a><a href="#navigation">Navigation</a><a href="#paginator">Paginator</a><a href="#quantity-control">Quantity Control</a><a href="#radio">Radio</a><a href="#searchable-select">Searchable Select</a><a href="#select">Select</a><a href="#spinner">Spinner</a><a href="#tag">Tag</a><a href="#toast">Toast</a><a href="#toggle-switch">Toggle Switch</a><a href="#tooltip">Tooltip</a><a href="#theming">Theming</a><a href="#validation">Validation</a>
         </nav>
         <div class="content">
             <h1 id=button-group><a href="#button-group">Button Group</a></h1><p>Button group renders group of <strong><code>&lt;zoo-button&gt;</code></strong> components and it works like a tabs, where only one button can be in active state.</p>
@@ -310,7 +310,24 @@
 <li><code>zoo-info</code></li>
 <li><code>zoo-attention-icon</code></li>
 </ul>
-<h1 id=collapsable-list><a href="#collapsable-list">Collapsable List</a></h1><p>Container component which provides styles for slotted content.</p>
+<h1 id=collapsable-list-item><a href="#collapsable-list-item">Collapsable List Item</a></h1><p>Container that might be injected into collapsible-list container component</p>
+<h2>Example usage</h2><p>See <a href="#collapsable-list">collapsible list component</a></p>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>opened-by-default</code></td>
+<td class="left">element will be initially opened</td>
+<td class="center">&#10003;</td>
+</tr>
+<tr>
+<td class="left"><code>border-visible</code></td>
+<td class="left">border will remain visible when the component closed</td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><h1 id=collapsable-list><a href="#collapsable-list">Collapsable List</a></h1><p>Container component which provides styles for slotted content.</p>
 <zoo-button class="sandbox-btn">
     <button type="button" onclick="openSandbox('zoo-collapsable-list')">open sandbox</button>
 </zoo-button>
@@ -376,7 +393,17 @@
     </zoo-collapsable-list-item>
 </zoo-collapsable-list>
 
-<h2>CSS Variables</h2><table><thead><tr>
+<h2>Attributes</h2><table><thead><tr>
+<th class="left"><strong>Name</strong></th>
+<th class="left"><strong>Description</strong></th>
+<th class="center"><strong>Optional</strong></th>
+</tr>
+</thead> <tbody><tr>
+<td class="left"><code>disable-autoclose</code></td>
+<td class="left">disables automatic closing of elements</td>
+<td class="center">&#10003;</td>
+</tr>
+</tbody></table><h2>CSS Variables</h2><table><thead><tr>
 <th class="left"><strong>Name</strong></th>
 <th class="left"><strong>Description</strong></th>
 </tr>

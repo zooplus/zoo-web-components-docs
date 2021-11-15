@@ -74,6 +74,12 @@ Container component which provides styles for slotted content.
 	</zoo-collapsable-list-item>
 </zoo-collapsable-list>
 
+## Attributes
+
+| **Name**  | **Description**                                        | **Optional** |
+| :-------- | :----------------------------------------------------- | :----------: |
+| `disable-autoclose` | disables automatic closing of elements |   &#10003;   |
+
 ## CSS Variables
 
 | **Name**         | **Description**                          |

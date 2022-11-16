@@ -69,10 +69,11 @@ The above will render to:
 
 ## CSS variables
 
-| **Name**              | **Description**                                                                        |
-| :-------------------- | :------------------------------------------------------------------------------------- |
-| `--warning-dark`      | user for text color for `norecords` slot                                               |
-| `--grid-column-sizes` | sizes of each column, for example: `repeat(var(--grid-column-num), minmax(50px, 1fr))` |
+| **Name**                           | **Description**                                                                        |
+|:-----------------------------------|:---------------------------------------------------------------------------------------|
+| `--warning-dark`                   | user for text color for `norecords` slot                                               |
+| `--grid-column-sizes`              | sizes of each column, for example: `repeat(var(--grid-column-num), minmax(50px, 1fr))` |
+| `--grid-stickyheader-position-top` | header position from top of the page when using `stickyheader`                         |
 
 > By default, grid will calculate number of headers supplied via slot,
 > and apply `repeat(var(--grid-column-num), minmax(50px, 1fr))` css rule

@@ -27,10 +27,11 @@ Modal visibility must be controlled by the client.
 
 ## CSS Variables
 
-| **Name**              | **Description**    |
-| :-------------------- | :----------------- |
-| `--primary-mid`       | close icon color   |
-| `--zoo-modal-opacity` | background opacity |
+| **Name**              | **Description**                |
+| :-------------------- |:-------------------------------|
+| `--primary-mid`       | close icon color               |
+| `--zoo-modal-opacity` | background opacity             |
+| `--zoo-modal-z-index` | z-index value, 9999 if not set |
 
 ## Functions
 

@@ -74,6 +74,7 @@ The above will render to:
 | `--warning-dark`                   | user for text color for `norecords` slot                                               |
 | `--grid-column-sizes`              | sizes of each column, for example: `repeat(var(--grid-column-num), minmax(50px, 1fr))` |
 | `--grid-stickyheader-position-top` | header position from top of the page when using `stickyheader`                         |
+| `--zoo-grid-z-index`               | z-index value of data loading overlay, 9998 if not set                                 |
 
 > By default, grid will calculate number of headers supplied via slot,
 > and apply `repeat(var(--grid-column-num), minmax(50px, 1fr))` css rule

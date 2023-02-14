@@ -30,6 +30,12 @@ The above will render to:
 | :--------- | :------------------------------- | :---------- | :----------: |
 | `position` | `top`, `right`, `bottom`, `left` | `top`       |   &#10003;   |
 
+## CSS Variables
+
+| **Name**                | **Description**                |
+|:------------------------|:-------------------------------|
+| `--zoo-tooltip-z-index` | z-index value, 9997 if not set |
+
 ## Slots
 
 | **Name** | **Description**   | **Optional** |

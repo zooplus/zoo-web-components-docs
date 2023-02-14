@@ -42,6 +42,8 @@ Spinner svg.
 
 ## CSS Variables
 
-|    **Name**     | **Description**  |
-| :-------------: | :--------------- |
-| `--primary-mid` | color of spinner |
+|        **Name**         | **Description**                 |
+|:-----------------------:|:--------------------------------|
+|     `--primary-mid`     | color of spinner                |
+| `--zoo-spinner-z-index` | z-index value, 10002 if not set |
+

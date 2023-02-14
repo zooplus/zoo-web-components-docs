@@ -22,13 +22,15 @@ Container component which has fly-in/out animations. It can be controlled via ex
 ## CSS Variables
 
 | **Name**               | **Description**                                 |
-| :--------------------- | :---------------------------------------------- |
+|:-----------------------|:------------------------------------------------|
 | `--info-ultralight`    | background color of toast when `type="info"`    |
 | `--info-mid`           | icon color of toast when `type="info"`          |
 | `--warning-ultralight` | background color of toast when `type="error"`   |
 | `--warning-mid`        | icon color of toast when `type="error"`         |
 | `--primary-ultralight` | background color of toast when `type="success"` |
 | `--primary-mid`        | icon color of toast when `type="success"`       |
+| `--zoo-toast-z-index`  | z-index value, 10001 if not set                 |
+
 
 ## Functions
 

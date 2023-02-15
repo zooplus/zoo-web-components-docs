@@ -1,5 +1,5 @@
 import fs from 'fs';
-import marked from 'marked';
+import { marked } from 'marked';
 
 const headers = [];
 const walkTokens = (token) => {
